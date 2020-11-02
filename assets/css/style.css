@@ -11,7 +11,7 @@ body{
 }
 /*--Code from Brad Traversy https://codepen.io/bradtraversy/pen/XerXYV--*/
 #showcase{
-  background-image:url('/assets/images/bg.jpg');
+  background-image:url('/assets/images/bg_landing.jpg');
   background-size:cover;
   background-position:center;
   opacity: 0.9;
@@ -21,6 +21,7 @@ body{
   justify-content:top;
   align-items:center;
   text-align:center;
+  text-shadow: 4px 4px 3px black;
   padding-top: 5%;
   color:#fff;
 }
