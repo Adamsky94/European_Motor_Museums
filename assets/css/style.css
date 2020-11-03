@@ -28,7 +28,6 @@ body{
 #showcase h1{
   font-size:50px;
   line-height:1.5;
-
 }
 
 #showcase p{
@@ -61,10 +60,20 @@ body{
     padding-top: 145px;
 }
 
+/* -- card settings -- */
+
+.card {
+    margin-bottom: 16px;
+}
+
 .card-body {
     min-height: 1px;
-    padding: .25rem;
+    padding: .5rem;
     text-align: center;
+}
+
+.card-title {
+    margin-top: 10px;
 }
 
 /*-- parallax section inspired by https://github.com/Eventyret/simple-parallax --*/
