@@ -14,7 +14,6 @@ body{
   background-image:url('/assets/images/bg_landing.jpg');
   background-size:cover;
   background-position:center;
-  opacity: 0.9;
   height:100vh;
   display:flex;
   flex-direction:column;
@@ -28,7 +27,7 @@ body{
 
 #showcase h1{
   font-size:50px;
-  line-height:1.2;
+  line-height:1.5;
 
 }
 
@@ -53,3 +52,16 @@ body{
 }
 
 /*--Code from Brad Traversy https://codepen.io/bradtraversy/pen/XerXYV ending--*/
+
+.nav-link:hover {
+    background: red;
+}
+
+.section-pad {
+    padding-top: 65px;
+}
+
+.title {
+    text-align: center;
+    
+}
