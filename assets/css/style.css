@@ -69,29 +69,26 @@ body{
 
 /*-- parallax section inspired by https://github.com/Eventyret/simple-parallax --*/
 
-.title-div-body {
-    height: 350px;
-    width: 100vw;
-}
-
 .title-bg {
     background-color: rgba(0,0,0, 0.4);
     color: #fff;
-    width: 100%;
-    overflow: hidden;
+}
+
+.title-div-body {
+    height: 350px;
+    max-width: 100vw;
 }
 
 .east-bg {
-    background:url('/assets/images/budapest.jpg') no-repeat center center fixed;
+    background:url('/assets/images/budapest.jpg') no-repeat center fixed;
 }
 
 .north-bg {
-    background:url('/assets/images/stockholm.jpg') no-repeat center center fixed;
+    background:url('/assets/images/stockholm.jpg') no-repeat center fixed;
 }
 .south-bg {
-    background:url('/assets/images/rome.jpg') no-repeat center center fixed;
+    background:url('/assets/images/rome.jpg') no-repeat center fixed;
 }
 .west-bg {
-    background:url('/assets/images/london.jpg') no-repeat center center fixed;
+    background:url('/assets/images/london.jpg') no-repeat center fixed;
 }
-
