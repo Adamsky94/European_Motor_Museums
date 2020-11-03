@@ -58,10 +58,40 @@ body{
 }
 
 .section-pad {
-    padding-top: 65px;
+    padding-top: 145px;
 }
 
-.title {
+.card-body {
+    min-height: 1px;
+    padding: .25rem;
     text-align: center;
-    
 }
+
+/*-- parallax section inspired by https://github.com/Eventyret/simple-parallax --*/
+
+.title-div-body {
+    height: 350px;
+    width: 100vw;
+}
+
+.title-bg {
+    background-color: rgba(0,0,0, 0.4);
+    color: #fff;
+    width: 100%;
+    overflow: hidden;
+}
+
+.east-bg {
+    background:url('/assets/images/budapest.jpg') no-repeat center center fixed;
+}
+
+.north-bg {
+    background:url('/assets/images/stockholm.jpg') no-repeat center center fixed;
+}
+.south-bg {
+    background:url('/assets/images/rome.jpg') no-repeat center center fixed;
+}
+.west-bg {
+    background:url('/assets/images/london.jpg') no-repeat center center fixed;
+}
+
