@@ -93,11 +93,25 @@ body{
     max-width: 100vw;
 }
 
-.cards-bg {
-    background:url('/assets/images/cards_bg.png') no-repeat center fixed;
+.e-country-bg {
+    background:url('/assets/images/e-country-bg.png') no-repeat center fixed;
     background-size:cover;
 }
 
+.n-country-bg {
+    background:url('/assets/images/n-country-bg.png') no-repeat center fixed;
+    background-size:cover;
+}
+
+.s-country-bg {
+    background:url('/assets/images/s-country-bg.png') no-repeat center fixed;
+    background-size:cover;
+}
+ 
+.w-country-bg {
+    background:url('/assets/images/w-country-bg.png') no-repeat center fixed;
+    background-size:cover;
+}
 
 .east-bg {
     background:url('/assets/images/budapest.jpg') no-repeat center fixed;
