@@ -15,7 +15,7 @@
         <!--Code from Brad Traversy https://codepen.io/bradtraversy/pen/XerXYV-->
         <header id="showcase">
             <h1>European Motoring Museums</h1>
-            <p>Discover automotive history</p>
+            <p>Join us in discovering the history of the automotive industry!</p>
             <a href="#navigation" class="button">Read More</a>
         </header>
 
@@ -49,6 +49,8 @@
         </nav>
 
         <div class="container-fluid">
+
+        <!-- Introduction -->
             <div class="pt-5" id="intro">
                 <h1 class="text-center">Introduction</h1>
                 <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse finibus maximus nisi, eu malesuada libero dapibus sit amet. Proin lacinia ipsum est, non pretium dui efficitur non. Quisque convallis enim nec leo
@@ -59,9 +61,18 @@
             <div class="section-pad title-div-body east-bg" id="east">
                 <h1 class="text-center title-bg">Eastern Europe</h1>
             </div>
-            <button data-toggle="collapse" data-target="#cards">Collapsible</button>
+            
+            <!-- section buttons -->
+            <div class="c-select d-flex justify-content-between flex-wrap align-self-center">
+            <button class="btn btn-outline-dark c-select" data-toggle="collapse" data-target="#bulgaria" aria-expanded="false" aria-controls="">Bulgaria</button>
+            <button class="btn btn-outline-dark c-select" data-toggle="collapse" data-target="#czechia" aria-expanded="false" aria-controls="">Czechia</button>
+            <button class="btn btn-outline-dark c-select" data-toggle="collapse" data-target="#hungary" aria-expanded="false" aria-controls="">Hungary</button>
+            <button class="btn btn-outline-dark c-select" data-toggle="collapse" data-target="#romania" aria-expanded="false" aria-controls="">Romania</button>
+            </div>
 
-            <div class="row collapse" id="cards">
+             <!-- section cards -->
+            <div class="row collapse justify-content-center" id="bulgaria">
+
                 <div class="col-sm-6 col-md-3 pt-3">
                     <div class="card">
                         <div class="card-body">
@@ -72,7 +83,9 @@
                         </div>
                     </div>
                 </div>
-
+               </div> 
+            
+            <div class="row collapse justify-content-center" id="czechia">
                 <div class="col-sm-6 col-md-3 pt-3">
                     <div class="card">
                         <div class="card-body">
@@ -83,6 +96,7 @@
                         </div>
                     </div>
                 </div>
+            
 
                 <div class="col-sm-6 col-md-3 pt-3">
                     <div class="card">
@@ -99,17 +113,6 @@
                     <div class="card">
                         <div class="card-body">
                             <img class="card-img-top" src="/assets/images/bg_landing.jpg" alt="Card image cap" />
-                            <h5 class="card-title">Țiriac Collection</h5>
-                            <p class="card-text">Otopeni, Romania</p>
-                            <a href="#" class="btn btn-warning">Show on Map</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-3 pt-3">
-                    <div class="card">
-                        <div class="card-body">
-                            <img class="card-img-top" src="/assets/images/bg_landing.jpg" alt="Card image cap" />
                             <h5 class="card-title">Sports Car Museum</h5>
                             <p class="card-text">Lány, Czechia</p>
                             <a href="#" class="btn btn-warning">Show on Map</a>
@@ -117,39 +120,32 @@
                     </div>
                 </div>
 
-                <div class="col-sm-6 col-md-3 pt-3">
-                    <div class="card">
-                        <div class="card-body">
-                            <img class="card-img-top" src="/assets/images/bg_landing.jpg" alt="Card image cap" />
-                            <h5 class="card-title">Veteran Arena</h5>
-                            <p class="card-text">Olomouc, Czechia</p>
-                            <a href="#" class="btn btn-warning">Show on Map</a>
-                        </div>
-                    </div>
-                </div>
+            </div>
 
+            <div class="row collapse justify-content-center" id="hungary">
                 <div class="col-sm-6 col-md-3 pt-3">
                     <div class="card">
                         <div class="card-body">
                             <img class="card-img-top" src="/assets/images/bg_landing.jpg" alt="Card image cap" />
-                            <h5 class="card-title">Veteran Arena</h5>
-                            <p class="card-text">Olomouc, Czechia</p>
+                            <h5 class="card-title"></h5>
+                            <p class="card-text">Budapest, Hungary</p>
                             <a href="#" class="btn btn-warning">Show on Map</a>
                         </div>
                     </div>
                 </div>
+            </div>
 
+            <div class="row collapse justify-content-center" id="romania">
                 <div class="col-sm-6 col-md-3 pt-3">
                     <div class="card">
                         <div class="card-body">
                             <img class="card-img-top" src="/assets/images/bg_landing.jpg" alt="Card image cap" />
-                            <h5 class="card-title">Veteran Arena</h5>
-                            <p class="card-text">Olomouc, Czechia</p>
+                            <h5 class="card-title">Țiriac Collection</h5>
+                            <p class="card-text">Otopeni, Romania</p>
                             <a href="#" class="btn btn-warning">Show on Map</a>
                         </div>
                     </div>
                 </div>
-                
             </div>
 
             

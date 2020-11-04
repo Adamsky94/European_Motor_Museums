@@ -60,6 +60,10 @@ body{
     padding-top: 145px;
 }
 
+.c-select {
+    margin: 10px;
+}
+
 /* -- card settings -- */
 
 .card {
@@ -90,14 +94,18 @@ body{
 
 .east-bg {
     background:url('/assets/images/budapest.jpg') no-repeat center fixed;
+    background-size:cover;
 }
 
 .north-bg {
     background:url('/assets/images/stockholm.jpg') no-repeat center fixed;
+    background-size:cover;
 }
 .south-bg {
     background:url('/assets/images/rome.jpg') no-repeat center fixed;
+    background-size:cover;
 }
 .west-bg {
     background:url('/assets/images/london.jpg') no-repeat center fixed;
+    background-size:cover;
 }
