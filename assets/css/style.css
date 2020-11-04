@@ -62,6 +62,7 @@ body{
 
 .c-select {
     margin: 10px;
+    min-width: 150px;
 }
 
 /* -- card settings -- */
