@@ -1,21 +1,17 @@
 $(document).ready(function(){
 
-    /*letterspacing function*/
-    function spacing() {
-        $(this).animate({
-            letterSpacing: "+=5px"
-        })
-    }
+    /*collapse logic*/
+    const idArray = ["east", "north", "south", "west"];
 
-    function spacingoff() {
-        $(this).animate({
-            letterSpacing: "-=5px"
-        })
-    }
+    idArray.forEach((element) => {
+         document.getElementById(element).addEventListener("click", () => {
+              Array.from(document.getElementsByClassName(`collapse-data-${element}`)).forEach((element) => {
+              element.classList.add("collapsed");
+              element.classList.remove("show");
+              })
+         })
+     }) 
 
-    const ids = $("#east, #north, #south, #west");
-
-     ids.mouseenter(spacing).mouseleave(spacingoff).css("cursor", "pointer");
 
 
   /* Code for animating the parallax section -- https://stackoverflow.com/questions/7672556/how-to-add-an-opacity-fading-effect-to-to-the-jquery-slidetoggle -- */
