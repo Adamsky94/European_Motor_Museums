@@ -1,8 +1,29 @@
 $(document).ready(function(){
-  /* Code for animating the parallax section -- https://stackoverflow.com/questions/7672556/how-to-add-an-opacity-fading-effect-to-to-the-jquery-slidetoggle -- */  
+
+    /*letterspacing function*/
+    function spacing() {
+        $(this).animate({
+            letterSpacing: "+=5px"
+        })
+    }
+
+    function spacingoff() {
+        $(this).animate({
+            letterSpacing: "-=5px"
+        })
+    }
+
+    const ids = $("#east, #north, #south, #west");
+
+     ids.mouseenter(spacing).mouseleave(spacingoff).css("cursor", "pointer");
+
+
+  /* Code for animating the parallax section -- https://stackoverflow.com/questions/7672556/how-to-add-an-opacity-fading-effect-to-to-the-jquery-slidetoggle -- */
+
+
   $("#east").mousedown(function(){
     $(".east").animate({
-            opacity: "toggle"
+            opacity: "toggle",
         }, "fast");
     });
 
@@ -23,7 +44,5 @@ $(document).ready(function(){
             opacity: "toggle"
         }, "fast");
     });
-
-    $("#east, #north, #south, #west").css("cursor", "pointer");
 
 });
