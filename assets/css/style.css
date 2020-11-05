@@ -87,7 +87,7 @@ body{
 /*-- parallax section inspired by https://github.com/Eventyret/simple-parallax --*/
 
 .title-bg {
-    background-color: rgba(0,0,0, 0.4);
+    background-color: rgba(0,0,0, 0.5);
     color: #fff;
 }
 
@@ -132,4 +132,14 @@ body{
 .west-bg {
     background:url('/assets/images/london.jpg') no-repeat center fixed;
     background-size:cover;
+}
+/*animation on hover*/
+#east:hover, #north:hover, #south:hover, #west:hover {
+ cursor: pointer;
+ letter-spacing: 3px;
+ opacity: 0.8;
+}
+
+#east, #north, #south, #west {
+    transition: letter-spacing 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }
