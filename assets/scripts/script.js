@@ -24,5 +24,6 @@ $(document).ready(function(){
         }, "fast");
     });
 
+    $("#east, #north, #south, #west").css("cursor", "pointer");
 
 });
