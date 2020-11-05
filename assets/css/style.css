@@ -133,7 +133,7 @@ body{
     background:url('/assets/images/london.jpg') no-repeat center fixed;
     background-size:cover;
 }
-/*animation on hover*/
+/*region animation on hover*/
 #east:hover, #north:hover, #south:hover, #west:hover {
  cursor: pointer;
  letter-spacing: 3px;
