@@ -89,6 +89,10 @@ body{
 .title-bg {
     background-color: rgba(0,0,0, 0.5);
     color: #fff;
+    -webkit-box-shadow: 0px 24px 17px -11px rgba(255,255,255,1);
+-moz-box-shadow: 0px 24px 17px -11px rgba(255,255,255,1);
+box-shadow: 0px 24px 17px -11px rgba(0,0,0,0.4);
+
 }
 
 .title-div-body {
