@@ -33,7 +33,7 @@ body{
 }
 
 #showcase p{
-  font-size:20px;
+  font-size: calc(1em + 0.2vw);
   font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -56,12 +56,17 @@ body{
 
 /*--Code from Brad Traversy https://codepen.io/bradtraversy/pen/XerXYV ending--*/
 
-/*navlink animation*/
+/*navigaton animation*/
 
 .nav-link:hover {
     background: rgba(0, 0, 0, 0.2);
     letter-spacing: 3px;
     transition:  0.3s ease-in-out;
+}
+
+#logo:hover {
+    transform: rotate(15deg);
+    transition:  0.5s;
 }
 
 .section-pad {
@@ -88,6 +93,28 @@ body{
     box-shadow: 15px 11px 19px -4px rgba(0,0,0,0.5);    
 }
 
+/* float animation ispired by https://codepen.io/MarioDesigns/pen/woJgeo */
+
+.card:hover{
+animation: float 6s infinite;
+}
+
+@keyframes float {
+	0% {
+	
+		transform: translatey(0px);
+	}
+
+	50% {
+	;
+		transform: translatey(-5px);
+	}
+	100% {
+		
+		transform: translatey(0px);
+	}
+}
+
 .card-title {
     margin-top: 10px;
 }
@@ -95,6 +122,7 @@ body{
 #navtitle{
     font-size: 1.5em;
 }
+/* Font properties */
 
 .fontmarck {
     font-family: 'Marck Script', cursive;
