@@ -3,6 +3,7 @@
 *{
   margin:0;
   padding:0;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 body{
@@ -98,8 +99,10 @@ body{
 .fontmarck {
     font-family: 'Marck Script', cursive;
 }
-.fontsourcesans {
+.sourcesans-i-b {
     font-family: 'Source Sans Pro', sans-serif;
+    font-style: italic;
+    font-weight: 600; 
 }
 
 /*-- parallax section inspired by https://github.com/Eventyret/simple-parallax --*/
