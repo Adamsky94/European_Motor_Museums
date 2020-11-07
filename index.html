@@ -7,11 +7,16 @@
         <!--Bootstrap CDN CSS file-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
         <!-- GoogleFonts CDN -->
-        <link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Source+Sans+Pro:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Source+Sans+Pro:ital,wght@0,400;1,600&display=swap" rel="stylesheet" />
         <!-- FontAwesome CDN -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+            integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+            crossorigin="anonymous"
+        />
         <!-- Animate.css CDN -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
         <!--my own CSS file-->
         <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
         <title>European Motoring Museums</title>
@@ -20,10 +25,9 @@
     <body>
         <!--Code from Brad Traversy https://codepen.io/bradtraversy/pen/XerXYV-->
         <header id="showcase">
-        
             <div class="animate__animated animate__fadeIn">
-                <h1 class="fontmarck ">European Motoring Museums</h1>
-                    <p>Your guide in discovering the history of the automotive industry!</p>
+                <h1 class="fontmarck">European Motoring Museums</h1>
+                <p>Your guide in discovering the history of the automotive industry</p>
             </div>
 
             <div class="animate__animated animate__fadeIn section-pad">
@@ -57,55 +61,48 @@
                         <a class="nav-link" href="#west">Western Europe</a>
                     </li>
                     <li class="nav-item mx-auto">
-                        <a class="nav-link"  data-toggle="modal" href="#modalContactForm">Contact</a>
+                        <a class="nav-link" data-toggle="modal" href="#modalContactForm">Contact</a>
                     </li>
                 </ul>
             </div>
         </nav>
 
-<!-- Modal from https://mdbootstrap.com/docs/jquery/modals/forms/ -->
-<div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-  aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content card">
-      <div class="modal-header text-center user-select-none">
-        <h4 class="modal-title w-100 font-weight-bold">Write to us</h4>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body mx-3 user-select-none">
-      <div class="text-center font-weight-bold">
-      <p>Please feel free to talk about your plans!</p> 
-      <p>We are here to make things happen so you can get along with your journey.</p>
-      </div>
-        <div class="md-form mb-5 text-center">
-            <label data-error="wrong" data-success="right" for="name"><i class="fas fa-user"></i> Your name</label>
-            <input type="text" id="name" class="form-control validate" placeholder="Full name">
+        <!-- Modal from https://mdbootstrap.com/docs/jquery/modals/forms/ -->
+        <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content card">
+                    <div class="modal-header text-center user-select-none">
+                        <h4 class="modal-title w-100 font-weight-bold">Write to us</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body mx-3 user-select-none">
+                        <div class="text-center font-weight-bold">
+                            <p>Please feel free to talk about your plans!</p>
+                            <p>We are here to make things happen so you can get along with your journey.</p>
+                        </div>
+                        <div class="md-form mb-5 text-center">
+                            <label data-error="wrong" data-success="right" for="name"><i class="fas fa-user"></i> Your name</label>
+                            <input type="text" id="name" class="form-control validate" placeholder="Full name" />
+                        </div>
+
+                        <div class="md-form mb-5 text-center">
+                            <label data-error="wrong" data-success="right" for="email"><i class="fas fa-envelope"></i> Your email</label>
+                            <input type="email" id="email" class="form-control validate" placeholder="Email address" />
+                        </div>
+
+                        <div class="md-form text-center">
+                            <label data-error="wrong" data-success="right" for="message"><i class="fas fa-comment-dots"></i> Your message</label>
+                            <textarea type="text" id="message" class="md-textarea form-control" rows="4" placeholder="Type your enquiry here..."></textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                        <button class="btn">Send <i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class="md-form mb-5 text-center">
-          <label data-error="wrong" data-success="right" for="email"><i class="fas fa-envelope"></i> Your email</label>
-          <input type="email" id="email" class="form-control validate" placeholder="Email address">
-          
-        </div>
-
-
-        <div class="md-form text-center">
-          <label data-error="wrong" data-success="right" for="message"><i class="fas fa-comment-dots"></i> Your message</label>
-          <textarea type="text" id="message" class="md-textarea form-control" rows="4" placeholder="Type your enquiry here..."></textarea>
-          
-        </div>
-
-      </div>
-      <div class="modal-footer d-flex justify-content-center">
-        <button class="btn">Send <i class="fas fa-paper-plane"></i></button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
 
         <div class="container-fluid">
             <!-- Introduction -->
@@ -117,16 +114,16 @@
                     magna non porttitor.
                 </p>
             </div>
-
+            <!-- Eastern Europe parallax -->
             <div class="section-pad title-div-body east-bg" id="east">
                 <h1 class="text-center title-bg sourcesans-i-b">Eastern Europe</h1>
             </div>
 
-            <!-- Eastern Europe section -->
+            <!-- Eastern Europe section country button -->
             <div class="d-flex justify-content-center">
                 <button class="btn btn-secondary btn-block c-select collapse east" data-toggle="collapse" data-target="#bulgaria" aria-expanded="false">Bulgaria</button>
             </div>
-
+            <!-- Eastern Europe cards -->
             <div class="container-fluid e-country-bg">
                 <div class="row collapse justify-content-center collapse-data-east" id="bulgaria">
                     <div class="col-sm-6 col-md-3 pt-3">
@@ -142,10 +139,11 @@
                 </div>
             </div>
 
+            <!-- Eastern Europe section country button -->
             <div class="d-flex justify-content-center">
                 <button class="btn btn-secondary btn-block c-select collapse east" data-toggle="collapse" data-target="#czechia" aria-expanded="false">Czechia</button>
             </div>
-
+            <!-- Eastern Europe cards -->
             <div class="container-fluid e-country-bg">
                 <div class="row collapse justify-content-center collapse-data-east" id="czechia">
                     <div class="col-sm-6 col-md-3 pt-3">
@@ -182,11 +180,11 @@
                     </div>
                 </div>
             </div>
-
+            <!-- Eastern Europe section country button -->
             <div class="d-flex justify-content-center">
                 <button class="btn btn-secondary btn-block c-select collapse east" data-toggle="collapse" data-target="#hungary" aria-expanded="false">Hungary</button>
             </div>
-
+            <!-- Eastern Europe cards -->
             <div class="container-fluid e-country-bg">
                 <div class="row toggle collapse justify-content-center collapse-data-east" id="hungary">
                     <div class="col-sm-6 col-md-3 pt-3">
@@ -201,11 +199,11 @@
                     </div>
                 </div>
             </div>
-
+            <!-- Eastern Europe section country button -->
             <div class="d-flex justify-content-center">
                 <button class="btn btn-secondary btn-block c-select collapse east" data-toggle="collapse" data-target="#romania" aria-expanded="false">Romania</button>
             </div>
-
+            <!-- Eastern Europe cards -->
             <div class="container-fluid e-country-bg">
                 <div class="row toggle collapse justify-content-center collapse-data-east" id="romania">
                     <div class="col-sm-6 col-md-3 pt-3">
@@ -220,14 +218,15 @@
                     </div>
                 </div>
             </div>
-
+            <!-- Northern Europe parallax -->
             <div class="section-pad d-block title-div-body north-bg" id="north">
                 <h1 class="text-center title-bg sourcesans-i-b">Northern Europe</h1>
             </div>
+            <!-- Northern Europe section country button -->
             <div class="d-flex justify-content-center">
                 <button class="btn btn-secondary btn-block c-select collapse north" data-toggle="collapse" data-target="#sweden" aria-expanded="false">Sweden</button>
             </div>
-
+            <!-- Northern Europe cards -->
             <div class="container-fluid n-country-bg">
                 <div class="row collapse justify-content-center collapse-data-north" id="sweden">
                     <div class="col-sm-6 col-md-3 pt-3">
@@ -243,16 +242,16 @@
                 </div>
             </div>
 
-
+            <!-- Southern Europe parallax -->
             <div class="section-pad title-div-body south-bg" id="south">
                 <h1 class="text-center title-bg sourcesans-i-b">Southern Europe</h1>
             </div>
-
+            <!-- Southern Europe section country button -->
             <div class="d-flex justify-content-center">
                 <button class="btn btn-secondary btn-block c-select collapse south" data-toggle="collapse" data-target="#italy" aria-expanded="false">Italy</button>
             </div>
-            
-             <div class="container-fluid s-country-bg">
+            <!-- Southern Europe cards -->
+            <div class="container-fluid s-country-bg">
                 <div class="row collapse justify-content-center collapse-data-south" id="italy">
                     <div class="col-sm-6 col-md-3 pt-3">
                         <div class="card">
@@ -266,16 +265,16 @@
                     </div>
                 </div>
             </div>
-
+            <!-- Western Europe parallax -->
             <div class="section-pad title-div-body west-bg" id="west">
                 <h1 class="text-center title-bg sourcesans-i-b">Western Europe</h1>
             </div>
-
-             <div class="d-flex justify-content-center">
+            <!-- Western Europe  section country button -->
+            <div class="d-flex justify-content-center">
                 <button class="btn btn-secondary btn-block c-select collapse west" data-toggle="collapse" data-target="#uk" aria-expanded="false">United Kingdom</button>
             </div>
-            
-             <div class="container-fluid w-country-bg">
+            <!-- Western Europe cards -->
+            <div class="container-fluid w-country-bg">
                 <div class="row collapse justify-content-center collapse-data-west" id="uk">
                     <div class="col-sm-6 col-md-3 pt-3">
                         <div class="card">
@@ -300,7 +299,11 @@
                         <div class="col-md-6 mt-md-0 mt-3">
                             <!-- Content -->
                             <h5 class="text-uppercase">European Motoring Museums</h5>
-                            <p>Here you can use rows and columns to organize your footer content.</p>
+                            <p>Your guide in discovering the history of the automotive industry</p>
+                            <p>
+                                Head Office<br />
+                                123 Beta Strand, Galway, Co. Galway, Republic Of Ireland
+                            </p>
                         </div>
                         <!-- Grid column -->
 
@@ -355,7 +358,7 @@
                 <!-- Footer Links -->
 
                 <!-- Copyright -->
-                <div class="footer-copyright text-center py-3">© 2020 Adam Kiss</div>
+                <div class="footer-copyright text-center py-3">Adam Kiss © 2020 Europen Motoring Museums</div>
                 <!-- Copyright -->
             </footer>
             <!-- Footer -->
