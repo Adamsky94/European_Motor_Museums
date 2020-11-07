@@ -6,12 +6,6 @@
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-body{
-  margin:0;
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  font-size:17px;
-  line-height:1.6;
-}
 /*--Code from Brad Traversy https://codepen.io/bradtraversy/pen/XerXYV--*/
 #showcase{
   background-image:url('/assets/images/bg_landing.jpg');
@@ -120,6 +114,10 @@ animation: float 6s infinite;
 		
 		transform: translatey(0px);
 	}
+}
+
+.modal-content:hover{
+    animation: none;
 }
 
 .card-title {
