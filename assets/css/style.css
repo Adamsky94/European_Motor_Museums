@@ -6,7 +6,7 @@
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-/*--Code from Brad Traversy https://codepen.io/bradtraversy/pen/XerXYV--*/
+/*--Code for landing from Brad Traversy https://codepen.io/bradtraversy/pen/XerXYV--*/
 #showcase{
   background-image:url('/assets/images/bg_landing.jpg');
   background-size:cover;
@@ -49,6 +49,11 @@
 }
 
 /*--Code from Brad Traversy https://codepen.io/bradtraversy/pen/XerXYV ending--*/
+
+/* navigation */
+#navtitle{
+    font-size: 1.5em;
+}
 
 /*navigaton animation*/
 
@@ -124,9 +129,7 @@ animation: float 6s infinite;
     margin-top: 10px;
 }
 
-#navtitle{
-    font-size: 1.5em;
-}
+
 /* Font properties */
 
 .fontmarck {
@@ -136,6 +139,17 @@ animation: float 6s infinite;
     font-family: 'Source Sans Pro', sans-serif;
     font-style: italic;
     font-weight: 600; 
+}
+/*-- css settings for modal-dialog inspired by https://stackoverflow.com/questions/4919076/outline-effect-to-text --*/
+.modal-dialog, .close, .modal-footer .btn {
+    color: #fff;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 3px #000, 1px 1px 0 #000;
+    
+}
+
+.modal-footer .btn:hover {
+    background: rgba(0, 0, 0, 0.5);
+    transition:  0.2s ease-in-out;
 }
 
 /*-- parallax section inspired by https://github.com/Eventyret/simple-parallax --*/
@@ -155,6 +169,7 @@ box-shadow: 0px 24px 17px -11px rgba(0,0,0,0.4);
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+/* background images */
 .e-country-bg {
     background:url('/assets/images/e-country-bg.png') no-repeat center fixed;
     background-size:cover;
@@ -191,6 +206,11 @@ box-shadow: 0px 24px 17px -11px rgba(0,0,0,0.4);
 .west-bg {
     background:url('/assets/images/london.jpg') no-repeat center fixed;
     background-size:cover;
+}
+
+.modal-content {
+    background:url('/assets/images/modal-bg.jpg') fixed center;
+    
 }
 /*region animation on hover*/
 #east:hover, #north:hover, #south:hover, #west:hover {
