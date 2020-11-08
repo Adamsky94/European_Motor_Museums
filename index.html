@@ -20,12 +20,12 @@
         <!--my own CSS file-->
         <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
         <!-- EmailJS SDK -->
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-<script type="text/javascript">
-(function() {
-emailjs.init("user_b3RGr0k68wLEgOcpsX75t");
-})();
-</script>
+        <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+        <script >
+            (function () {
+                emailjs.init("user_b3RGr0k68wLEgOcpsX75t");
+            })();
+        </script>
 
         <title>European Motoring Museums</title>
     </head>
@@ -76,7 +76,7 @@ emailjs.init("user_b3RGr0k68wLEgOcpsX75t");
         </nav>
 
         <!-- Modal from https://mdbootstrap.com/docs/jquery/modals/forms/ -->
-        <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="Contact form label" aria-hidden="true">
+        <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="modalContactForm" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content card">
                     <div class="modal-header text-center user-select-none">
@@ -92,26 +92,25 @@ emailjs.init("user_b3RGr0k68wLEgOcpsX75t");
                             <p>If you are interested in visiting one of the museums we work with, we're here for you!</p>
                         </div>
                         <form onsubmit="return sendMail(this);">
-                        <div class="md-form mb-5 text-center">
-                            <label for="name"><i class="fas fa-user"></i> Your name</label>
-                            <input type="text" required id="name" class="form-control" placeholder="Full name" />
-                        </div>
+                            <div class="md-form mb-5 text-center">
+                                <label for="name"><i class="fas fa-user"></i> Your name</label>
+                                <input type="text" required id="name" class="form-control" placeholder="Full name" />
+                            </div>
 
-                        <div class="md-form mb-5 text-center">
-                            <label for="email"><i class="fas fa-envelope"></i> Your email</label>
-                            <input type="email" required id="email" class="form-control" placeholder="Email address" />
-                        </div>
+                            <div class="md-form mb-5 text-center">
+                                <label for="email"><i class="fas fa-envelope"></i> Your email</label>
+                                <input type="email" required id="email" class="form-control" placeholder="Email address" />
+                            </div>
 
-                        <div class="md-form text-center">
-                            <label for="message"><i class="fas fa-comment-dots"></i> Your message</label>
-                            <textarea type="text" required id="message" class="md-textarea form-control" rows="4" placeholder="Type your enquiry here..."></textarea>
-                        </div>
-                    <br>
-                    <div class="modal-footer d-flex justify-content-center">
-                    <button type="submit" value="Submit" class="btn" onclick=""><i class="fas fa-paper-plane"></i> Send</button>
-                    </div>
-                    
-                    </form>
+                            <div class="md-form text-center">
+                                <label for="message"><i class="fas fa-comment-dots"></i> Your message</label>
+                                <textarea required id="message" class="md-textarea form-control" rows="4" placeholder="Type your enquiry here..."></textarea>
+                            </div>
+                            <br />
+                            <div class="modal-footer d-flex justify-content-center">
+                                <button type="submit" value="Submit" class="btn" onclick=""><i class="fas fa-paper-plane"></i> Send</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -323,31 +322,11 @@ emailjs.init("user_b3RGr0k68wLEgOcpsX75t");
                         <hr class="clearfix w-100 d-md-none pb-3" />
 
                         <!-- Grid column -->
-                        <div class="col-md-3 mb-md-0 mb-3">
-                            <!-- Links -->
-                            <h5 class="text-uppercase">Links</h5>
-
-                            <ul class="list-unstyled">
-                                <li>
-                                    <a href="#!">Link 1</a>
-                                </li>
-                                <li>
-                                    <a href="#!">Link 2</a>
-                                </li>
-                                <li>
-                                    <a href="#!">Link 3</a>
-                                </li>
-                                <li>
-                                    <a href="#!">Link 4</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- Grid column -->
 
                         <!-- Grid column -->
                         <div class="col-md-3 mb-md-0 mb-3">
                             <!-- Links -->
-                            <p class="text-uppercase">Navigation</p>
+                            <h5 class="text-uppercase">Navigation</h5>
 
                             <ul class="list-unstyled">
                                 <li>
@@ -365,13 +344,21 @@ emailjs.init("user_b3RGr0k68wLEgOcpsX75t");
                             </ul>
                         </div>
                         <!-- Grid column -->
+                        <!-- Grid column -->
+                        <div class="col-md-3 mb-md-0 mb-3">
+                            <!-- Links -->
+                            <h5 class="text-uppercase">
+                                <a href="#modalContactForm" data-toggle="modal">Contact us in e-mail <i class="fas fa-mail-bulk"></i></a>
+                            </h5>
+                        </div>
+                        <!-- Grid column -->
                     </div>
                     <!-- Grid row -->
                 </div>
                 <!-- Footer Links -->
 
                 <!-- Copyright -->
-                <div class="footer-copyright text-center py-3">Adam Kiss © 2020 Europen Motoring Museums</div>
+                <div class="footer-copyright text-center py-3">Adam Kiss © 2020 European Motoring Museums</div>
                 <!-- Copyright -->
             </footer>
             <!-- Footer -->
