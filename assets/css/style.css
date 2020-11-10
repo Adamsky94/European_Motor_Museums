@@ -67,21 +67,22 @@
 /*navigaton animation*/
 
 .nav-link:hover {
-    color: black;
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.3);
     letter-spacing: 3px;
     transition:  0.3s ease-in-out;
 }
+#menubutton {
+    color: rgb(255, 255, 255);
+}
 
 #menubutton:hover {
-    color: black;
-    background: rgba(0, 0, 0, 0.2);
-    transition:  0.3s ease-in-out;
+    background: rgba(0, 0, 0, 0.5);
+    transition:  0.2s ease-in-out;
 }
 
 #logo:hover {
     transform: scale(1.2);
-    transition:  0.5s;
+    transition:  0.5s ease-in-out;
 }
 
 .section-pad {
