@@ -89,10 +89,7 @@
     padding-top: 145px;
 }
 
-.c-select {
-    margin: 10px;
-    max-width: 800px;
-}
+
 /*anchor styling*/
 a {
     color: rgb(0,0,0);
@@ -103,6 +100,28 @@ a:hover {
     color: rgb(0,0,0);
     text-decoration: none;
     background: rgba(0, 0, 0, 0.2);
+    transition:  0.3s ease-in-out;
+}
+
+/* -- country selection buttons -- */
+
+.btn-secondary {
+    background-color:rgb( 2, 57, 112);
+    margin: 10px;
+    max-width: 800px;
+}
+
+.btn-secondary:hover {
+    background-color:#001222;
+    font-weight: bold;
+    letter-spacing: 3px;
+    transition:  0.3s ease-in-out;
+    
+}
+
+.btn-secondary:focus{
+    background-color:#001222;
+    letter-spacing: 3px;
     transition:  0.3s ease-in-out;
 }
 
