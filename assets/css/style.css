@@ -71,18 +71,22 @@
     letter-spacing: 3px;
     transition:  0.3s ease-in-out;
 }
+
 #menubutton {
     color: rgb(255, 255, 255);
+    border: 1px solid white;
 }
 
-#menubutton:hover {
-    background: rgba(0, 0, 0, 0.5);
+#menubutton:hover,  #menubutton:focus {
+    color: rgb(0, 0, 0);
+    background: rgba(255, 255, 255, 0.8);
     transition:  0.2s ease-in-out;
 }
 
+
 #logo:hover {
-    transform: scale(1.2);
-    transition:  0.5s ease-in-out;
+    transform: scale(1.1);
+    transition:  0.3s ease-in-out;
 }
 
 .section-pad {
