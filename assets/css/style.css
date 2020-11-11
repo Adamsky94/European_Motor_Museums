@@ -254,7 +254,7 @@ box-shadow: 0px 24px 17px -11px rgba(0,0,0,0.4);
 }
 
 .modal-content {
-    background:url('../images/jpg/modal-bg.jpg') fixed center;
+    background:url('../images/jpg/modal-bg.jpg') fixed;
     
 }
 /*region animation on hover*/
