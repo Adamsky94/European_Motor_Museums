@@ -64,6 +64,11 @@
     box-shadow: 0px 0px 29px 8px rgba(0,0,0,1); 
 }
 
+.navbar {
+    min-height: 50px;
+    padding: 0 10px;
+}
+
 /*navigaton animation*/
 
 .nav-link:hover {
@@ -85,7 +90,7 @@
 
 
 #logo:hover {
-    transform: scale(1.1);
+    transform: scale(0.8);
     transition:  0.3s ease-in-out;
 }
 
@@ -254,7 +259,7 @@ box-shadow: 0px 24px 17px -11px rgba(0,0,0,0.4);
 }
 
 .modal-content {
-    background:url('../images/jpg/modal-bg.jpg') fixed;
+    background:url('../images/jpg/modal-bg.jpg');
     
 }
 /*region animation on hover*/
