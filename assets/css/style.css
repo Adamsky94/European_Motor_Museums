@@ -8,7 +8,7 @@
 
 /*--Code for landing from Brad Traversy https://codepen.io/bradtraversy/pen/XerXYV--*/
 #showcase{
-  background-image:url('/assets/images/bg_landing.jpg');
+  background-image:url('/assets/images/jpg/bg_landing.jpg');
   background-size:cover;
   background-position:center;
   height:100vh;
@@ -216,45 +216,45 @@ box-shadow: 0px 24px 17px -11px rgba(0,0,0,0.4);
 
 /* background images */
 .e-country-bg {
-    background:url('/assets/images/e-country-bg.png') no-repeat center fixed;
+    background:url('/assets/images/png/e-country-bg.png') no-repeat center fixed;
     background-size:cover;
 }
 
 .n-country-bg {
-    background:url('/assets/images/n-country-bg.png') no-repeat center fixed;
+    background:url('/assets/images/png/n-country-bg.png') no-repeat center fixed;
     background-size:cover;
 }
 
 .s-country-bg {
-    background:url('/assets/images/s-country-bg.png') no-repeat center fixed;
+    background:url('/assets/images/png/s-country-bg.png') no-repeat center fixed;
     background-size:cover;
 }
  
 .w-country-bg {
-    background:url('/assets/images/w-country-bg.png') no-repeat center fixed;
+    background:url('/assets/images/png/w-country-bg.png') no-repeat center fixed;
     background-size:cover;
 }
 
 .east-bg {
-    background:url('/assets/images/budapest.jpg') no-repeat center fixed;
+    background:url('/assets/images/jpg/budapest.jpg') no-repeat center fixed;
     background-size:cover;
 }
 
 .north-bg {
-    background:url('/assets/images/stockholm.jpg') no-repeat center fixed;
+    background:url('/assets/images/jpg/stockholm.jpg') no-repeat center fixed;
     background-size:cover;
 }
 .south-bg {
-    background:url('/assets/images/rome.jpg') no-repeat center fixed;
+    background:url('/assets/images/jpg/rome.jpg') no-repeat center fixed;
     background-size:cover;
 }
 .west-bg {
-    background:url('/assets/images/london.jpg') no-repeat center fixed;
+    background:url('/assets/images/jpg/london.jpg') no-repeat center fixed;
     background-size:cover;
 }
 
 .modal-content {
-    background:url('/assets/images/modal-bg.jpg') fixed center;
+    background:url('/assets/images/jpg/modal-bg.jpg') fixed center;
     
 }
 /*region animation on hover*/
