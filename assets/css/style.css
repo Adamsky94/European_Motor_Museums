@@ -171,7 +171,31 @@ animation: float 6s infinite;
 	}
 }
 
-/* Modal properties */
+/* Font properties */
+
+.fontmarck {
+    font-family: 'Marck Script', cursive;
+}
+.sourcesans-i-b {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: italic;
+    font-weight: 600; 
+
+
+}
+
+/*-- CSS settings for modal-dialog inspired by https://stackoverflow.com/questions/4919076/outline-effect-to-text --*/
+.modal-dialog, .modal-footer .btn {
+    color: #fff;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 3px #000, 1px 1px 0 #000;
+    
+}
+/*Send button*/
+.modal-footer .btn:hover {
+    background: rgba(0, 0, 0, 0.5);
+    transition:  0.2s ease-in-out;
+}
+
 .modal-footer .btn{
     width: 100vw;
     border: solid 1px #fff;
@@ -184,28 +208,10 @@ animation: float 6s infinite;
 .card-title {
     margin-top: 10px;
 }
-
-
-/* Font properties */
-
-.fontmarck {
-    font-family: 'Marck Script', cursive;
-}
-.sourcesans-i-b {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-style: italic;
-    font-weight: 600; 
-}
-/*-- css settings for modal-dialog inspired by https://stackoverflow.com/questions/4919076/outline-effect-to-text --*/
-.modal-dialog, .close, .modal-footer .btn {
-    color: #fff;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 3px #000, 1px 1px 0 #000;
-    
-}
-
-.modal-footer .btn:hover {
-    background: rgba(0, 0, 0, 0.5);
-    transition:  0.2s ease-in-out;
+/*Modal close button*/
+.close {
+    color: rgb(0, 0, 0);
+    text-shadow: -1px -1px 0 rgb(255, 255, 255), 1px -1px 0 rgb(255, 255, 255), -1px 1px 3px rgb(255, 255, 255), 1px 1px 0 rgb(255, 255, 255);
 }
 
 /*-- parallax section inspired by https://github.com/Eventyret/simple-parallax --*/
