@@ -11,9 +11,9 @@ function sendMail(modalContactForm) {
         .then(
             function (response) {
                 console.log("SUCCESS", response);
+                document.getElementById("message").innerHTML += "Thank you for your email! We appreciate Your trust in Our service. One of our colleagues will contact shortly!";
                 modalContactForm.reset();
-                alert("Thank you for contacting us! We will shortly get back to you about your enquiry.");
-                $("#modalclose").click();
+                event.preventDefault();
             },
             function (error) {
                 console.log("FAILED", error);
