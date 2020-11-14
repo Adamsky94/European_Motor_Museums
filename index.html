@@ -34,12 +34,16 @@
         <!--Code from Brad Traversy https://codepen.io/bradtraversy/pen/XerXYV-->
         <header id="showcase">
             <div class="animate__animated animate__fadeIn">
-                <h1 class="fontmarck">European Motoring Museums</h1>
-                <p>Your guide in discovering the history of the automotive industry</p>
+                <h1 id="title" class="fontmarck">European Motoring Museums</h1>
+                <p id="title2" class="fontsourcesans mb-5">Your guide in discovering the history of the automotive industry</p>
             </div>
 
-            <div class="animate__animated animate__fadeIn animate__delay-2s pt-4">
-                <a href="#navigation" class="button" id="about-us">Read more</a>
+            <div id="introduction" class="fontsourcesans animate__animated animate__fadeIn animate__delay-2s">
+                 <p class="mt-3">Do your hobbies include cars, traveling, history, or all of the above combined?</p>
+                   <p> If you have answered yes, we can assure you are in the best hands now!</p>
+                   <p>Our service was designed with one goal in mind: to aid you on your travels abroad.</p>
+                    <p>We are working with museums across Europe to ensure that potential visitors will get there!</p>
+                    <p>We can offer complete travel solutions, including accommodation, private transfer, or public transport times and tickets, and entrance to your selected museums.</p>
             </div>
         </header>
 
@@ -49,8 +53,8 @@
         <nav class="navbar sticky-top navbar-dark bg-dark" id="navigation">
             <a class="nav-item" id="logo" href="#showcase"> <img src="assets/images/png/sitelogo.png" alt="Website logo which is a car with a navigation icon." /></a>
 
-            <span class="align-middle d-none d-sm-block user-select-none fontmarck" id="navtitle">European Motoring Museums</span>
-            <button class="navbar-toggler" type="button" id="menubutton" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle menu">
+            <span class="align-middle d-none d-sm-block user-select-none fontmarck" id="navtitle" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle menu">European Motoring Museums</span>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle menu">
                 <span>Menu</span>
             </button>
 
@@ -117,20 +121,7 @@
         </div>
 
         <div class="container-fluid">
-            <!-- Introduction -->
-            <div class="pt-5 fontsourcesans" id="intro">
-                <h1 class="text-center">Introduction</h1>
-                <div class="text-center">
-                    <p>Do your hobbies include cars, traveling, history, or all of the above combined?</p>
-                    <p>If you have answered yes, we can assure you are in the best hands now!</p>
-                    <p>Our service was designed with one goal in mind: to aid you on your travels abroad to find the real value in an unfamiliar setting.</p>
-                    <p>We are working with several museums across Europe to ensure that if there is someone who would be interested in visiting them, they will get there!</p>
-                    <p>We can offer complete travel solutions, including accommodation, private transfer, or public transport times and tickets, and entrance to your selected museums.</p>
-                    <h5 class="pb-3">
-                        <strong><a data-toggle="modal" href="#modalContactForm">Contact us for our current deals!</a></strong>
-                    </h5>
-                </div>
-            </div>
+    
             <!-- Eastern Europe parallax -->
             <div class="section-pad title-div-body east-bg" id="east">
                 <h1 class="text-center title-bg sourcesans-i-b">Eastern Europe</h1>
@@ -155,6 +146,9 @@
                     </div>
                 </div>
             </div>
+             <h5 class="pt-3 pb-4 e-country-bg text-center">
+                <strong><a data-toggle="modal" href="#modalContactForm">Contact us for our current deals!</a></strong>
+            </h5>
 
             <!-- Eastern Europe section country button -->
             <div class="d-flex justify-content-center">
