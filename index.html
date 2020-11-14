@@ -95,12 +95,12 @@
                             <p>If you are interested in visiting one of the museums we work with, we're here for you!</p>
                         </div>
                         <form onsubmit="return sendMail(this);">
-                            <div class="md-form mb-5 text-center">
+                            <div class="md-form mb-3 text-center">
                                 <label for="name"><i class="fas fa-user"></i> Your name</label>
                                 <input type="text" required id="name" class="form-control" placeholder="Full name" />
                             </div>
 
-                            <div class="md-form mb-5 text-center">
+                            <div class="md-form mb-3 text-center">
                                 <label for="email"><i class="fas fa-envelope"></i> Your email</label>
                                 <input type="email" required id="email" class="form-control" placeholder="Email address" />
                             </div>
@@ -111,8 +111,9 @@
                             </div>
                             <br />
                             <div class="modal-footer d-flex justify-content-center">
-                                <button type="submit" value="Submit" class="btn" onclick=""><i class="fas fa-paper-plane"></i> Send</button>
+                                <button type="submit" value="Submit" class="btn"><i class="fas fa-paper-plane"></i> Send</button>
                             </div>
+                            <div id="mailresponse" class="text-center"></div>
                         </form>
                     </div>
                 </div>
