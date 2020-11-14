@@ -47,7 +47,7 @@ body {
           align-items:center;
   text-align:center;
   text-shadow: 4px 4px 3px black;
-  padding-top: 5%;
+  padding-top: 7%;
   color:#fff;
 }
 
@@ -72,16 +72,13 @@ body {
 
 #showcase #title{
   font-size: calc(2em + 2vw);
-}
-
-#showcase #title2{
-  font-size: calc(1em + 0.2vw);
-  font-family: 'Source Sans Pro', sans-serif;
+  color:#fff;
 }
 
 #introduction {
-    min-width: 90vw;
+    min-width: 100vw;
     background-color: rgba(0, 0, 0, 0.6); 
+    padding: 10px;
 }
 
 /*--Code from Brad Traversy https://codepen.io/bradtraversy/pen/XerXYV ending--*/
@@ -174,7 +171,7 @@ a:hover {
 .btn-secondary:hover {
     background-color:#001222;
     font-weight: bold;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     -webkit-transition:  0.3s ease-in-out;
     -o-transition:  0.3s ease-in-out;
     transition:  0.3s ease-in-out;
@@ -205,7 +202,7 @@ a:hover {
 
 /* float animation ispired by https://codepen.io/MarioDesigns/pen/woJgeo */
 
-.card:hover{
+.card:hover, #showcase #title:hover{
 -webkit-animation: float 6s infinite;
         animation: float 6s infinite;
 }
@@ -324,7 +321,7 @@ box-shadow: 0px 24px 17px -11px rgba(0,0,0,0.4);
 /*region animation on hover*/
 #east:hover, #north:hover, #south:hover, #west:hover {
  cursor: pointer;
- letter-spacing: 3px;
+ letter-spacing: 2px;
  opacity: 0.8;
 }
 
