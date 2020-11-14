@@ -11,8 +11,9 @@ function sendMail(modalContactForm) {
         .then(
             function (response) {
                 console.log("SUCCESS", response);
-                document.getElementById("message").innerHTML += "Thank you for your email! We appreciate Your trust in Our service. One of our colleagues will be in touch shortly!";
                 modalContactForm.reset();
+                /* code for replacing placeholder text from https://stackoverflow.com/questions/13506481/change-placeholder-text */
+                $("#message").attr("placeholder","Thank you for your email! We sincerely appreciate Your trust in Our service. One of our colleagues will be in touch shortly!");
                 event.preventDefault();
             },
             function (error) {
