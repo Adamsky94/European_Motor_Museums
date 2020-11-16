@@ -37,9 +37,9 @@
                 <a href="#east"><h1 id="title" class="fontmarck mb-5">European Motoring Museums</h1></a>
             </div>
 
-            <div id="introduction" class="fontsourcesans animate__animated animate__fadeIn animate__delay-2s">
+            <div id="introduction" class="fontsourcesans animate__animated animate__fadeIn animate__delay-1s">
                 <p class="mt-3">Do your hobbies include cars, traveling, history, or all of the above combined?</p>
-                <p> If you have answered yes, we can assure you are in the best hands now!</p>
+                <p>If you have answered yes, we can assure you are in the best hands now!</p>
                 <p>Our service was designed with one goal in mind: to aid you on your travels abroad.</p>
                 <p>We are working with museums across Europe to ensure that potential visitors will get there!</p>
                 <p>We can offer complete travel solutions, including accommodation, private transfer, or public transport times and tickets, and entrance to your selected museums.</p>
@@ -52,7 +52,9 @@
         <nav class="navbar sticky-top navbar-dark bg-dark" id="navigation">
             <a class="nav-item" id="logo" href="#showcase"> <img src="assets/images/png/sitelogo.png" alt="Website logo which is a car with a navigation icon." /></a>
 
-            <span class="align-middle d-none d-sm-block user-select-none fontmarck" id="navtitle" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle menu">Your guide in Automotive History.</span>
+            <span class="align-middle d-none d-sm-block user-select-none fontmarck" id="navtitle" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle menu">
+                Your guide in Automotive History.
+            </span>
             <button class="navbar-toggler" id="menubutton" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle menu">
                 <span>Menu</span>
             </button>
@@ -94,7 +96,7 @@
                             <p>Our goal is to set everything up so you only need to focus on enjoying your journey.</p>
                             <p>If you are interested in visiting one of the museums we work with, we're here for you!</p>
                         </div>
-                        <form id="contact-form" onsubmit="return sendMail(this)" >
+                        <form id="contact-form" onsubmit="return sendMail(this)">
                             <div class="md-form mb-3 text-center">
                                 <label for="name"><i class="fas fa-user"></i> Your name</label>
                                 <input type="text" required id="name" class="form-control" placeholder="Full name" />
@@ -119,249 +121,313 @@
             </div>
         </div>
 
-    
-            <!-- Eastern Europe parallax -->
-            <div class="section-pad title-div-body east-bg" id="east">
-                <h1 class="text-center title-bg sourcesans-i-b">Eastern Europe</h1>
-            </div>
+        <!-- Eastern Europe parallax -->
+        <div class="section-pad title-div-body east-bg" id="east" data-toggle="collapse" data-target="#east-list" aria-expanded="false">
+            <h1 class="text-center title-bg sourcesans-i-b">Eastern Europe</h1>
+        </div>
 
-            <!-- Eastern Europe section country button -->
-            <div class="d-flex justify-content-center">
-                <button class="btn btn-secondary btn-block collapse east" data-toggle="collapse" data-target="#bulgaria" aria-expanded="false">Bulgaria</button>
-            </div>
-            
-            <!-- Eastern Europe cards -->
-            <div class="container-fluid e-country-bg">
-                <div class="row collapse justify-content-center collapse-data-east" id="bulgaria">
-                    <div class="col-sm-6 col-md-3 pt-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <img class="card-img-top" src="assets/images/jpg/bg_landing.jpg" alt="Card image cap" />
-                                <h5 class="card-title">Retro-Museum</h5>
-                                <p class="card-text">Varna, Bulgaria</p>
-                                <a href="#" class="btn btn-warning">Show on Map</a>
-                            </div>
+        <!-- Eastern Europe cards container -->
+        <div class="container-fluid e-country-bg collapse" id="east-list">
+            <div class="row justify-content-center">
+                <!-- Eastern Europe cards -->
+                <div class="col-sm-6 col-md-3 pt-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <img class="card-img-top" src="assets/images/jpg/bg_landing.jpg" alt="Card image cap" />
+                            <h5 class="card-title">Retro-Museum</h5>
+                            <p class="card-text">Varna, Bulgaria</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 pt-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <img class="card-img-top" src="assets/images/jpg/bg_landing.jpg" alt="Card image cap" />
+                            <h5 class="card-title">Škoda Auto Museum</h5>
+                            <p class="card-text">Mladá Boleslav, Czechia</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 pt-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <img class="card-img-top" src="assets/images/jpg/bg_landing.jpg" alt="Card image cap" />
+                            <h5 class="card-title">Tatra Muzeum</h5>
+                            <p class="card-text">Kopřivnice, Czechia</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 pt-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <img class="card-img-top" src="assets/images/jpg/bg_landing.jpg" alt="Card image cap" />
+                            <h5 class="card-title">Sports Car Museum</h5>
+                            <p class="card-text">Lány, Czechia</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 pt-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <img class="card-img-top" src="assets/images/jpg/bg_landing.jpg" alt="Card image cap" />
+                            <h5 class="card-title"></h5>
+                            <p class="card-text">Budapest, Hungary</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 pt-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <img class="card-img-top" src="assets/images/jpg/bg_landing.jpg" alt="Card image cap" />
+                            <h5 class="card-title">Țiriac Collection</h5>
+                            <p class="card-text">Otopeni, Romania</p>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+
+        <!--
              <h5 class="pt-3 pb-4 e-country-bg text-center">
                 <strong><a data-toggle="modal" href="#modalContactForm">Contact us for our current deals!</a></strong>
-            </h5>
+            </h5> -->
 
-            <!-- Eastern Europe section country button -->
-            <div class="d-flex justify-content-center">
-                <button class="btn btn-secondary btn-block collapse east" data-toggle="collapse" data-target="#czechia" aria-expanded="false">Czechia</button>
-            </div>
-            <!-- Eastern Europe cards -->
-            <div class="container-fluid e-country-bg">
-                <div class="row collapse justify-content-center collapse-data-east" id="czechia">
-                    <div class="col-sm-6 col-md-3 pt-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <img class="card-img-top" src="assets/images/jpg/bg_landing.jpg" alt="Card image cap" />
-                                <h5 class="card-title">Škoda Auto Museum</h5>
-                                <p class="card-text">Mladá Boleslav, Czechia</p>
-                                <a href="#" class="btn btn-warning">Show on Map</a>
-                            </div>
+        <!-- Northern Europe parallax -->
+        <div class="section-pad d-block title-div-body north-bg" id="north" data-toggle="collapse" data-target="#north-list" aria-expanded="false">
+            <h1 class="text-center title-bg sourcesans-i-b">Northern Europe</h1>
+        </div>
+
+        <!-- Northern  Europe cards container -->
+        <div class="container-fluid n-country-bg collapse" id="north-list">
+            <div class="row justify-content-center">
+                <!-- Northern Europe cards -->
+                <div class="col-sm-6 col-md-3 pt-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <img class="card-img-top" src="assets/images/jpg/bg_landing.jpg" alt="Card image cap" />
+                            <h5 class="card-title">Retro-Museum</h5>
+                            <p class="card-text">Varna, Bulgaria</p>
                         </div>
                     </div>
+                </div>
 
-                    <div class="col-sm-6 col-md-3 pt-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <img class="card-img-top" src="assets/images/jpg/bg_landing.jpg" alt="Card image cap" />
-                                <h5 class="card-title">Tatra Muzeum</h5>
-                                <p class="card-text">Kopřivnice, Czechia</p>
-                                <a href="#" class="btn btn-warning">Show on Map</a>
-                            </div>
+                <div class="col-sm-6 col-md-3 pt-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <img class="card-img-top" src="assets/images/jpg/bg_landing.jpg" alt="Card image cap" />
+                            <h5 class="card-title">Škoda Auto Museum</h5>
+                            <p class="card-text">Mladá Boleslav, Czechia</p>
                         </div>
                     </div>
+                </div>
 
-                    <div class="col-sm-6 col-md-3 pt-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <img class="card-img-top" src="assets/images/jpg/bg_landing.jpg" alt="Card image cap" />
-                                <h5 class="card-title">Sports Car Museum</h5>
-                                <p class="card-text">Lány, Czechia</p>
-                                <a href="#" class="btn btn-warning">Show on Map</a>
-                            </div>
+                <div class="col-sm-6 col-md-3 pt-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <img class="card-img-top" src="assets/images/jpg/bg_landing.jpg" alt="Card image cap" />
+                            <h5 class="card-title">Tatra Muzeum</h5>
+                            <p class="card-text">Kopřivnice, Czechia</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 pt-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <img class="card-img-top" src="assets/images/jpg/bg_landing.jpg" alt="Card image cap" />
+                            <h5 class="card-title">Sports Car Museum</h5>
+                            <p class="card-text">Lány, Czechia</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Eastern Europe section country button -->
-            <div class="d-flex justify-content-center">
-                <button class="btn btn-secondary btn-block collapse east" data-toggle="collapse" data-target="#hungary" aria-expanded="false">Hungary</button>
-            </div>
-            <!-- Eastern Europe cards -->
-            <div class="container-fluid e-country-bg">
-                <div class="row toggle collapse justify-content-center collapse-data-east" id="hungary">
-                    <div class="col-sm-6 col-md-3 pt-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <img class="card-img-top" src="assets/images/jpg/bg_landing.jpg" alt="Card image cap" />
-                                <h5 class="card-title"></h5>
-                                <p class="card-text">Budapest, Hungary</p>
-                                <a href="#" class="btn btn-warning">Show on Map</a>
-                            </div>
+        </div>
+
+        <!--
+             <h5 class="pt-3 pb-4 e-country-bg text-center">
+                <strong><a data-toggle="modal" href="#modalContactForm">Contact us for our current deals!</a></strong>
+            </h5> -->
+
+        <!-- Southern Europe parallax -->
+        <div class="section-pad title-div-body south-bg" id="south" data-toggle="collapse" data-target="#south-list" aria-expanded="false">
+            <h1 class="text-center title-bg sourcesans-i-b">Southern Europe</h1>
+        </div>
+
+        <!-- Southern Europe cards container -->
+        <div class="container-fluid s-country-bg collapse" id="south-list">
+            <div class="row justify-content-center">
+                <!-- Southern Europe cards -->
+                <div class="col-sm-6 col-md-3 pt-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <img class="card-img-top" src="assets/images/jpg/bg_landing.jpg" alt="Card image cap" />
+                            <h5 class="card-title">Retro-Museum</h5>
+                            <p class="card-text">Varna, Bulgaria</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 pt-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <img class="card-img-top" src="assets/images/jpg/bg_landing.jpg" alt="Card image cap" />
+                            <h5 class="card-title">Škoda Auto Museum</h5>
+                            <p class="card-text">Mladá Boleslav, Czechia</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 pt-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <img class="card-img-top" src="assets/images/jpg/bg_landing.jpg" alt="Card image cap" />
+                            <h5 class="card-title">Tatra Muzeum</h5>
+                            <p class="card-text">Kopřivnice, Czechia</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 pt-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <img class="card-img-top" src="assets/images/jpg/bg_landing.jpg" alt="Card image cap" />
+                            <h5 class="card-title">Sports Car Museum</h5>
+                            <p class="card-text">Lány, Czechia</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Eastern Europe section country button -->
-            <div class="d-flex justify-content-center">
-                <button class="btn btn-secondary btn-block collapse east" data-toggle="collapse" data-target="#romania" aria-expanded="false">Romania</button>
-            </div>
-            <!-- Eastern Europe cards -->
-            <div class="container-fluid e-country-bg">
-                <div class="row toggle collapse justify-content-center collapse-data-east" id="romania">
-                    <div class="col-sm-6 col-md-3 pt-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <img class="card-img-top" src="assets/images/jpg/bg_landing.jpg" alt="Card image cap" />
-                                <h5 class="card-title">Țiriac Collection</h5>
-                                <p class="card-text">Otopeni, Romania</p>
-                                <a href="#" class="btn btn-warning">Show on Map</a>
-                            </div>
+        </div>
+
+        <!--
+             <h5 class="pt-3 pb-4 e-country-bg text-center">
+                <strong><a data-toggle="modal" href="#modalContactForm">Contact us for our current deals!</a></strong>
+            </h5> -->
+
+        <!-- Western Europe parallax -->
+        <div class="section-pad title-div-body west-bg" id="west" data-toggle="collapse" data-target="#west-list" aria-expanded="false">
+            <h1 class="text-center title-bg sourcesans-i-b">Western Europe</h1>
+        </div>
+
+        <!-- Southern Europe cards container -->
+        <div class="container-fluid w-country-bg collapse" id="west-list">
+            <div class="row justify-content-center">
+                <!-- Southern Europe cards -->
+                <div class="col-sm-6 col-md-3 pt-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <img class="card-img-top" src="assets/images/jpg/bg_landing.jpg" alt="Card image cap" />
+                            <h5 class="card-title">Retro-Museum</h5>
+                            <p class="card-text">Varna, Bulgaria</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 pt-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <img class="card-img-top" src="assets/images/jpg/bg_landing.jpg" alt="Card image cap" />
+                            <h5 class="card-title">Škoda Auto Museum</h5>
+                            <p class="card-text">Mladá Boleslav, Czechia</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 pt-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <img class="card-img-top" src="assets/images/jpg/bg_landing.jpg" alt="Card image cap" />
+                            <h5 class="card-title">Tatra Muzeum</h5>
+                            <p class="card-text">Kopřivnice, Czechia</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 pt-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <img class="card-img-top" src="assets/images/jpg/bg_landing.jpg" alt="Card image cap" />
+                            <h5 class="card-title">Sports Car Museum</h5>
+                            <p class="card-text">Lány, Czechia</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Northern Europe parallax -->
-            <div class="section-pad d-block title-div-body north-bg" id="north">
-                <h1 class="text-center title-bg sourcesans-i-b">Northern Europe</h1>
-            </div>
-            <!-- Northern Europe section country button -->
-            <div class="d-flex justify-content-center">
-                <button class="btn btn-secondary btn-block collapse north" data-toggle="collapse" data-target="#sweden" aria-expanded="false">Sweden</button>
-            </div>
-            <!-- Northern Europe cards -->
-            <div class="container-fluid n-country-bg">
-                <div class="row collapse justify-content-center collapse-data-north" id="sweden">
-                    <div class="col-sm-6 col-md-3 pt-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <img class="card-img-top" src="assets/images/jpg/bg_landing.jpg" alt="Card image cap" />
-                                <h5 class="card-title">Retro-Museum</h5>
-                                <p class="card-text">Varna, Bulgaria</p>
-                                <a href="#" class="btn btn-warning">Show on Map</a>
-                            </div>
-                        </div>
+        </div>
+
+        <!--
+             <h5 class="pt-3 pb-4 e-country-bg text-center">
+                <strong><a data-toggle="modal" href="#modalContactForm">Contact us for our current deals!</a></strong>
+            </h5> -->
+
+        <!-- Footer code from https://mdbootstrap.com/docs/jquery/navigation/footer/ -->
+        <footer class="page-footer pt-4">
+            <!-- Footer Links -->
+            <div class="container-fluid text-center text-md-left">
+                <!-- Grid row -->
+                <div class="row">
+                    <!-- Grid column -->
+                    <div class="col-md-6 mt-md-0 mt-3">
+                        <!-- Content -->
+                        <h5 class="text-uppercase">European Motoring Museums</h5>
+                        <p class="user-select-none">Your guide in discovering the history of the automotive industry</p>
+                        <h5 class="user-select-none">Head Office<br /></h5>
+                        <p>123 Beta Strand, Galway, Co. Galway, Republic Of Ireland</p>
                     </div>
-                </div>
-            </div>
+                    <!-- Grid column -->
 
-            <!-- Southern Europe parallax -->
-            <div class="section-pad title-div-body south-bg" id="south">
-                <h1 class="text-center title-bg sourcesans-i-b">Southern Europe</h1>
-            </div>
-            <!-- Southern Europe section country button -->
-            <div class="d-flex justify-content-center">
-                <button class="btn btn-secondary btn-block collapse south" data-toggle="collapse" data-target="#italy" aria-expanded="false">Italy</button>
-            </div>
-            <!-- Southern Europe cards -->
-            <div class="container-fluid s-country-bg">
-                <div class="row collapse justify-content-center collapse-data-south" id="italy">
-                    <div class="col-sm-6 col-md-3 pt-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <img class="card-img-top" src="assets/images/jpg/bg_landing.jpg" alt="Card image cap" />
-                                <h5 class="card-title">Retro-Museum</h5>
-                                <p class="card-text">Varna, Bulgaria</p>
-                                <a href="#" class="btn btn-warning">Show on Map</a>
-                            </div>
-                        </div>
+                    <hr class="clearfix w-100 d-md-none pb-3" />
+
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 mb-md-0 mb-3">
+                        <!-- Links -->
+                        <h5 class="text-uppercase user-select-none text-center">Navigation</h5>
+
+                        <ul class="list-unstyled text-center">
+                            <li>
+                                <a href="#showcase">Home</a>
+                            </li>
+                            <li>
+                                <a href="#east">Eastern Europe</a>
+                            </li>
+                            <li>
+                                <a href="#north">Northern Europe</a>
+                            </li>
+                            <li>
+                                <a href="#south">Southern Europe</a>
+                            </li>
+                            <li>
+                                <a href="#west">Western Europe</a>
+                            </li>
+                        </ul>
                     </div>
-                </div>
-            </div>
-            <!-- Western Europe parallax -->
-            <div class="section-pad title-div-body west-bg" id="west">
-                <h1 class="text-center title-bg sourcesans-i-b">Western Europe</h1>
-            </div>
-            <!-- Western Europe  section country button -->
-            <div class="d-flex justify-content-center">
-                <button class="btn btn-secondary btn-block collapse west" data-toggle="collapse" data-target="#uk" aria-expanded="false">United Kingdom</button>
-            </div>
-            <!-- Western Europe cards -->
-            <div class="container-fluid w-country-bg">
-                <div class="row collapse justify-content-center collapse-data-west" id="uk">
-                    <div class="col-sm-6 col-md-3 pt-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <img class="card-img-top" src="assets/images/jpg/bg_landing.jpg" alt="Card image cap" />
-                                <h5 class="card-title">Retro-Museum</h5>
-                                <p class="card-text">Varna, Bulgaria</p>
-                                <a href="#" class="btn btn-warning">Show on Map</a>
-                            </div>
-                        </div>
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <div class="col-md-3 mb-md-0 mb-3">
+                        <!-- Links -->
+                        <h5 class="text-uppercase">
+                            <a href="#modalContactForm" data-toggle="modal">Contact us in e-mail <i class="fas fa-mail-bulk"></i></a>
+                        </h5>
                     </div>
+                    <!-- Grid column -->
                 </div>
+                <!-- Grid row -->
             </div>
+            <!-- Footer Links -->
 
-            <!-- Footer code from https://mdbootstrap.com/docs/jquery/navigation/footer/ -->
-            <footer class="page-footer pt-4">
-                <!-- Footer Links -->
-                <div class="container-fluid text-center text-md-left">
-                    <!-- Grid row -->
-                    <div class="row">
-                        <!-- Grid column -->
-                        <div class="col-md-6 mt-md-0 mt-3">
-                            <!-- Content -->
-                            <h5 class="text-uppercase">European Motoring Museums</h5>
-                            <p class="user-select-none">Your guide in discovering the history of the automotive industry</p>
-                            <h5 class="user-select-none">Head Office<br /></h5>
-                            <p>123 Beta Strand, Galway, Co. Galway, Republic Of Ireland</p>
-                        </div>
-                        <!-- Grid column -->
+            <!-- Copyright -->
+            <div class="footer-copyright text-center user-select-none py-3">Adam Kiss © 2020 European Motoring Museums</div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
 
-                        <hr class="clearfix w-100 d-md-none pb-3" />
-
-                        <!-- Grid column -->
-
-                        <!-- Grid column -->
-                        <div class="col-md-3 mb-md-0 mb-3">
-                            <!-- Links -->
-                            <h5 class="text-uppercase user-select-none text-center">Navigation</h5>
-
-                            <ul class="list-unstyled text-center">
-                                <li>
-                                    <a href="#showcase">Home</a>
-                                </li>
-                                <li>
-                                    <a href="#east">Eastern Europe</a>
-                                </li>
-                                <li>
-                                    <a href="#north">Northern Europe</a>
-                                </li>
-                                <li>
-                                    <a href="#south">Southern Europe</a>
-                                </li>
-                                <li>
-                                    <a href="#west">Western Europe</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- Grid column -->
-                        <!-- Grid column -->
-                        <div class="col-md-3 mb-md-0 mb-3">
-                            <!-- Links -->
-                            <h5 class="text-uppercase">
-                                <a href="#modalContactForm" data-toggle="modal">Contact us in e-mail <i class="fas fa-mail-bulk"></i></a>
-                            </h5>
-                        </div>
-                        <!-- Grid column -->
-                    </div>
-                    <!-- Grid row -->
-                </div>
-                <!-- Footer Links -->
-
-                <!-- Copyright -->
-                <div class="footer-copyright text-center user-select-none py-3">Adam Kiss © 2020 European Motoring Museums</div>
-                <!-- Copyright -->
-            </footer>
-            <!-- Footer -->
-       
         <!--Bootstrap CDN JavaScript plugins-->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
