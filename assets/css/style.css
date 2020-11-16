@@ -62,6 +62,11 @@
   color:#fff;
 }
 
+#showcase #title span {
+    display: block;
+    font-size: 40%;
+}
+
 #introduction {
     min-width: 100vw;
     background-color: rgba(0, 0, 0, 0.6); 
