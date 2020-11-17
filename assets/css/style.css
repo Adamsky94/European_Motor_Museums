@@ -191,6 +191,13 @@ a:hover {
     -webkit-box-shadow: 15px 11px 19px -4px rgba(0,0,0,0.5);
     box-shadow: 15px 11px 19px -4px rgba(0,0,0,0.5);    
 }
+/*Map body*/
+ #map {
+    height: 50vh;
+    width: 50vw;
+  }
+
+  
 
 /* float animation ispired by https://codepen.io/MarioDesigns/pen/woJgeo */
 
