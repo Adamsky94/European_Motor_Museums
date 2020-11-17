@@ -13,6 +13,10 @@
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+body {
+    background: rgb(235, 235, 235);
+}
+
 /*--Code for landing from Brad Traversy https://codepen.io/bradtraversy/pen/XerXYV--*/
 #showcase{
   background-image:url('../images/jpg/bg_landing.jpg');
@@ -68,9 +72,8 @@
 }
 
 #introduction {
-    min-width: 100vw;
+    min-width: 90vw;
     background-color: rgba(0, 0, 0, 0.6); 
-    padding: 10px;
 }
 
 /*--Code from Brad Traversy https://codepen.io/bradtraversy/pen/XerXYV ending--*/
@@ -193,11 +196,10 @@ a:hover {
 }
 /*Map body*/
  #map {
-    height: 50vh;
-    width: 50vw;
+    height: 70vh;
+    width: 100%;
   }
 
-  
 
 /* float animation ispired by https://codepen.io/MarioDesigns/pen/woJgeo */
 
@@ -331,7 +333,8 @@ box-shadow: 0px 24px 17px -11px rgba(0,0,0,0.4);
 }
 
 
-/* background images */
+/* backgrounds */
+
 .e-country-bg {
     background:url('../images/png/e-country-bg.png') no-repeat center fixed;
     background-size:cover;
