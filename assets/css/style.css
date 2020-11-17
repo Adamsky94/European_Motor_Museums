@@ -17,6 +17,17 @@ body {
     background: rgb(235, 235, 235);
 }
 
+/* Font properties */
+.fontmarck {
+    font-family: 'Marck Script', cursive;
+}
+.sourcesans-i-b {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: italic;
+    font-weight: 600; 
+}
+
+
 /*--Code for landing from Brad Traversy https://codepen.io/bradtraversy/pen/XerXYV--*/
 #showcase{
   background-image:url('../images/jpg/bg_landing.jpg');
@@ -39,23 +50,6 @@ body {
   text-align:center;
   text-shadow: 4px 4px 3px black;
   padding-top: 7%;
-  color:#fff;
-}
-
-#showcase .button{
-  font-size:1em;
-  text-decoration:none;
-  font-family: 'Source Sans Pro', sans-serif;
-  background-color: rgba(0,0,0, 0.7);
-  color:#fff;
-  border:#fff 1px solid;
-  padding:10px 20px;
-  border-radius:10px;
-  margin-top:20px;
-}
-
-#showcase .button:hover{
-  background:rgba(65, 65, 65, 0.7);
   color:#fff;
 }
 
@@ -155,32 +149,6 @@ a:hover {
     transition:  0.3s ease-in-out;
 }
 
-/*country selection buttons*/
-
-.btn-secondary {
-    background-color:rgb( 2, 57, 112);
-    margin: 10px;
-    max-width: 800px;
-}
-
-.btn-secondary:hover {
-    background-color:#001222;
-    font-weight: bold;
-    letter-spacing: 2px;
-    -webkit-transition:  0.3s ease-in-out;
-    -o-transition:  0.3s ease-in-out;
-    transition:  0.3s ease-in-out;
-    
-}
-
-.btn-secondary:focus{
-    background-color:#001222;
-    letter-spacing: 3px;
-    -webkit-transition:  0.3s ease-in-out;
-    -o-transition:  0.3s ease-in-out;
-    transition:  0.3s ease-in-out;
-}
-
 /* -- card settings -- */
 
 .card {
@@ -188,12 +156,23 @@ a:hover {
 }
 
 .card-body {
-    min-height: 1px;
+   
     padding: .5rem;
     text-align: center;
     -webkit-box-shadow: 15px 11px 19px -4px rgba(0,0,0,0.5);
     box-shadow: 15px 11px 19px -4px rgba(0,0,0,0.5);    
 }
+
+.card-title {
+    font-size: 120%;
+     font-weight: bold;
+}
+
+.card-text {
+    font-size: 100%;
+}
+
+
 /*Map body*/
  #map {
     height: 70vh;
@@ -250,17 +229,6 @@ a:hover {
 		
 		        transform: translatey(0px);
 	}
-}
-
-/* Font properties */
-
-.fontmarck {
-    font-family: 'Marck Script', cursive;
-}
-.sourcesans-i-b {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-style: italic;
-    font-weight: 600; 
 }
 
 /*-- CSS settings for modal-dialog inspired by https://stackoverflow.com/questions/4919076/outline-effect-to-text --*/
@@ -374,6 +342,6 @@ box-shadow: 0px 24px 17px -11px rgba(0,0,0,0.4);
 }
 
 .modal-content {
-    background:url('../images/jpg/modal-bg.jpg');
+    background:url('../images/jpg/modal-bg.jpg') no-repeat;
     
 }
