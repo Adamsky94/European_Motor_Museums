@@ -166,12 +166,13 @@
                     </div>
                 </div>
 
+
                 <div class="col-6 col-sm-4 col-md-3 pt-3">
                     <div class="card">
                         <div class="card-body">
                             <img class="card-img-top" src="assets/images/jpg/bg_landing.jpg" alt="Card image cap" />
-                            <h5 class="card-title">Sports Car Museum</h5>
-                            <p class="card-text">Lány, Czechia</p>
+                            <h5 class="card-title">Museum of Transport</h5>
+                            <p class="card-text">Budapest, Hungary</p>
                         </div>
                     </div>
                 </div>
@@ -180,8 +181,8 @@
                     <div class="card">
                         <div class="card-body">
                             <img class="card-img-top" src="assets/images/jpg/bg_landing.jpg" alt="Card image cap" />
-                            <h5 class="card-title">Museum of Transport</h5>
-                            <p class="card-text">Budapest, Hungary</p>
+                            <h5 class="card-title">Topacz Museum</h5>
+                            <p class="card-text">Ślęza, Poland</p>
                         </div>
                     </div>
                 </div>
@@ -427,28 +428,11 @@
         <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
         <!--EmailJS-->
         <script src="assets/scripts/sendEmail.js"></script>
-
         <!--GoogleMaps map-->
-        <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNARTWwuydyLNlcB-kwgc9OsyrlrrD8to&callback=initMap"></script>
-
-        <script>
-            function initMap() {
-                const Varna= { lat: 43.2069025, lng: 27.9150855 };
-                const map = new google.maps.Map(document.getElementById("map"), {
-                    zoom: 5,
-                    center: { lat: 47.180144, lng: 18.591205},
-                });
-                new google.maps.Marker({
-                    position: Varna,
-                    map,
-                    title: "Retro-Museum, Varna, Bulgaria",
-                });
-            }
-        </script>
-
-        <!--GoogleMaps marker clusterer-->
-        <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
-
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNARTWwuydyLNlcB-kwgc9OsyrlrrD8to&callback=initMap"></script>
+       
+        <!--GoogleMaps marker clusterer
+        <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>-->
         <!--My scritp-->
         <script src="assets/scripts/script.js"></script>
     </body>
