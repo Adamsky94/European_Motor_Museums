@@ -26,8 +26,6 @@
                 emailjs.init("user_b3RGr0k68wLEgOcpsX75t");
             })();
         </script>
-        <!--GoogleMaps-->
-        <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNARTWwuydyLNlcB-kwgc9OsyrlrrD8to&callback=initMap"></script>
 
         <title>European Motoring Museums</title>
     </head>
@@ -46,7 +44,7 @@
             </div>
         </header>
         <!--Code from Brad Traversy https://codepen.io/bradtraversy/pen/XerXYV ending-->
-       
+
         <!-- Modal from https://mdbootstrap.com/docs/jquery/modals/forms/ -->
         <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="modalContactForm" aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -88,7 +86,7 @@
             </div>
         </div>
 
-         <!--Bootstrap Navbar code-->
+        <!--Bootstrap Navbar code-->
         <nav class="navbar sticky-top navbar-dark bg-dark" id="navigation">
             <a class="nav-item" id="logo" href="#showcase"> <img src="assets/images/png/sitelogo.png" alt="Website logo which is a car with a navigation icon." /></a>
 
@@ -120,14 +118,13 @@
             </div>
         </nav>
 
-
         <div id="intro2" class="mt-5 text-center">
-        <h3>What are we doing?</h3>
-        <p>We are working with museums across Europe to ensure that potential visitors will get there!</p>
-        <p>We can offer complete travel solutions, including accommodation, private transfer, or public transport times and tickets, and entrance to your selected museums.</p>
-         <h5 class="pt-3 pb-4 text-center">
+            <h3>What are we doing?</h3>
+            <p>We are working with museums across Europe to ensure that potential visitors will get there!</p>
+            <p>We can offer complete travel solutions, including accommodation, private transfer, or public transport times and tickets, and entrance to your selected museums.</p>
+            <h5 class="pt-3 pb-4 text-center">
                 <strong><a data-toggle="modal" href="#modalContactForm">Contact us for our current deals!</a></strong>
-        </h5>
+            </h5>
         </div>
 
         <!-- Eastern Europe parallax -->
@@ -197,10 +194,9 @@
                             <p class="card-text">Otopeni, Romania</p>
                         </div>
                     </div>
-                </div>     
+                </div>
             </div>
         </div>
-    
 
         <!-- Northern Europe parallax -->
         <div class="section-pad d-block title-div-body north-bg" id="north" data-toggle="collapse" data-target="#north-list" aria-expanded="false">
@@ -251,7 +247,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
 
         <!--
@@ -365,9 +360,8 @@
                 </div>
             </div>
         </div>
-        
+
         <div id="map"></div>
-           
 
         <!-- Footer code from https://mdbootstrap.com/docs/jquery/navigation/footer/ -->
         <footer class="page-footer pt-4">
@@ -433,6 +427,28 @@
         <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
         <!--EmailJS-->
         <script src="assets/scripts/sendEmail.js"></script>
+
+        <!--GoogleMaps map-->
+        <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNARTWwuydyLNlcB-kwgc9OsyrlrrD8to&callback=initMap"></script>
+
+        <script>
+            function initMap() {
+                const Varna= { lat: 43.2069025, lng: 27.9150855 };
+                const map = new google.maps.Map(document.getElementById("map"), {
+                    zoom: 5,
+                    center: { lat: 47.180144, lng: 18.591205},
+                });
+                new google.maps.Marker({
+                    position: Varna,
+                    map,
+                    title: "Retro-Museum, Varna, Bulgaria",
+                });
+            }
+        </script>
+
+        <!--GoogleMaps marker clusterer-->
+        <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
+
         <!--My scritp-->
         <script src="assets/scripts/script.js"></script>
     </body>
