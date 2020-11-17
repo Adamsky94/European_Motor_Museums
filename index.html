@@ -26,6 +26,8 @@
                 emailjs.init("user_b3RGr0k68wLEgOcpsX75t");
             })();
         </script>
+        <!--GoogleMaps-->
+        <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNARTWwuydyLNlcB-kwgc9OsyrlrrD8to&callback=initMap"></script>
 
         <title>European Motoring Museums</title>
     </head>
@@ -174,7 +176,7 @@
                     <div class="card">
                         <div class="card-body">
                             <img class="card-img-top" src="assets/images/jpg/bg_landing.jpg" alt="Card image cap" />
-                            <h5 class="card-title"></h5>
+                            <h5 class="card-title">Museum of Technology and Transport</h5>
                             <p class="card-text">Budapest, Hungary</p>
                         </div>
                     </div>
@@ -190,7 +192,17 @@
                     </div>
                 </div>
             </div>
+
+            <div id="map-container" class="container-fluid">
+            <div class="row justify-content-center">
+            <div id="map"></div>
+            </div>
+            </div>      
+             <h5 class="pt-3 pb-4 text-center">
+                <strong><a data-toggle="modal" href="#modalContactForm">Contact us for our current deals!</a></strong>
+            </h5>
         </div>
+        
 
         <!--
              <h5 class="pt-3 pb-4 e-country-bg text-center">
