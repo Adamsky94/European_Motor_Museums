@@ -36,52 +36,17 @@
         <!--Code from Brad Traversy https://codepen.io/bradtraversy/pen/XerXYV-->
         <header id="showcase">
             <div class="animate__animated animate__fadeIn">
-                <a href="#east"><h1 id="title" class="fontmarck mb-5">European Motoring Museums<span class="fontmarck mt-4">Your guide in Automotive History.</span></h1></a>
+                <a href="#east"><h1 id="title" class="fontmarck mb-5">European Motoring Museums<span class="fontmarck mt-3">Your guide in Automotive History.</span></h1></a>
             </div>
 
             <div id="introduction" class="fontsourcesans animate__animated animate__fadeIn animate__delay-1s">
                 <p class="mt-3">Do your hobbies include cars, traveling, history, or all of the above combined?</p>
                 <p>If you have answered yes, we can assure you are in the best hands now!</p>
                 <p>Our service was designed with one goal in mind: to aid you on your travels abroad.</p>
-                <p>We are working with museums across Europe to ensure that potential visitors will get there!</p>
-                <p>We can offer complete travel solutions, including accommodation, private transfer, or public transport times and tickets, and entrance to your selected museums.</p>
             </div>
         </header>
-
         <!--Code from Brad Traversy https://codepen.io/bradtraversy/pen/XerXYV ending-->
-
-        <!--Bootstrap Navbar code-->
-        <nav class="navbar sticky-top navbar-dark bg-dark" id="navigation">
-            <a class="nav-item" id="logo" href="#showcase"> <img src="assets/images/png/sitelogo.png" alt="Website logo which is a car with a navigation icon." /></a>
-
-            <span class="align-middle d-none d-sm-block user-select-none fontmarck" id="navtitle" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle menu">
-                Your guide in Automotive History.
-            </span>
-            <button class="navbar-toggler" id="menubutton" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle menu">
-                <span>Menu</span>
-            </button>
-
-            <div class="collapse navbar-collapse" data-toggle="collapse" data-target="#menu" id="menu">
-                <ul class="navbar-nav d-block text-center mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item mx-auto">
-                        <a class="nav-link" href="#east">Eastern Europe</a>
-                    </li>
-                    <li class="nav-item mx-auto">
-                        <a class="nav-link" href="#north">Northern Europe</a>
-                    </li>
-                    <li class="nav-item mx-auto">
-                        <a class="nav-link" href="#south">Southern Europe</a>
-                    </li>
-                    <li class="nav-item mx-auto">
-                        <a class="nav-link" href="#west">Western Europe</a>
-                    </li>
-                    <li class="nav-item mx-auto">
-                        <a class="nav-link" data-toggle="modal" href="#modalContactForm">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
+       
         <!-- Modal from https://mdbootstrap.com/docs/jquery/modals/forms/ -->
         <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="modalContactForm" aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -121,6 +86,47 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+         <!--Bootstrap Navbar code-->
+        <nav class="navbar sticky-top navbar-dark bg-dark" id="navigation">
+            <a class="nav-item" id="logo" href="#showcase"> <img src="assets/images/png/sitelogo.png" alt="Website logo which is a car with a navigation icon." /></a>
+
+            <span class="align-middle d-none d-sm-block user-select-none fontmarck" id="navtitle" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle menu">
+                Your guide in Automotive History.
+            </span>
+            <button class="navbar-toggler" id="menubutton" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle menu">
+                <span>Menu</span>
+            </button>
+
+            <div class="collapse navbar-collapse" data-toggle="collapse" data-target="#menu" id="menu">
+                <ul class="navbar-nav d-block text-center mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item mx-auto">
+                        <a class="nav-link" href="#east">Eastern Europe</a>
+                    </li>
+                    <li class="nav-item mx-auto">
+                        <a class="nav-link" href="#north">Northern Europe</a>
+                    </li>
+                    <li class="nav-item mx-auto">
+                        <a class="nav-link" href="#south">Southern Europe</a>
+                    </li>
+                    <li class="nav-item mx-auto">
+                        <a class="nav-link" href="#west">Western Europe</a>
+                    </li>
+                    <li class="nav-item mx-auto">
+                        <a class="nav-link" data-toggle="modal" href="#modalContactForm">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <div id="intro2" class="mt-5 text-center">
+        <p>We are working with museums across Europe to ensure that potential visitors will get there!</p>
+        <p>We can offer complete travel solutions, including accommodation, private transfer, or public transport times and tickets, and entrance to your selected museums.</p>
+         <h5 class="pt-3 pb-4 text-center">
+                <strong><a data-toggle="modal" href="#modalContactForm">Contact us for our current deals!</a></strong>
+        </h5>
         </div>
 
         <!-- Eastern Europe parallax -->
@@ -190,17 +196,8 @@
                             <p class="card-text">Otopeni, Romania</p>
                         </div>
                     </div>
-                </div>
+                </div>     
             </div>
-
-            <div id="map-container" class="container-fluid">
-            <div class="row justify-content-center">
-            <div id="map"></div>
-            </div>
-            </div>      
-             <h5 class="pt-3 pb-4 text-center">
-                <strong><a data-toggle="modal" href="#modalContactForm">Contact us for our current deals!</a></strong>
-            </h5>
         </div>
         
 
@@ -258,6 +255,7 @@
                     </div>
                 </div>
             </div>
+
         </div>
 
         <!--
@@ -371,11 +369,9 @@
                 </div>
             </div>
         </div>
-
-        <!--
-             <h5 class="pt-3 pb-4 e-country-bg text-center">
-                <strong><a data-toggle="modal" href="#modalContactForm">Contact us for our current deals!</a></strong>
-            </h5> -->
+        
+        <div id="map"></div>
+           
 
         <!-- Footer code from https://mdbootstrap.com/docs/jquery/navigation/footer/ -->
         <footer class="page-footer pt-4">

@@ -26,7 +26,9 @@ $(document).ready(function(){
         }, "fast");
     });
     
- /* Code from the animate.css documentation -- https://animate.style/#javascript */
-    document.documentElement.style.setProperty('--animate-duration', '2s');
+    map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: 47.061802, lng: 21.488646},
+    zoom: 6
+    });
 
 });
