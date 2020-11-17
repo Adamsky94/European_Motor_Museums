@@ -7,10 +7,10 @@
 * Browsers: last 4 version
 */
 
-*{
-  margin:0;
-  padding:0;
-  font-family: 'Source Sans Pro', sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Source Sans Pro", sans-serif;
 }
 
 body {
@@ -19,45 +19,44 @@ body {
 
 /* Font properties */
 .fontmarck {
-    font-family: 'Marck Script', cursive;
+    font-family: "Marck Script", cursive;
 }
 .sourcesans-i-b {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
     font-style: italic;
-    font-weight: 600; 
+    font-weight: 600;
 }
 
-
 /*--Code for landing from Brad Traversy https://codepen.io/bradtraversy/pen/XerXYV--*/
-#showcase{
-  background-image:url('../images/jpg/bg_landing.jpg');
-  background-size:cover;
-  background-position:center;
-  height:100vh;
-  display:-webkit-box;
-  display:-ms-flexbox;
-  display:flex;
-  -webkit-box-orient:vertical;
-  -webkit-box-direction:normal;
-      -ms-flex-direction:column;
-          flex-direction:column;
-  -webkit-box-pack:flex-start;
-      -ms-flex-pack:flex-start;
-          justify-content:flex-start;
-  -webkit-box-align:center;
-      -ms-flex-align:center;
-          align-items:center;
-  text-align:center;
-  text-shadow: 4px 4px 3px black;
-  padding-top: 7%;
-  color:#fff;
+#showcase {
+    background-image: url("../images/jpg/bg_landing.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: flex-start;
+    -ms-flex-pack: flex-start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    text-shadow: 4px 4px 3px black;
+    padding-top: 7%;
+    color: #fff;
 }
 
 /* responsive text size*/
 
-#showcase #title{
-  font-size: calc(2em + 2vw);
-  color:#fff;
+#showcase #title {
+    font-size: calc(2em + 2vw);
+    color: #fff;
 }
 
 #showcase #title span {
@@ -67,18 +66,17 @@ body {
 
 #introduction {
     min-width: 90vw;
-    background-color: rgba(0, 0, 0, 0.6); 
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 /*--Code from Brad Traversy https://codepen.io/bradtraversy/pen/XerXYV ending--*/
 
-
 /* navigation */
-#navtitle{
+#navtitle {
     color: rgb(255, 255, 255);
     font-size: 1.5em;
     text-shadow: 0 0 15px rgb(0, 0, 0);
-    font-family: 
+    font-family: ;
 }
 
 #navtitle:hover {
@@ -86,9 +84,9 @@ body {
 }
 
 .bg-dark {
-    background-color: #1a1a1a!important;
-    -webkit-box-shadow: 0px 0px 29px 8px rgba(0,0,0,1);
-    box-shadow: 0px 0px 29px 8px rgba(0,0,0,1); 
+    background-color: #1a1a1a !important;
+    -webkit-box-shadow: 0px 0px 29px 8px rgba(0, 0, 0, 1);
+    box-shadow: 0px 0px 29px 8px rgba(0, 0, 0, 1);
 }
 
 .navbar {
@@ -101,9 +99,9 @@ body {
 .nav-link:hover {
     background: rgba(109, 109, 109, 0.3);
     letter-spacing: 3px;
-    -webkit-transition:  0.3s ease-in-out;
-    -o-transition:  0.3s ease-in-out;
-    transition:  0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 #menubutton {
@@ -111,12 +109,13 @@ body {
     border: 1px solid white;
 }
 
-#menubutton:hover,  #menubutton:focus {
+#menubutton:hover,
+#menubutton:focus {
     color: rgb(0, 0, 0);
     background: rgba(255, 255, 255, 0.8);
-    -webkit-transition:  0.2s ease-in-out;
-    -o-transition:  0.2s ease-in-out;
-    transition:  0.2s ease-in-out;
+    -webkit-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 
 #logo img {
@@ -125,28 +124,27 @@ body {
 
 #logo:hover {
     -webkit-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-            transform: scale(1.1);
-    -webkit-transition:  0.3s ease-in-out;
-    -o-transition:  0.3s ease-in-out;
-    transition:  0.3s ease-in-out;
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
     background-color: transparent;
 }
 
-
 /*anchor styling*/
 a {
-    color: rgb(0,0,0);
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 
 a:hover {
-    color: rgb(0,0,0);
+    color: rgb(0, 0, 0);
     text-decoration: none;
     background: rgba(0, 0, 0, 0.2);
-    -webkit-transition:  0.3s ease-in-out;
-    -o-transition:  0.3s ease-in-out;
-    transition:  0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 /* -- card settings -- */
@@ -156,86 +154,75 @@ a:hover {
 }
 
 .card-body {
-   
-    padding: .5rem;
+    padding: 0.5rem;
     text-align: center;
-    -webkit-box-shadow: 15px 11px 19px -4px rgba(0,0,0,0.5);
-    box-shadow: 15px 11px 19px -4px rgba(0,0,0,0.5);    
+    -webkit-box-shadow: 15px 11px 19px -4px rgba(0, 0, 0, 0.5);
+    box-shadow: 15px 11px 19px -4px rgba(0, 0, 0, 0.5);
 }
 
 .card-title {
     font-size: 120%;
-     font-weight: bold;
+    font-weight: bold;
 }
 
 .card-text {
     font-size: 100%;
 }
 
-
 /*Map body*/
- #map {
+#map {
     height: 70vh;
     width: 100%;
-  }
-
+}
 
 /* float animation ispired by https://codepen.io/MarioDesigns/pen/woJgeo */
 
-.card:hover, #showcase #title:hover{
--webkit-animation: float 6s infinite;
-        animation: float 6s infinite;
+.card:hover {
+    -webkit-animation: float 6s infinite;
+    animation: float 6s infinite;
 }
 
 @-webkit-keyframes float {
-	0% {
-	
-		-webkit-transform: translatey(0px);
-	
-		        transform: translatey(0px);
-	}
+    0% {
+        -webkit-transform: translatey(0px);
 
-	50% {
-	;
-		-webkit-transform: translatey(-5px);
-	;
-		        transform: translatey(-5px);
-	}
-	100% {
-		
-		-webkit-transform: translatey(0px);
-		
-		        transform: translatey(0px);
-	}
+        transform: translatey(0px);
+    }
+
+    50% {
+        -webkit-transform: translatey(-5px);
+        transform: translatey(-5px);
+    }
+    100% {
+        -webkit-transform: translatey(0px);
+
+        transform: translatey(0px);
+    }
 }
 
 @keyframes float {
-	0% {
-	
-		-webkit-transform: translatey(0px);
-	
-		        transform: translatey(0px);
-	}
+    0% {
+        -webkit-transform: translatey(0px);
 
-	50% {
-	;
-		-webkit-transform: translatey(-5px);
-	;
-		        transform: translatey(-5px);
-	}
-	100% {
-		
-		-webkit-transform: translatey(0px);
-		
-		        transform: translatey(0px);
-	}
+        transform: translatey(0px);
+    }
+
+    50% {
+        -webkit-transform: translatey(-5px);
+        transform: translatey(-5px);
+    }
+    100% {
+        -webkit-transform: translatey(0px);
+
+        transform: translatey(0px);
+    }
 }
 
 /*-- CSS settings for modal-dialog inspired by https://stackoverflow.com/questions/4919076/outline-effect-to-text --*/
-.modal-dialog, .modal-footer .btn {
+.modal-dialog,
+.modal-footer .btn {
     color: #fff;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 3px #000, 1px 1px 0 #000;
-    
 }
 
 .card-title {
@@ -251,36 +238,34 @@ a:hover {
 /*Send button*/
 .modal-footer .btn:hover {
     background: rgba(0, 0, 0, 0.5);
-    -webkit-transition:  0.2s ease-in-out;
-    -o-transition:  0.2s ease-in-out;
-    transition:  0.2s ease-in-out;
+    -webkit-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 
-.modal-footer .btn{
+.modal-footer .btn {
     width: 100vw;
     border: solid 1px #fff;
 }
 /* This code is disabling the animation on modal card body*/
-.modal-content:hover{
+.modal-content:hover {
     -webkit-animation: none;
-            animation: none;
+    animation: none;
 }
-
 
 /*-- parallax section inspired by https://github.com/Eventyret/simple-parallax --*/
 
 .title-bg {
-    background-color: rgba(0,0,0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
-    -webkit-box-shadow: 0px 24px 17px -11px rgba(255,255,255,1);
-box-shadow: 0px 24px 17px -11px rgba(0,0,0,0.4);
-
+    -webkit-box-shadow: 0px 24px 17px -11px rgba(255, 255, 255, 1);
+    box-shadow: 0px 24px 17px -11px rgba(0, 0, 0, 0.4);
 }
 
 .title-div-body {
     height: 350px;
     max-width: 100vw;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
 }
 
 .section-pad {
@@ -288,60 +273,64 @@ box-shadow: 0px 24px 17px -11px rgba(0,0,0,0.4);
 }
 
 /*region animation on hover*/
-#east:hover, #north:hover, #south:hover, #west:hover {
- cursor: pointer;
- letter-spacing: 2px;
- opacity: 0.8;
+#east:hover,
+#north:hover,
+#south:hover,
+#west:hover {
+    cursor: pointer;
+    letter-spacing: 2px;
+    opacity: 0.8;
 }
 
-#east, #north, #south, #west {
+#east,
+#north,
+#south,
+#west {
     -webkit-transition: letter-spacing 0.5s ease-in-out, opacity 0.2s ease-in-out;
     -o-transition: letter-spacing 0.5s ease-in-out, opacity 0.2s ease-in-out;
     transition: letter-spacing 0.5s ease-in-out, opacity 0.2s ease-in-out;
 }
 
-
 /* backgrounds */
 
 .e-country-bg {
-    background:url('../images/png/e-country-bg.png') no-repeat center fixed;
-    background-size:cover;
+    background: url("../images/png/e-country-bg.png") no-repeat center fixed;
+    background-size: cover;
 }
 
 .n-country-bg {
-    background:url('../images/png/n-country-bg.png') no-repeat center fixed;
-    background-size:cover;
+    background: url("../images/png/n-country-bg.png") no-repeat center fixed;
+    background-size: cover;
 }
 
 .s-country-bg {
-    background:url('../images/png/s-country-bg.png') no-repeat center fixed;
-    background-size:cover;
+    background: url("../images/png/s-country-bg.png") no-repeat center fixed;
+    background-size: cover;
 }
- 
+
 .w-country-bg {
-    background:url('../images/png/w-country-bg.png') no-repeat center fixed;
-    background-size:cover;
+    background: url("../images/png/w-country-bg.png") no-repeat center fixed;
+    background-size: cover;
 }
 
 .east-bg {
-    background:url('../images/jpg/budapest.jpg') no-repeat center fixed;
-    background-size:cover;
+    background: url("../images/jpg/budapest.jpg") no-repeat center fixed;
+    background-size: cover;
 }
 
 .north-bg {
-    background:url('../images/jpg/stockholm.jpg') no-repeat center fixed;
-    background-size:cover;
+    background: url("../images/jpg/stockholm.jpg") no-repeat center fixed;
+    background-size: cover;
 }
 .south-bg {
-    background:url('../images/jpg/rome.jpg') no-repeat center fixed;
-    background-size:cover;
+    background: url("../images/jpg/rome.jpg") no-repeat center fixed;
+    background-size: cover;
 }
 .west-bg {
-    background:url('../images/jpg/london.jpg') no-repeat center fixed;
-    background-size:cover;
+    background: url("../images/jpg/london.jpg") no-repeat center fixed;
+    background-size: cover;
 }
 
 .modal-content {
-    background:url('../images/jpg/modal-bg.jpg') no-repeat;
-    
+    background: url("../images/jpg/modal-bg.jpg") no-repeat;
 }
