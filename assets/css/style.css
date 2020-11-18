@@ -61,7 +61,7 @@ body {
 
 #showcase #title span {
     display: block;
-    font-size: 40%;
+    font-size: 50%;
 }
 
 #introduction {
@@ -156,6 +156,8 @@ a:hover {
 .card-body {
     padding: 0.5rem;
     text-align: center;
+    min-height: 150px;
+    min-width: 150px;
     -webkit-box-shadow: 15px 11px 19px -4px rgba(0, 0, 0, 0.5);
     box-shadow: 15px 11px 19px -4px rgba(0, 0, 0, 0.5);
 }
@@ -247,6 +249,12 @@ a:hover {
     width: 100vw;
     border: solid 1px #fff;
 }
+
+.footer-copyright {
+    color: #fff;
+    background-color: #000;
+    height: 45px;
+}
 /* This code is disabling the animation on modal card body*/
 .modal-content:hover {
     -webkit-animation: none;
@@ -332,5 +340,5 @@ a:hover {
 }
 
 .modal-content {
-    background: url("../images/jpg/modal-bg.jpg") no-repeat;
+    background: url("../images/jpg/modal-bg.jpg");
 }
