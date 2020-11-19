@@ -21,6 +21,7 @@
         <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
         <!-- EmailJS SDK -->
         <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+        <!-- Script that initiates EmailJS with the personal key-->
         <script>
             (function () {
                 emailjs.init("user_b3RGr0k68wLEgOcpsX75t");
@@ -37,7 +38,7 @@
                 <h1 id="title" class="fontmarck user-select-none mb-5">European Motoring Museums<span class="fontmarck mt-4">Your guide in Automotive History.</span></h1>
             </div>
 
-            <div id="introduction" class="fontsourcesans animate__animated animate__fadeIn animate__delay-1s d-none d-sm-block">
+            <div id="introduction" class="animate__animated animate__fadeIn animate__delay-1s d-none d-sm-block">
                 <p class="mt-3">Do your hobbies include cars, traveling, history, or all of the above combined?</p>
                 <p>If you have answered yes, we can assure you are in the best hands now!</p>
                 <p>Our service was designed with one goal in mind: to aid you on your travels abroad.</p>
@@ -129,7 +130,7 @@
         <!-- The content of this project was mainly selected by the list below https://en.wikipedia.org/wiki/List_of_automotive_museums#Europe -->
         <!-- Eastern Europe parallax -->
         <div class="section-pad title-div-body east-bg" id="east" data-toggle="collapse" data-target="#east-list" aria-expanded="false">
-            <h1 class="text-center title-bg sourcesans-i-b">Eastern Europe</h1>
+            <h1 class="text-center title-bg sourcesans-i-b"><i class="fas fa-angle-down"></i> Eastern Europe</h1>
         </div>
 
         <!-- Eastern Europe cards container -->
@@ -212,7 +213,7 @@
 
         <!-- Northern Europe parallax -->
         <div class="section-pad d-block title-div-body north-bg" id="north" data-toggle="collapse" data-target="#north-list" aria-expanded="false">
-            <h1 class="text-center title-bg sourcesans-i-b">Northern Europe</h1>
+            <h1 class="text-center title-bg sourcesans-i-b"><i class="fas fa-angle-down"></i> Northern Europe</h1>
         </div>
 
         <!-- Northern  Europe cards container -->
@@ -295,7 +296,7 @@
 
         <!-- Southern Europe parallax -->
         <div class="section-pad title-div-body south-bg" id="south" data-toggle="collapse" data-target="#south-list" aria-expanded="false">
-            <h1 class="text-center title-bg sourcesans-i-b">Southern Europe</h1>
+            <h1 class="text-center title-bg sourcesans-i-b"><i class="fas fa-angle-down"></i> Southern Europe</h1>
         </div>
 
         <!-- Southern Europe cards container -->
@@ -387,7 +388,7 @@
 
         <!-- Western Europe parallax -->
         <div class="section-pad title-div-body west-bg" id="west" data-toggle="collapse" data-target="#west-list" aria-expanded="false">
-            <h1 class="text-center title-bg sourcesans-i-b">Western Europe</h1>
+            <h1 class="text-center title-bg sourcesans-i-b"><i class="fas fa-angle-down"></i> Western Europe</h1>
         </div>
 
         <!-- Western Europe cards container -->
@@ -586,7 +587,7 @@
                 </div>
             </div>
         </div>
-
+        <!-- div that holds the map -->
         <div id="map"></div>
 
         <!-- Footer code from https://mdbootstrap.com/docs/jquery/navigation/footer/ -->
@@ -653,7 +654,7 @@
         <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
         <!--EmailJS-->
         <script src="assets/scripts/sendEmail.js"></script>
-        <!--GoogleMaps map-->
+        <!--GoogleMaps map script with unique my API key-->
         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNARTWwuydyLNlcB-kwgc9OsyrlrrD8to&callback=initMap"></script>
        
         <!--GoogleMaps marker clusterer
