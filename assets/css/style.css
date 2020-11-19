@@ -168,6 +168,7 @@ a:hover {
 
 .card {
     margin-bottom: 16px;
+    transition: .3s;
 }
 
 .card-body {
@@ -197,10 +198,11 @@ a:hover {
 /* float animation ispired by https://codepen.io/MarioDesigns/pen/woJgeo */
 
 .card:hover {
-    -webkit-animation: float 6s infinite;
-    animation: float 6s infinite;
+    transform: scale(1.02);
+    z-index: 1;
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
 }
-
+/*
 @-webkit-keyframes float {
     0% {
         -webkit-transform: translatey(0px);
@@ -236,7 +238,7 @@ a:hover {
         transform: translatey(0px);
     }
 }
-
+*/
 /*-- CSS settings for modal-dialog inspired by https://stackoverflow.com/questions/4919076/outline-effect-to-text --*/
 .modal-dialog,
 .modal-footer .btn {
@@ -359,3 +361,13 @@ a:hover {
 .modal-content {
     background: url("../images/jpg/modal-bg.jpg");
 }
+
+/*Media query for reducing section div height on mobile screens*/
+@media only screen and (max-width: 992px) {
+
+    .title-div-body {
+    height: 245px;
+    padding-top: 100px;
+    }
+
+  }
