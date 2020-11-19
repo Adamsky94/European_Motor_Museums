@@ -65,9 +65,26 @@ body {
     font-size: 50%;
 }
 
-#introduction {
+#introduction{
+    font-size: calc(0.5em + 0.5vw);
     min-width: 90vw;
     background-color: rgba(0, 0, 0, 0.6);
+}
+
+#intro2 {
+    font-size: calc(0.5em + 0.5vw);
+}
+
+#intro2 h3 {
+    font-size: calc(1em + 1vw);
+}
+
+#intro2 h5 {
+    font-size: calc(1em + 0.1vw);
+}
+
+.title-div-body h1{
+    font-size: calc(1.5em + 1vw);
 }
 
 /*--Code from Brad Traversy https://codepen.io/bradtraversy/pen/XerXYV ending--*/
@@ -77,7 +94,6 @@ body {
     color: rgb(255, 255, 255);
     font-size: 1.5em;
     text-shadow: 0 0 15px rgb(0, 0, 0);
-    font-family: ;
 }
 
 #navtitle:hover {
