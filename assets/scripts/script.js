@@ -342,6 +342,12 @@ function initMap() {
                     title: "AutoVAZ Museum, Tolyatti, Russia",
                 });
 
+                new google.maps.Marker({
+                    position: Otopeni,
+                    map,
+                    title: "Tiriac Collection, Otopeni, Romania",
+                });
+
                  new google.maps.Marker({
                     position: Aakirkeby,
                     map,
@@ -545,5 +551,5 @@ function initMap() {
                     map,
                     title: "Museo Automovilístico de Málaga, Spain",
                 });
-               
+                
             }
