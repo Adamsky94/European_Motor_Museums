@@ -199,46 +199,9 @@ a:hover {
 
 .card:hover {
     transform: scale(1.02);
-    z-index: 1;
     box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
 }
-/*
-@-webkit-keyframes float {
-    0% {
-        -webkit-transform: translatey(0px);
 
-        transform: translatey(0px);
-    }
-
-    50% {
-        -webkit-transform: translatey(-5px);
-        transform: translatey(-5px);
-    }
-    100% {
-        -webkit-transform: translatey(0px);
-
-        transform: translatey(0px);
-    }
-}
-
-@keyframes float {
-    0% {
-        -webkit-transform: translatey(0px);
-
-        transform: translatey(0px);
-    }
-
-    50% {
-        -webkit-transform: translatey(-5px);
-        transform: translatey(-5px);
-    }
-    100% {
-        -webkit-transform: translatey(0px);
-
-        transform: translatey(0px);
-    }
-}
-*/
 /*-- CSS settings for modal-dialog inspired by https://stackoverflow.com/questions/4919076/outline-effect-to-text --*/
 .modal-dialog,
 .modal-footer .btn {
@@ -274,10 +237,10 @@ a:hover {
     background-color: #000;
     height: 45px;
 }
-/* This code is disabling the animation on modal card body*/
+/* This code is disabling the scaling on modal card body when you put your cursor on it*/
 .modal-content:hover {
-    -webkit-animation: none;
-    animation: none;
+    transform: none;
+    box-shadow: none;
 }
 
 /*-- parallax section inspired by https://github.com/Eventyret/simple-parallax --*/
