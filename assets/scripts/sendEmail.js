@@ -1,6 +1,7 @@
 /*EmailJS code segment inspired by the Interactive Frontend course material 
 https://github.com/Code-Institute-Solutions/InteractiveFrontendDevelopment-Resume/blob/master/03-SendingEmailsUsingEmailJS/06-sending_emails/assets/js/sendEmail.js*/
 
+/*Code that prevents the site to reload after pressing the submit button*/
 document.getElementById("contact-form").addEventListener("submit",(event)=>{
     event.preventDefault();
 })
@@ -16,7 +17,7 @@ function sendMail(modalContactForm) {
             function (response) {
                 console.log("SUCCESS", response);
                 modalContactForm.reset();
-                /* code for replacing placeholder text from https://stackoverflow.com/questions/13506481/change-placeholder-text */
+                /* Code for replacing placeholder text as a feedback for the user from https://stackoverflow.com/questions/13506481/change-placeholder-text */
                 $("#message").attr("placeholder","Thank you for your email! We sincerely appreciate Your trust in Our service. One of our colleagues will be in touch shortly!");
             },
             function (error) {

@@ -1,7 +1,4 @@
-
-
- 
- function initMap() {
+function initMap() {
                 /*coordinates for the markers*/
                 const Varna = { lat: 43.21733945, lng: 27.898463459304434 };
                 const Budapest = { lat:47.514134350000006, lng: 19.091634960797748};
@@ -45,7 +42,7 @@
                 const StuttgartP = {lat:48.834187 , lng:9.152548 };
                 const Malaga = {lat:36.699287 , lng: -4.438910 };
 
-                /*function that draws the map from Google Maps Documentation*/
+                /*Function that draws the map from Google Maps Documentation*/
                 const map = new google.maps.Map(document.getElementById("map"), {
                     zoom: 4,
                     center: { lat: 52.314985, lng: 13.288772},
@@ -307,6 +304,7 @@
     }
 ]
                 });
+                /*Code that places the markers on the map*/
 
                 new google.maps.Marker({
                     position: Varna,
