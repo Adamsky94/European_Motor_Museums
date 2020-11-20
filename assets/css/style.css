@@ -86,10 +86,6 @@ body {
     font-size: calc(1.5em + 1vw);
 }
 
-#mainbutton {
-    padding-top: 3%;
-}
-
 #mainbutton a#about-us{
     font-weight: bold;
     color: #fff;
