@@ -482,6 +482,11 @@ a:hover {
     background: url("../images/jpg/modal-bg.jpg");
 }
 
+.page-footer {
+    background: url("../images/png/footerbg.png") center;
+    background-size: cover;
+}
+
 /*Media query for reducing section div height on mobile screens*/
 @media only screen and (max-width: 992px) {
     .title-div-body {
