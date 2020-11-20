@@ -1,3 +1,7 @@
+$( document ).ready(function() {
+    console.log( "ready!" );
+});
+
 function initMap() {
     /*coordinates for the markers*/
     const Varna = { lat: 43.21733945, lng: 27.898463459304434 };
@@ -601,4 +605,6 @@ function initMap() {
 
     // Enable marker clustering for this map and these markers
     const markerClusterer = new MarkerClusterer(map, markers, { imagePath: imagePath });
+
+    console.log( "Map loaded sucessfully" );
 }
