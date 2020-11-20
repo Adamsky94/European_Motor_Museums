@@ -78,10 +78,32 @@ body {
 #intro2 h5,
 #intro2 {
     font-size: calc(1em + 0.1vw);
+    margin-bottom: 0;
+    padding: 0 10px;
 }
 
 .title-div-body h1 {
     font-size: calc(1.5em + 1vw);
+}
+
+#mainbutton {
+    padding-top: 3%;
+}
+
+#mainbutton a#about-us{
+    font-weight: bold;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+#mainbutton  a#about-us:hover{
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.3);
+    transform: scale(1.2);
+    transition: 0.2s ease-in-out;
 }
 
 /*--Code from Brad Traversy https://codepen.io/bradtraversy/pen/XerXYV ending--*/
@@ -407,6 +429,11 @@ a:hover {
 }
 
 /* backgrounds */
+
+#intro2 {
+    background: url("../images/png/introbg.png") center;
+    background-size: cover;
+}
 
 .e-country-bg {
     background: url("../images/png/e-country-bg.png") no-repeat center fixed;
