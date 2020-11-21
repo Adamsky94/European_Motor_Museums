@@ -480,6 +480,7 @@ a:hover {
 
 .modal-content {
     background: url("../images/jpg/modal-bg.jpg");
+    background-size: cover;
 }
 
 .page-footer {
