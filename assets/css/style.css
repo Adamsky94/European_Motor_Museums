@@ -470,6 +470,8 @@ a:hover {
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
+/* Code for fixing hover state for touchscreen devices https://medium.com/@mezoistvan/finally-a-css-only-solution-to-hover-on-touchscreens-c498af39c31c */
+@media (hover: hover) and (pointer: fine) {
 #return-to-top:hover {
     background: rgba(0, 0, 0, 0.9);
     width: 40px;
@@ -478,6 +480,7 @@ a:hover {
 #return-to-top:hover i {
     color: #fff;
     top: 5px;
+}
 }
 
 .footer-copyright {
