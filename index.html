@@ -27,6 +27,8 @@
                 emailjs.init("user_b3RGr0k68wLEgOcpsX75t");
             })();
         </script>
+        <!--Lighgallery CSS https://sachinchoolur.github.io/lightGallery/docs/ -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css" integrity="sha512-kwJUhJJaTDzGp6VTPBbMQWBFUof6+pv0SM3s8fo+E6XnPmVmtfwENK0vHYup3tsYnqHgRDoBDTJWoq7rnQw2+g==" crossorigin="anonymous" />
 
         <title>European Motoring Museums</title>
     </head>
@@ -151,7 +153,9 @@
                 <div class="col-6 col-sm-4 col-md-3 pt-3 p-2 d-flex align-items-stretch">
                     <div class="card">
                         <div class="card-body">
-                            <img class="card-img" src="assets/images/jpg/east/varna.jpg" alt="Retro Museum Varna" />
+                            <div class="lightgallery">
+                                <a title="Retro Museum Varna" href="assets/images/jpg/east/varna.jpg"><img class="card-img" src="assets/images/jpg/east/varna.jpg" alt="Retro Museum Varna" /></a>
+                            </div>
                             <h5 class="card-title">Retro-Museum</h5>
                             <p class="card-text">Varna, Bulgaria</p>
                         </div>
@@ -161,7 +165,9 @@
                 <div class="col-6 col-sm-4 col-md-3 pt-3 p-2 d-flex align-items-stretch">
                     <div class="card">
                         <div class="card-body">
-                            <img class="card-img" src="assets/images/jpg/east/mladaboleslav.jpg" alt="Skoda Museum Mlada Boleslav" />
+                            <div class="lightgallery">
+                                <a title="Skoda Museum Mlada Boleslav" href="assets/images/jpg/east/mladaboleslav.jpg"><img class="card-img" src="assets/images/jpg/east/mladaboleslav.jpg" alt="Skoda Museum Mlada Boleslav" /></a>
+                            </div>
                             <h5 class="card-title">Škoda Auto Museum</h5>
                             <p class="card-text">Mladá Boleslav, Czechia</p>
                         </div>
@@ -694,6 +700,17 @@
         <!--Marker clusterer code on GitHub https://github.com/googlemaps/js-markerclustererplus-->
         <!--GoogleMaps marker clusterer-->
         <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
+        <!--LightGallery JS CDN-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js" integrity="sha512-b4rL1m5b76KrUhDkj2Vf14Y0l1NtbiNXwV+SzOzLGv6Tz1roJHa70yr8RmTUswrauu2Wgb/xBJPR8v80pQYKtQ==" crossorigin="anonymous"></script>
+        <!--Calling Lightgallery function. Help in the code from my brother Bence Kiss-->
+        <script type="text/javascript">
+            document.querySelectorAll('.lightgallery').forEach((gallery) => {
+                lightGallery(gallery, {
+                    counter: false,
+                    download: false
+                })
+            })
+        </script>
         <!--My JavaScript-->
         <script src="assets/scripts/script.js"></script>
     </body>
