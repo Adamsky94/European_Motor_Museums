@@ -217,6 +217,17 @@ a:hover {
     width: 100%;
 }
 
+/*hide html section under map before clicking the marker*/
+.hide {
+    display: none;
+}
+
+/*Marker infowindow image size*/
+.imagesize {
+    max-width: 150px;
+    max-height: 120px;
+}
+
 /* float animation ispired by https://codepen.io/MarioDesigns/pen/woJgeo */
 
 .card:hover {
@@ -538,7 +549,7 @@ a:hover {
 }
 
 .page-footer {
-    background: url("../images/png/footerbg.png") center;
+    background: url("../images/png/footerbg.png")  no-repeat center fixed;
     background-size: cover;
 }
 
