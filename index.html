@@ -19,6 +19,13 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
         <!--my own CSS file-->
         <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+        <!--Lighgallery CSS https://sachinchoolur.github.io/lightGallery/docs/ -->
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css"
+        integrity="sha512-kwJUhJJaTDzGp6VTPBbMQWBFUof6+pv0SM3s8fo+E6XnPmVmtfwENK0vHYup3tsYnqHgRDoBDTJWoq7rnQw2+g=="
+        crossorigin="anonymous"
+        />
         <!-- EmailJS SDK -->
         <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
         <!-- Script that initiates EmailJS with the personal key-->
@@ -27,13 +34,9 @@
                 emailjs.init("user_b3RGr0k68wLEgOcpsX75t");
             })();
         </script>
-        <!--Lighgallery CSS https://sachinchoolur.github.io/lightGallery/docs/ -->
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css"
-            integrity="sha512-kwJUhJJaTDzGp6VTPBbMQWBFUof6+pv0SM3s8fo+E6XnPmVmtfwENK0vHYup3tsYnqHgRDoBDTJWoq7rnQw2+g=="
-            crossorigin="anonymous"
-        />
+        <!-- Jquery.min CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+        
 
         <title>European Motoring Museums</title>
     </head>
@@ -52,7 +55,7 @@
             </div>
 
             <div id="mainbutton">
-                <a href="#navigation" id="about-us" class="button animate__animated animate__fadeIn animate__delay-2s"><i>Read more</i></a>
+                <a href="#navigation" id="about-us" class="button animate__animated animate__fadeIn animate__delay-2s">Read more</a>
             </div>
         </header>
         <!--Code end for landing -->
@@ -773,6 +776,8 @@
         </footer>
         <!-- Footer -->
 
+        <!--My JavaScript-->
+        <script src="assets/scripts/script.js"></script>
         <!--Bootstrap CDN JavaScript plugins-->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
@@ -801,7 +806,5 @@
                 });
             });
         </script>
-        <!--My JavaScript-->
-        <script src="assets/scripts/script.js"></script>
     </body>
 </html>
