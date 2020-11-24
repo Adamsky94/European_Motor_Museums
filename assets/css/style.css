@@ -93,7 +93,6 @@ body {
     border: 1px solid white;
     border-radius: 10px;
 }
-
 #mainbutton:hover{
     -webkit-transform: scale(1.05);
         -ms-transform: scale(1.05);
@@ -548,5 +547,17 @@ a:hover {
     .title-div-body {
         height: 200px;
         padding-top: 80px;
+    }
+
+    #intro2 h5,
+    #intro2 {
+    font-size: calc(0.8em + 0.1vw);
+}       
+    .page-footer {
+        font-size: calc(0.8em + 0.1vw);
+    }
+
+    .slider__contents {
+    font-size: calc(0.8em + 0.1vw);
     }
 }
