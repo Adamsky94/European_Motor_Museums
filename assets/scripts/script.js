@@ -1,6 +1,13 @@
-$( document ).ready(function() {
-    console.log( "ready!" );
+$(document).ready(function () {
+    console.log("ready!");
 });
+
+/*Function for loading HTML code under the map*/
+function load_museum_detail(marker) {
+    console.log("You have successfully clicked on the marker of", marker.title);
+    document.getElementById("museum_title").innerHTML = marker.title;
+    document.getElementById("museum_detail").classList.remove("hide");
+}
 
 function initMap() {
     /*coordinates for the markers*/
@@ -54,350 +61,350 @@ function initMap() {
         /*Helping video for setting up Snazzymaps https://www.youtube.com/watch?v=iPq69CnYxMA&ab_channel=GoogleDevelopers */
         styles: [
             {
-                "featureType": "administrative.province",
-                "elementType": "all",
-                "stylers": [
+                featureType: "administrative.province",
+                elementType: "all",
+                stylers: [
                     {
-                        "visibility": "off"
-                    }
-                ]
+                        visibility: "off",
+                    },
+                ],
             },
             {
-                "featureType": "administrative.locality",
-                "elementType": "labels",
-                "stylers": [
+                featureType: "administrative.locality",
+                elementType: "labels",
+                stylers: [
                     {
-                        "lightness": "-8"
-                    }
-                ]
+                        lightness: "-8",
+                    },
+                ],
             },
             {
-                "featureType": "administrative.locality",
-                "elementType": "labels.text.fill",
-                "stylers": [
+                featureType: "administrative.locality",
+                elementType: "labels.text.fill",
+                stylers: [
                     {
-                        "color": "#000000"
-                    }
-                ]
+                        color: "#000000",
+                    },
+                ],
             },
             {
-                "featureType": "administrative.locality",
-                "elementType": "labels.text.stroke",
-                "stylers": [
+                featureType: "administrative.locality",
+                elementType: "labels.text.stroke",
+                stylers: [
                     {
-                        "visibility": "off"
-                    }
-                ]
+                        visibility: "off",
+                    },
+                ],
             },
             {
-                "featureType": "administrative.neighborhood",
-                "elementType": "all",
-                "stylers": [
+                featureType: "administrative.neighborhood",
+                elementType: "all",
+                stylers: [
                     {
-                        "color": "#acacac"
-                    }
-                ]
+                        color: "#acacac",
+                    },
+                ],
             },
             {
-                "featureType": "administrative.neighborhood",
-                "elementType": "labels.text.fill",
-                "stylers": [
+                featureType: "administrative.neighborhood",
+                elementType: "labels.text.fill",
+                stylers: [
                     {
-                        "color": "#484848"
-                    }
-                ]
+                        color: "#484848",
+                    },
+                ],
             },
             {
-                "featureType": "administrative.neighborhood",
-                "elementType": "labels.text.stroke",
-                "stylers": [
+                featureType: "administrative.neighborhood",
+                elementType: "labels.text.stroke",
+                stylers: [
                     {
-                        "color": "#ff0000"
+                        color: "#ff0000",
                     },
                     {
-                        "visibility": "off"
-                    }
-                ]
+                        visibility: "off",
+                    },
+                ],
             },
             {
-                "featureType": "administrative.land_parcel",
-                "elementType": "all",
-                "stylers": [
+                featureType: "administrative.land_parcel",
+                elementType: "all",
+                stylers: [
                     {
-                        "lightness": "-3"
-                    }
-                ]
+                        lightness: "-3",
+                    },
+                ],
             },
             {
-                "featureType": "landscape",
-                "elementType": "all",
-                "stylers": [
+                featureType: "landscape",
+                elementType: "all",
+                stylers: [
                     {
-                        "saturation": -100
+                        saturation: -100,
                     },
                     {
-                        "lightness": "72"
+                        lightness: "72",
                     },
                     {
-                        "visibility": "on"
-                    }
-                ]
+                        visibility: "on",
+                    },
+                ],
             },
             {
-                "featureType": "landscape",
-                "elementType": "labels",
-                "stylers": [
+                featureType: "landscape",
+                elementType: "labels",
+                stylers: [
                     {
-                        "lightness": "23"
-                    }
-                ]
+                        lightness: "23",
+                    },
+                ],
             },
             {
-                "featureType": "poi",
-                "elementType": "all",
-                "stylers": [
+                featureType: "poi",
+                elementType: "all",
+                stylers: [
                     {
-                        "saturation": -100
+                        saturation: -100,
                     },
                     {
-                        "lightness": "30"
+                        lightness: "30",
                     },
                     {
-                        "visibility": "off"
-                    }
-                ]
+                        visibility: "off",
+                    },
+                ],
             },
             {
-                "featureType": "road",
-                "elementType": "all",
-                "stylers": [
+                featureType: "road",
+                elementType: "all",
+                stylers: [
                     {
-                        "lightness": "-19"
-                    }
-                ]
+                        lightness: "-19",
+                    },
+                ],
             },
             {
-                "featureType": "road",
-                "elementType": "geometry",
-                "stylers": [
+                featureType: "road",
+                elementType: "geometry",
+                stylers: [
                     {
-                        "lightness": "2"
+                        lightness: "2",
                     },
                     {
-                        "gamma": "1.21"
-                    }
-                ]
+                        gamma: "1.21",
+                    },
+                ],
             },
             {
-                "featureType": "road",
-                "elementType": "geometry.stroke",
-                "stylers": [
+                featureType: "road",
+                elementType: "geometry.stroke",
+                stylers: [
                     {
-                        "visibility": "off"
+                        visibility: "off",
                     },
                     {
-                        "saturation": "15"
+                        saturation: "15",
                     },
                     {
-                        "hue": "#ff0000"
-                    }
-                ]
+                        hue: "#ff0000",
+                    },
+                ],
             },
             {
-                "featureType": "road",
-                "elementType": "labels",
-                "stylers": [
+                featureType: "road",
+                elementType: "labels",
+                stylers: [
                     {
-                        "lightness": "-43"
-                    }
-                ]
+                        lightness: "-43",
+                    },
+                ],
             },
             {
-                "featureType": "road",
-                "elementType": "labels.text",
-                "stylers": [
+                featureType: "road",
+                elementType: "labels.text",
+                stylers: [
                     {
-                        "visibility": "on"
+                        visibility: "on",
                     },
                     {
-                        "lightness": "22"
-                    }
-                ]
+                        lightness: "22",
+                    },
+                ],
             },
             {
-                "featureType": "road",
-                "elementType": "labels.text.fill",
-                "stylers": [
+                featureType: "road",
+                elementType: "labels.text.fill",
+                stylers: [
                     {
-                        "weight": "0.12"
+                        weight: "0.12",
                     },
                     {
-                        "lightness": "-23"
+                        lightness: "-23",
                     },
                     {
-                        "visibility": "on"
-                    }
-                ]
+                        visibility: "on",
+                    },
+                ],
             },
             {
-                "featureType": "road",
-                "elementType": "labels.text.stroke",
-                "stylers": [
+                featureType: "road",
+                elementType: "labels.text.stroke",
+                stylers: [
                     {
-                        "visibility": "off"
+                        visibility: "off",
                     },
                     {
-                        "lightness": "71"
-                    }
-                ]
+                        lightness: "71",
+                    },
+                ],
             },
             {
-                "featureType": "road",
-                "elementType": "labels.icon",
-                "stylers": [
+                featureType: "road",
+                elementType: "labels.icon",
+                stylers: [
                     {
-                        "visibility": "on"
-                    }
-                ]
+                        visibility: "on",
+                    },
+                ],
             },
             {
-                "featureType": "road.highway",
-                "elementType": "all",
-                "stylers": [
+                featureType: "road.highway",
+                elementType: "all",
+                stylers: [
                     {
-                        "saturation": -100
+                        saturation: -100,
                     },
                     {
-                        "visibility": "simplified"
-                    }
-                ]
+                        visibility: "simplified",
+                    },
+                ],
             },
             {
-                "featureType": "road.arterial",
-                "elementType": "all",
-                "stylers": [
+                featureType: "road.arterial",
+                elementType: "all",
+                stylers: [
                     {
-                        "saturation": -100
+                        saturation: -100,
                     },
                     {
-                        "lightness": 30
+                        lightness: 30,
                     },
                     {
-                        "visibility": "on"
-                    }
-                ]
+                        visibility: "on",
+                    },
+                ],
             },
             {
-                "featureType": "road.local",
-                "elementType": "all",
-                "stylers": [
+                featureType: "road.local",
+                elementType: "all",
+                stylers: [
                     {
-                        "saturation": -100
+                        saturation: -100,
                     },
                     {
-                        "lightness": 40
+                        lightness: 40,
                     },
                     {
-                        "visibility": "on"
-                    }
-                ]
+                        visibility: "on",
+                    },
+                ],
             },
             {
-                "featureType": "transit",
-                "elementType": "all",
-                "stylers": [
+                featureType: "transit",
+                elementType: "all",
+                stylers: [
                     {
-                        "saturation": -100
+                        saturation: -100,
                     },
                     {
-                        "visibility": "simplified"
-                    }
-                ]
+                        visibility: "simplified",
+                    },
+                ],
             },
             {
-                "featureType": "transit",
-                "elementType": "geometry.fill",
-                "stylers": [
+                featureType: "transit",
+                elementType: "geometry.fill",
+                stylers: [
                     {
-                        "saturation": "5"
+                        saturation: "5",
                     },
                     {
-                        "visibility": "on"
+                        visibility: "on",
                     },
                     {
-                        "lightness": "5"
-                    }
-                ]
+                        lightness: "5",
+                    },
+                ],
             },
             {
-                "featureType": "water",
-                "elementType": "geometry",
-                "stylers": [
+                featureType: "water",
+                elementType: "geometry",
+                stylers: [
                     {
-                        "hue": "#ffff00"
+                        hue: "#ffff00",
                     },
                     {
-                        "lightness": "-24"
+                        lightness: "-24",
                     },
                     {
-                        "saturation": -97
-                    }
-                ]
+                        saturation: -97,
+                    },
+                ],
             },
             {
-                "featureType": "water",
-                "elementType": "geometry.fill",
-                "stylers": [
+                featureType: "water",
+                elementType: "geometry.fill",
+                stylers: [
                     {
-                        "saturation": "-88"
+                        saturation: "-88",
                     },
                     {
-                        "lightness": "-23"
+                        lightness: "-23",
                     },
                     {
-                        "visibility": "on"
-                    }
-                ]
+                        visibility: "on",
+                    },
+                ],
             },
             {
-                "featureType": "water",
-                "elementType": "labels",
-                "stylers": [
+                featureType: "water",
+                elementType: "labels",
+                stylers: [
                     {
-                        "visibility": "on"
+                        visibility: "on",
                     },
                     {
-                        "lightness": -25
+                        lightness: -25,
                     },
                     {
-                        "saturation": -100
-                    }
-                ]
+                        saturation: -100,
+                    },
+                ],
             },
             {
-                "featureType": "water",
-                "elementType": "labels.text",
-                "stylers": [
+                featureType: "water",
+                elementType: "labels.text",
+                stylers: [
                     {
-                        "weight": "0.01"
+                        weight: "0.01",
                     },
                     {
-                        "lightness": "9"
-                    }
-                ]
+                        lightness: "9",
+                    },
+                ],
             },
             {
-                "featureType": "water",
-                "elementType": "labels.text.fill",
-                "stylers": [
+                featureType: "water",
+                elementType: "labels.text.fill",
+                stylers: [
                     {
-                        "lightness": "-32"
+                        lightness: "-32",
                     },
                     {
-                        "gamma": "2.99"
-                    }
-                ]
-            }
+                        gamma: "2.99",
+                    },
+                ],
+            },
         ],
     });
     /*Code that places the markers on the map*/
@@ -406,6 +413,7 @@ function initMap() {
         position: Varna,
         map,
         title: "Retro-Museum, Varna, Bulgaria",
+        content: "<h3>Retro-Museum</h3><p>Varna, Bulgaria</p>" + "<img class='imagesize' src='../assets/images/jpg/east/varna.jpg'></img>",
     });
 
     const marker2 = new google.maps.Marker({
@@ -693,25 +701,52 @@ function initMap() {
         marker41,
     ];
 
+    /*Function to add and map markers*/
+    function addMarker(marker) {
+        /* Check content */
+        var infoWindow = new google.maps.InfoWindow({
+            content: marker.content,
+        });
+
+        /*Click event listerner for marker*/
+
+        marker.addListener("click", function (event) {
+            infoWindow.open(map, marker);
+
+            /*loads info and contact form for clicked marker*/
+            load_museum_detail(marker);
+        });
+    }
+
     // Path for cluster icons to be appended (1.png, 2.png, etc.)
     const imagePath = "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m";
 
     // Enable marker clustering for this map and these markers
     const markerClusterer = new MarkerClusterer(map, markers, { imagePath: imagePath });
+    
+    // for loop for placing markers on the map
+    for (var i = 0; i < markers.length; i++) {
+        addMarker(markers[i]);
+    }
 
-    console.log( "Map loaded sucessfully" );
+    console.log("Map loaded sucessfully");
 }
 
 /* Scroll to top button code from @rdallaire on CodePen https://codepen.io/rdallaire/pen/apoyx */
-$(window).scroll(function() {
-    if ($(this).scrollTop() >= 450) {        // If page is scrolled more than 450px
-        $('#return-to-top').fadeIn(100);    // Fade in the arrow
+$(window).scroll(function () {
+    if ($(this).scrollTop() >= 450) {
+        // If page is scrolled more than 450px
+        $("#return-to-top").fadeIn(100); // Fade in the arrow
     } else {
-        $('#return-to-top').fadeOut(100);   // Else fade out the arrow
+        $("#return-to-top").fadeOut(100); // Else fade out the arrow
     }
 });
-$('#return-to-top').click(function() {      // When arrow is clicked
-    $('body,html').animate({
-        scrollTop : 0                       // Scroll to top of body
-    }, 500);
+$("#return-to-top").click(function () {
+    // When arrow is clicked
+    $("body,html").animate(
+        {
+            scrollTop: 0, // Scroll to top of body
+        },
+        500
+    );
 });
