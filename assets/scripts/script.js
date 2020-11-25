@@ -434,7 +434,7 @@ function initMap() {
         position: Koprivnice,
         map,
         title: "Tatra Muzeum, Kopřivnice, Czechia",
-        content: "<h3>Tatra Muzeum</h3><h5>Kopřivnice, Czechia</h5>" + "<img class='imagesize' src='/assets/images/jpg/east/tatra.jpg'></img>",
+        content: "<h3>Tatra Muzeum</h3><h5>Kopřivnice, Czechia</h5>" + "<img class='imagesize' src='../assets/images/jpg/east/tatra.jpg'></img>",
     });
 
     const marker5 = new google.maps.Marker({
