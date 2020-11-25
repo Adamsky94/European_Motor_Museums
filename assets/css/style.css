@@ -93,7 +93,8 @@ body {
     border: 1px solid white;
     border-radius: 10px;
 }
-#mainbutton:hover{
+#mainbutton:hover,
+#map_contact:hover{
     -webkit-transform: scale(1.05);
         -ms-transform: scale(1.05);
             transform: scale(1.05);
@@ -493,6 +494,19 @@ a:hover {
 }
 }
 
+#map_contact {
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 8px;
+}
+
+#map_contact:hover {
+    background:  rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.5);
+
+}
+
 .footer-copyright {
     -webkit-box-shadow: 0px 0px 29px 8px rgba(0, 0, 0, 1);
     box-shadow: 0px 5px 5px 8px rgba(0, 0, 0, 1);
@@ -561,9 +575,15 @@ a:hover {
     }
 
     #intro2 h5,
-    #intro2 {
-    font-size: calc(0.8em + 0.1vw);
-}       
+    #intro2,
+    #museum_detail h5 {
+    font-size: calc(0.9em + 0.1vw);
+    }     
+
+    h2#museum_title {
+        font-size: calc(1em + 1vw);
+    }
+    
     .page-footer {
         font-size: calc(0.8em + 0.1vw);
     }
