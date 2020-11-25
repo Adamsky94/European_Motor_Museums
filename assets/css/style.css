@@ -549,7 +549,7 @@ a:hover {
 }
 
 .page-footer {
-    background: url("../images/png/footerbg.png")  no-repeat center fixed;
+    background: url("../images/png/footerbg.png")  no-repeat center;
     background-size: cover;
 }
 
