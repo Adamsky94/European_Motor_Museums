@@ -103,7 +103,7 @@
 
         <!-- Bootstrap Navbar code -->
         <nav class="navbar sticky-top navbar-dark bg-dark" id="navigation">
-            <a class="nav-item" id="logo" href="#showcase"> <img src="assets/images/png/sitelogo.png" alt="Website logo which is a car with a navigation icon." /></a>
+            <a class="nav-item" id="logo" href="#map"> <img src="assets/images/png/sitelogo.png" alt="Website logo which is a car with a navigation icon. It brings you to the map when you click on it" /></a>
 
             <span class="align-middle d-none d-sm-block user-select-none fontmarck" id="navtitle" role="banner" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle menu">
                 Your guide in Automotive History.
@@ -128,6 +128,9 @@
                     </li>
                     <li class="nav-item mx-auto">
                         <a class="nav-link" data-toggle="modal" href="#modalContactForm">Contact</a>
+                    </li>
+                    <li class="nav-item mx-auto">
+                        <a class="nav-link" href="#map">Map</a>
                     </li>
                 </ul>
             </div>
@@ -724,7 +727,7 @@
 
         <!-- Div section that holds the map -->
         <div id="museum_detail" class="hide pt-2 text-center">
-            <h5>You have looked up the following location on our map:</h5>
+            <h5>You have looked up the following:</h5>
         <h2 id="museum_title"></h2>
             <h5 class=" pb-3">Would you like us to organise your visit?</h5> 
             <button class="mb-3" id="map_contact" data-toggle="modal" href="#modalContactForm"><i class="fas fa-map-marked-alt"></i> Take me there!</button>
@@ -756,23 +759,26 @@
                         <!-- Links list-->
                         <ul class="list-unstyled">
                             <li>
-                                <a href="#showcase">Home</a>
+                                <a class="nav-link-footer" href="#showcase">Home</a>
                             </li>
                             <li>
-                                <a href="#east">Eastern Europe</a>
+                                <a class="nav-link-footer" href="#east">Eastern Europe</a>
                             </li>
                             <li>
-                                <a href="#north">Northern Europe</a>
+                                <a class="nav-link-footer" href="#north">Northern Europe</a>
                             </li>
                             <li>
-                                <a href="#south">Southern Europe</a>
+                                <a class="nav-link-footer" href="#south">Southern Europe</a>
                             </li>
                             <li>
-                                <a href="#west">Western Europe</a>
+                                <a class="nav-link-footer" href="#west">Western Europe</a>
+                            </li>
+                            <li>
+                                <a class="nav-link-footer" href="#map">Map</a>
                             </li>
                         </ul>
                         <h5 class="text-uppercase">
-                            <a href="#modalContactForm" data-toggle="modal"><i class="fas fa-mail-bulk"></i> Write to us!</a>
+                            <a class="nav-link-footer" href="#modalContactForm" data-toggle="modal"><i class="fas fa-mail-bulk"></i> Write to us!</a>
                         </h5>
                     </div>
                 </div>
