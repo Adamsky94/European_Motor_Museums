@@ -134,12 +134,18 @@ body {
 
 /*navigaton animation*/
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link-footer:hover {
     background: rgba(109, 109, 109, 0.3);
     letter-spacing: 3px;
     -webkit-transition: 0.3s ease-in-out;
     -o-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
+}
+
+.nav-link-footer {
+    display: block;
+    padding: 0;
 }
 
 #menubutton {
