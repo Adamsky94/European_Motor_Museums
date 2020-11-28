@@ -6,8 +6,6 @@ Code Institute Diploma in Full-Stack Web Development Milestone 2 Project
 
 <img src="./assets/images/readme_img/projectlogo.png" />
 
-##### <u>Project name:</u> European Motoring Museums
-
 ### View the live project: https://adamsky94.github.io/European_Motoring_Museums/
 
 ### <u>Scope of the project</u>
@@ -43,7 +41,7 @@ The European Motoring Museums Organization /EMM in the following/ is a non-profi
 
 "As a newbie learner, I wanted to create a more modern looking website than my first project. I tried to create something more visually appealing so whoever checks out my GitHub repository will see my improvement. Code Institute has provided us the GitPod IDE but around 70% done with the project I switched to develop locally with VS Code because of occasional "hiccups" with GitPod's servers. It was not too difficult because GitPod is based on VS Code so it was an easy transition. I pulled my repo for this project, committed, and pushed from VS Code since. I was able to reach everything quicker and it was nice to get to know how to install plugins and other functionalities!"
 
------------------------------------------------------------------------------------------------------------
+-----------------
 
 #### **Wireframing**
 
@@ -95,6 +93,8 @@ Whenever there is a background image I used faded images so it would not conflic
 I gave the pages a black frame on the top and bottom with the navbar and the footer. 
 There is a light-grey background color applied to the whole site. It is mostly not visible but it was important because of the second half of the page. As I was thinking of creating a contrast to the imagery so the imported Google Maps map element have been styled to be monochrome.
 
+-----------------
+
 ### Technologies Used
 
 - HTML5
@@ -132,6 +132,8 @@ It's best practice to restrict the use of your API key in order to avoid unautho
 
 You can find information on how to place markers and use the marker clusterer on a map in the Google Maps JavaScript API Documentation here: https://developers.google.com/maps/documentation/javascript/overview#maps_map_simple-javascript
 
+-----------------
+
 ### **Version Control**
 
 I used Git for version control and uploading the project to GitHub.
@@ -156,7 +158,7 @@ Used online autoprefixer for maximum browser compatibility - https://autoprefixe
 
 Used online code formatter to achieve optimal syntax - https://webformatter.com/
 
-Used online image compressor for achieving the fastest image loading times from the server - https://imagecompressor.com/ , https://tinypng.com/
+Used online image compressor for achieving the fastest image loading times from the server - https://imagecompressor.com/ and https://tinypng.com/
 
 Used online image editor when I had to change the opacity on an image: https://www.lunapic.com
 
@@ -180,6 +182,8 @@ On further inspecting the findings of this test the tool brought my attention to
 <img src="./assets/images/readme_img/lighthouse improvement.jpg" />
 
 There are loads of other things this tool inspects for you and has capabilities beyond mine. I most certainly going to use it with all my future projects to get a better understanding of how and why things are as they are at a given state!
+
+-----------------
 
 ### Deployment
 
@@ -212,12 +216,14 @@ If you'd like to see and work on my code locally feel free to clone the reposito
 6. Type `git clone`, and then paste the URL you copied earlier.
 
    ```shell
-   $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+   $ git clone https://github.com/Adamsky94/European_Motoring_Museums.git
    ```
 
 7. Press **Enter** to create your local clone.
 
 GitHub documentation on cloning repository includes other methods to using the console. You can read more here: https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository
+
+-----------------
 
 ### Credits
 
@@ -241,9 +247,9 @@ GitHub documentation on cloning repository includes other methods to using the c
 
 ***Paul Saxman*** - https://www.youtube.com/watch?v=iPq69CnYxMA&ab_channel=GoogleDevelopers - tutorial video on using SnazzyMaps
 
-**Ehsan** on StackOwerflow - https://stackoverflow.com/questions/13506481/change-placeholder-text - for changing placeholder text after submitting form
+***Ehsan*** on StackOwerflow - https://stackoverflow.com/questions/13506481/change-placeholder-text - for changing placeholder text after submitting form
 
-**geocodezip** on StackOwerflow - https://stackoverflow.com/questions/38992746/how-to-zoom-out-the-map-when-the-infowindow-is-closed-in-google-map/ - for zooming out the map when marker infowindow gets closed
+***geocodezip*** on StackOwerflow - https://stackoverflow.com/questions/38992746/how-to-zoom-out-the-map-when-the-infowindow-is-closed-in-google-map/ - for zooming out the map when marker infowindow gets closed
 
 ***Kyle*** on StackOwerflow - https://stackoverflow.com/questions/4919076/outline-effect-to-text - for adding outline effect to text in CSS
 
@@ -268,3 +274,5 @@ GitHub documentation on cloning repository includes other methods to using the c
 ***Autoprefixer CSS online*** - https://autoprefixer.github.io/
 
 ***Wikipedia*** - https://en.wikipedia.org/wiki/List_of_automotive_museums#Europe - List of European Motoring Museums
+
+***Pexels*** - https://www.pexels.com/ - for images found in the project
