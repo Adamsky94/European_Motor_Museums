@@ -2,7 +2,9 @@
 
 Code Institute Diploma in Full-Stack Web Development Milestone 2 Project
 
-<img src="./assets/images/readme_img/projectlogo.png" style="zoom: 60%;" />
+##### <u>Project name:</u> European Motoring Museums
+
+<img src="./assets/images/readme_img/projectlogo.png" />
 
 ##### <u>Project name:</u> European Motoring Museums
 
@@ -47,13 +49,13 @@ The European Motoring Museums Organization /EMM in the following/ is a non-profi
 
 ###### Landing
 
-<img src="./assets/images/readme_img/wire_landing.png" style="zoom: 33%;" />
+<img src="./assets/images/readme_img/wire_landing.png" />
 
 > I wanted to create a large image background landing site with a button. The landing would scale on all viewports. Clicking on the button would bring the user to the main content as well as scrolling downwards.
 
 ###### Page layout
 
-<img src="./assets/images/readme_img/wire_onesection.png" style="zoom: 33%;" />
+<img src="./assets/images/readme_img/wire_onesection.png" />
 
 > The main feature of the page is the four sections that would reveal further information upon clicking on them. The four sections are Eastern, Northern, Southern, and Western Europe. These sections would be done as a parallax. Each section would have different background images. The background images would be fixed and centered so scrolling up and down would create a nice visual.
 > On clicking these sections it would reveal buttons which are named by the countries they represent. There is just a solid background color on this section.
@@ -62,13 +64,13 @@ The European Motoring Museums Organization /EMM in the following/ is a non-profi
 
 ###### Contact form
 
-<img src="./assets/images/readme_img/wire_contactform.png" style="zoom: 33%;" />
+<img src="./assets/images/readme_img/wire_contactform.png" />
 
 > The contact form would be on a modal and only visible after customer interaction with a link or button. The contact form would have a message on the top about EMM's service. It would have input fields for the full name, email address, and message. These input fields are required to be filled with appropriate data, otherwise, the user could not click the send button.
 
 ###### Map section
 
-<img src="./assets/images/readme_img/wire_bottompagemap.png" style="zoom: 50%;" />
+<img src="./assets/images/readme_img/wire_bottompagemap.png" />
 
 > There would be a google maps map under the parallax section. All the museums are marked with a marker and the markers are clustered on certain zoom levels. Visitors would be able to browse all the locations showcased above on the site.
 
@@ -158,7 +160,7 @@ Used online image compressor for achieving the fastest image loading times from 
 
 Used online image editor when I had to change the opacity on an image: https://www.lunapic.com
 
-<img src="./assets/images/readme_img/resp2.png" style="zoom: 50%;" />
+<img src="./assets/images/readme_img/resp2.png" />
 
 ##### Bug Fixes
 
@@ -171,11 +173,11 @@ Used online image editor when I had to change the opacity on an image: https://w
 
 A member of Code Institute Anna Greaves has mentioned this handy tool in her "How to README.md" online webinar. After learning about it I tested my project in an advanced phase. This was the initial result: 
 
-<img src="./assets/images/readme_img/lighthouse.jpg" style="zoom: 50%;" />
+<img src="./assets/images/readme_img/lighthouse.jpg" />
 
 On further inspecting the findings of this test the tool brought my attention to the slow loading times of some images and recommended fixes for the issue. Here are the site metrics after performing said fixes:
 
-<img src="./assets/images/readme_img/lighthouse improvement.jpg" style="zoom: 50%;" />
+<img src="./assets/images/readme_img/lighthouse improvement.jpg" />
 
 There are loads of other things this tool inspects for you and has capabilities beyond mine. I most certainly going to use it with all my future projects to get a better understanding of how and why things are as they are at a given state!
 
@@ -189,7 +191,7 @@ There are loads of other things this tool inspects for you and has capabilities 
 
 #### The live project page: https://adamsky94.github.io/European_Motoring_Museums/
 
-<img src="./assets/images/readme_img/multimuckup.png" style="zoom:50%;" />
+<img src="./assets/images/readme_img/multimuckup.png" />
 
 GitHub documentation for deploying project to GitHub Pages: https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
 
