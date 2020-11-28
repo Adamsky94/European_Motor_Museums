@@ -57,7 +57,7 @@ function initMap() {
     const map = new google.maps.Map(document.getElementById("map"), {
         zoom: 4,
         center: { lat: 52.314985, lng: 13.288772 },
-        /*Map style array. Code from https://snazzymaps.com/style/1735/discreet */
+        /*Map style array. Code from https://snazzymaps.com/style/6376/masik-www */
         /*Helping video for setting up Snazzymaps https://www.youtube.com/watch?v=iPq69CnYxMA&ab_channel=GoogleDevelopers */
         styles: [
             {
