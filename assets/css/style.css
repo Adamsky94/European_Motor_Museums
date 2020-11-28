@@ -1,4 +1,4 @@
-/*Linked MarkScript and Source Sans Pro fonts from Google Fonts*/
+/* Linked MarkScript and Source Sans Pro fonts from Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Marck+Script&family=Source+Sans+Pro:ital,wght@0,400;1,600&display=swap");
 
 /*
@@ -28,7 +28,7 @@ body {
     font-weight: 600;
 }
 
-/*--Code for landing from Brad Traversy https://codepen.io/bradtraversy/pen/XerXYV--*/
+/* Code for landing from Brad Traversy https://codepen.io/bradtraversy/pen/XerXYV */
 #showcase {
     background-image: url("../images/jpg/bg_landing.jpg");
     background-size: cover;
@@ -53,7 +53,7 @@ body {
     color: #fff;
 }
 
-/* responsive text size*/
+/* responsive text size */
 
 #showcase #title {
     font-size: calc(2em + 2vw);
@@ -108,9 +108,9 @@ body {
     box-shadow: 0px 0px 10px 5px rgba(227,227,227,0.5);
 }
 
-/*--Code from Brad Traversy https://codepen.io/bradtraversy/pen/XerXYV ending--*/
+/* Code from Brad Traversy https://codepen.io/bradtraversy/pen/XerXYV ending */
 
-/* navigation */
+/* Navigation */
 #navtitle {
     color: rgb(255, 255, 255);
     font-size: 1.5em;
@@ -132,7 +132,7 @@ body {
     padding: 0 10px;
 }
 
-/*navigaton animation*/
+/* Navigaton animation */
 
 .nav-link:hover,
 .nav-link-footer:hover {
@@ -177,7 +177,7 @@ body {
     background-color: transparent;
 }
 
-/*anchor styling*/
+/* Anchor styling */
 a {
     color: rgb(0, 0, 0);
     text-decoration: none;
@@ -192,7 +192,7 @@ a:hover {
     transition: 0.3s ease-in-out;
 }
 
-/* -- card settings -- */
+/* Card settings */
 
 .card {
     margin-bottom: 16px;
@@ -219,32 +219,30 @@ a:hover {
     font-size: 2vh;
 }
 
-/*Map body*/
-#map {
-    height: 70vh;
-    width: 100%;
-}
-
-/*hide html section under map before clicking the marker*/
-.hide {
-    display: none;
-}
-
-/*Marker infowindow image size*/
-.imagesize {
-    max-width: 150px;
-    max-height: 120px;
-}
-
-/* float animation ispired by https://codepen.io/MarioDesigns/pen/woJgeo */
-
 .card:hover {
     -webkit-transform: scale(1.02);
         -ms-transform: scale(1.02);
             transform: scale(1.02);
 }
 
-/*-- CSS settings for modal-dialog inspired by https://stackoverflow.com/questions/4919076/outline-effect-to-text --*/
+/* Map body */
+#map {
+    height: 70vh;
+    width: 100%;
+}
+
+/* Hide html section under map before clicking the marker */
+.hide {
+    display: none;
+}
+
+/* Marker infowindow image size */
+.imagesize {
+    max-width: 150px;
+    max-height: 120px;
+}
+
+/* CSS settings for modal-dialog inspired by https://stackoverflow.com/questions/4919076/outline-effect-to-text */
 .modal-dialog,
 .modal-footer .btn {
     color: #fff;
@@ -255,13 +253,13 @@ a:hover {
     margin-top: 10px;
 }
 
-/*Modal close button*/
+/* Modal close button */
 .close {
     color: rgb(0, 0, 0);
     text-shadow: -1px -1px 0 rgb(255, 255, 255), 1px -1px 0 rgb(255, 255, 255), -1px 1px 3px rgb(255, 255, 255), 1px 1px 0 rgb(255, 255, 255);
 }
 
-/*Send button*/
+/* Send button */
 .modal-footer .btn:hover {
     background: rgba(0, 0, 0, 0.5);
     -webkit-transition: 0.2s ease-in-out;
@@ -279,7 +277,7 @@ a:hover {
     background-color: #000;
     height: 45px;
 }
-/* This code is disabling the scaling on modal card body when you put your cursor on it*/
+/* This code is disabling the scaling on modal card body on hover */
 .modal-content:hover {
     -webkit-transform: none;
         -ms-transform: none;
@@ -288,7 +286,7 @@ a:hover {
             box-shadow: none;
 }
 
-/*-- parallax section inspired by https://github.com/Eventyret/simple-parallax --*/
+/* Parallax section inspired by https://github.com/Eventyret/simple-parallax */
 
 .title-bg {
     background-color: rgba(0, 0, 0, 0.5);
@@ -315,7 +313,7 @@ a:hover {
     padding-top: 145px;
 }
 
-/*region animation on hover*/
+/* region section animation on hover */
 #east:hover,
 #north:hover,
 #south:hover,
@@ -427,7 +425,7 @@ a:hover {
     -ms-flex-pack: center;
     justify-content: center;
 }
-/*Animation for slider radio buttons*/
+/* Animation for slider radio buttons */
 @-webkit-keyframes check {
     50% {
         outline-color: #333;
@@ -465,14 +463,11 @@ a:hover {
     z-index: 100;
     display: block;
     text-decoration: none;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
     border-radius: 15px;
     display: none;
     -webkit-transition: all 0.3s linear;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
 #return-to-top i {
@@ -483,8 +478,6 @@ a:hover {
     top: 10px;
     font-size: 19px;
     -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
@@ -501,6 +494,7 @@ a:hover {
 }
 }
 
+/* Styling for the button that is visible when clicked on marker on map */
 #map_contact {
     border-radius: 10px;
     background: rgba(0, 0, 0, 0.2);
@@ -513,13 +507,13 @@ a:hover {
     box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.5);
 
 }
-
+/* Bottom part of footer */
 .footer-copyright {
     -webkit-box-shadow: 0px 0px 29px 8px rgba(0, 0, 0, 1);
     box-shadow: 0px 5px 5px 8px rgba(0, 0, 0, 1);
 }
 
-/* backgrounds */
+/* Background images */
 
 #intro2 {
     background: url("../images/png/introbg.png") center;
