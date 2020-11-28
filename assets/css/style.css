@@ -145,7 +145,8 @@ body {
 
 .nav-link-footer {
     display: block;
-    padding: 0;
+    padding: 2px;
+    margin: 2px;
 }
 
 #menubutton {
