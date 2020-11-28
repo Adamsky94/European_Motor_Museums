@@ -36,12 +36,12 @@
         </script>
         <!-- Jquery.min CDN -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
-        
+
         <title>European Motoring Museums</title>
     </head>
 
     <body>
-        <!--Code for the landing page from Brad Traversy https://codepen.io/bradtraversy/pen/XerXYV-->
+        <!--Code for the landing page from Brad Traversy https://codepen.io/bradtraversy/pen/XerXYV -->
         <header id="showcase">
             <div class="animate__animated animate__fadeIn">
                 <h1 id="title" class="fontmarck user-select-none mb-4">European Motoring Museums<span class="fontmarck mt-4">Your guide in Automotive History.</span></h1>
@@ -144,7 +144,9 @@
             <p>Our offer extends to complete travel solutions inclusive of accommodation, private transfer or public transport, opening times, and tickets for your destination of choice.</p>
             <p>Because every individual has different requirements and no two places are the same, we are tailoring the prices to suit you the best, so please email us with your travel idea!</p>
             <h5 class="pt-3 pb-5 text-center">
-                <strong><a id="introcontact" data-toggle="modal" href="#modalContactForm"><i class="fas fa-hand-point-right"></i> Click here to contact us for our current deals!</a></strong>
+                <strong>
+                    <a id="introcontact" data-toggle="modal" href="#modalContactForm"><i class="fas fa-hand-point-right"></i> Click here to contact us for our current deals!</a>
+                </strong>
             </h5>
         </div>
         <!-- Intro2 code end-->
@@ -726,12 +728,12 @@
         <div id="map"></div>
 
         <!-- Div section that holds the map -->
-        <div id="museum_detail" class="hide pt-2 text-center">
+        <div id="museum_detail" class="hide pt-2 pb-3 text-center">
             <h5>You have looked up the following:</h5>
-        <h2 id="museum_title"></h2>
-            <h5 class=" pb-3">Would you like us to organise your visit?</h5> 
-            <button class="mb-3" id="map_contact" data-toggle="modal" href="#modalContactForm"><i class="fas fa-map-marked-alt"></i> Take me there!</button>
-		</div>
+            <h2 id="museum_title">Here goes the name of the selected Museum. This text will be replaced by the JavaScript code when a marker is clicked.</h2>
+            <h5 class="pb-3">Would you like us to organise your visit?</h5>
+            <a class="mb-3" id="map_contact" data-toggle="modal" href="#modalContactForm"><i class="fas fa-map-marked-alt"></i> Take me there!</a>
+        </div>
 
         <!-- Return to top button code from @rdallaire on CodePen https://codepen.io/rdallaire/pen/apoyx -->
         <a href="javascript:" id="return-to-top"><i class="fas fa-angle-double-up"></i></a>
@@ -785,10 +787,8 @@
                     </div>
                 </div>
             </div>
-
             <!-- Copyright -->
             <div class="footer-copyright text-center user-select-none py-3 mt-2">Adam Kiss © 2020 European Motoring Museums</div>
-            <!-- Copyright -->
         </footer>
         <!-- Footer -->
 
