@@ -15,34 +15,36 @@ The European Motoring Museums Organization /EMM in the following/ is a non-profi
 -----------------
 ### <u>Contents</u>
 
-- [User Stories](#User Stories)
+- [UX Design](#ux-design--presentation)
 
-- [Wireframing](#Wireframing)
+- [Wireframing](#wireframing)
 
-  - [Landing](#Landing)
-  - [Page layout](#Page Layout)
-  - [Contact Form](#Contact form)
-  - [Navigation](#Navigation)
-  - [Footer](#Footer)
+  - [Landing](#landing)
+  - [Page layout](#page-layout)
+  - [Contact Form](#contact-form)
+  - [Navigation](#navigation)
+  - [Footer](#footer)
 
-- [Technologies Used](#Technologies Used)
+- [Technologies Used](#technologies-used)
+  - [Adding Email JS SDK](#adding-email-js-sdk)
+  - [Adding the Google Maps API](#adding-the-google-maps-api)
+  
+- [Version Control](#version-control)
 
-- [Version Control](#Version Control)
+- [Testing write-up](#testing-write-up)
 
-- [Testing write-up](#Testing write-up)
+  - [Bug fixes](#bug-fixes)
+  - [Lighthouse Speed Tool](#lighthouse-speed-tool)
 
-  - [Bug fixes](#Bug Fixes)
-  - [Lighthouse Speed Tool](#Lighthouse Speed Tool)
+- [Deployment](#deployment)
 
-- [Deployment](#Deployment)
+- [Cloning this repository](#cloning-this-repository)
 
-- [Cloning this repository](#Cloning this repository)
-
-- [Credits](#Credits)
+- [Credits](#credits)
 
 -----------------
 
-### <u>UX Design / Presentation</u>
+### UX Design / Presentation
 
 #### User Stories
 
@@ -135,7 +137,7 @@ There is a light-grey background color applied to the whole site. It is mostly n
 - GitPod IDE - remote developer environment
 - Microsoft Visual Studio Code - local code editor
 - Balsamiq Wireframes - used in the design process for wireframing
--  [Bootstrap](https://getbootstrap.com/) 
+- [Bootstrap](https://getbootstrap.com/) 
 - [JQuery](https://jquery.com/)
 - [Email JS](https://www.emailjs.com/) - for making the contact form alive
 - [FontAwesome](https://fontawesome.com/) - for the icons used
@@ -144,11 +146,11 @@ There is a light-grey background color applied to the whole site. It is mostly n
 - [SnazzyMaps](https://snazzymaps.com/) - for styling the map
 - [Typora](https://typora.io/) - The README.md file was edited in Typora
 
-### Adding Email JS SDK
+#### Adding Email JS SDK
 
 Adding this functionality to a website was covered in the Interactive Frontend Development module of the course. Those few videos were a great help. Firstly you have to be registered to this service then you will be able to link it with an existing email address. The official EmailJS documentation is also crucial to understand what has to be done in order to get everything in working order. You can find the documentation [here](https://www.emailjs.com/docs/introduction/how-does-emailjs-work/).
 
-### Adding the Google Maps API
+#### Adding the Google Maps API
 
 Firstly you have to register for Google Cloud Services. It is easier if you already use Gmail for example. You can do that at the following [link](https://cloud.google.com/).
 
@@ -156,7 +158,7 @@ Once you logged in you have to set up billing for your account. Only then you ar
 
 For Google Maps you need to get a personal API key. Here is [how to do that](https://developers.google.com/maps/documentation/javascript/get-api-key). 
 
-It's best practice to restrict the use of your API key in order to avoid unauthorized use and extra charges applied to your account. Google Cloud services actually sent me an email when I first pushed my HTML code to my repository on GitHub saying that it might accidentally have been published and the best thing would be to restrict access if it has not been done already. Here is [how to do that](https://developers.google.com/maps/api-key-best-practices?hl=en). My API key is restricted. The Google Maps map in my project only functions if it's called from the Deployed Website on GitHub pages, GitPod, or LiveServer from VS Code when I use it locally. 
+It's best practice to restrict the use of your API key in order to avoid unauthorized use and extra charges applied to your account. Google Cloud services actually sent me an email when I first pushed my HTML code to my repository on GitHub saying that it might accidentally have been published and the best thing would be to restrict access if it has not been done already. You can read more on how to do that [here](https://developers.google.com/maps/api-key-best-practices?hl=en). My API key is restricted. The Google Maps map in my project only functions if it's called from the Deployed Website on GitHub pages, GitPod, or LiveServer from VS Code when I use it locally. 
 
 You can find information on how to place markers and use the marker clusterer on a map in the Google Maps JavaScript API Documentation [here](https://developers.google.com/maps/documentation/javascript/overview#maps_map_simple-javascript).
 
@@ -166,7 +168,7 @@ You can find information on how to place markers and use the marker clusterer on
 
 I used Git for version control and uploading the project to GitHub.
 
-My GitHub repository for this project: https://github.com/Adamsky94/European_Motoring_Museums
+My GitHub repository for this project is accessible [here](https://github.com/Adamsky94/European_Motoring_Museums).
 
 ### Testing write-up
 
@@ -176,19 +178,19 @@ CSS code validated on - https://jigsaw.w3.org/css-validator/
 
 Responsivity for mobile devices tested on:
 
-- http://www.responsinator.com/ and https://techsini.com/multi-mockup/
+- [Responsinator](http://www.responsinator.com/) and [Multi Device Mockup Generator](https://techsini.com/multi-mockup/) 
 - Google Chrome Developer Tools
-- Microsoft Edge
-- Opera Browser
 - Mozilla Firefox on Galaxy S9 setting
+- Opera Browser
+- Microsoft Edge
 
-Used online [autoprefixer](https://autoprefixer.github.io/) for maximum browser compatibility 
+Used online [Autoprefixer](https://autoprefixer.github.io/) for maximum browser compatibility 
 
-Used online [code formatter](https://webformatter.com/) to achieve optimal syntax 
+Used online [Code formatter](https://webformatter.com/) to achieve optimal syntax 
 
-Used online [image compressor](https://imagecompressor.com/) and [TinyPNG](https://tinypng.com/) for achieving the fastest image loading times from the server 
+Used online [Image compressor](https://imagecompressor.com/) and [TinyPNG](https://tinypng.com/) for achieving the fastest image loading times from the server 
 
-Used online [image editor](https://www.lunapic.com) when I had to change the opacity on an image 
+Used [Lunapic](https://www.lunapic.com) online image editor when I had to change the opacity on an image 
 
 <img src="./assets/images/readme_img/resp2.png" />
 
@@ -201,7 +203,7 @@ Used online [image editor](https://www.lunapic.com) when I had to change the opa
 
 ##### Lighthouse Speed Tool
 
-A member of Code Institute Anna Greaves has mentioned this handy tool in her "How to README.md" online webinar. After learning about it I tested my project in an advanced phase. This was the initial result: 
+A member of Code Institute Anna Greaves has mentioned this handy tool in her ["How to README.md"](https://www.youtube.com/watch?v=7BteidgLAyM&feature=youtu.be&ab_channel=CodeInstitute) online webinar. After learning about it I tested my project in an advanced phase. This was the initial result: 
 
 <img src="./assets/images/readme_img/lighthouse.jpg" />
 
@@ -257,41 +259,45 @@ GitHub documentation on cloning repository includes other methods to using the c
 
 ***Antonio Rodgrigez*** - My mentor at Code Institute - for general feedback and guidance, special guidance on Google Maps
 
-***Matt Rudge*** - Lecturer/Developer at Code Institute -  https://github.com/Code-Institute-Org/gitpod-full-template - for template used with GitPod IDE for developing this project, and lecture on Email JS
-
-***Anna Greaves*** - Developer at Code Institute - for the "How to README.md" webinar
-
-***Brad Traversy*** - https://codepen.io/bradtraversy - for full screen landing page
-
-***Simen Daehlin*** - https://github.com/Eventyret/simple-parallax - for the parallax idea
-
-***Mahesh Ambure*** - https://codepen.io/maheshambure21/pen/qZZrxy - for the testimonial slider
-
-***Ross Dallaire*** - https://codepen.io/rdallaire/pen/apoyx - for return-to-top arrow
-
-***Mezo Istvan*** - https://medium.com/@mezoistvan/finally-a-css-only-solution-to-hover-on-touchscreens-c498af39c31c - for solution to the touchscreen :hover state of return-to-top arrow
-
 ***Bence Kiss*** - My brother, helping to set up LightGallery
 
-***Paul Saxman*** - https://www.youtube.com/watch?v=iPq69CnYxMA&ab_channel=GoogleDevelopers - tutorial video on using SnazzyMaps
+***Matt Rudge*** - Lecturer/Developer at Code Institute - for the [template](https://github.com/Code-Institute-Org/gitpod-full-template) used with GitPod IDE for developing this project, and the lecture on Email JS
 
-***Ehsan*** on StackOwerflow - https://stackoverflow.com/questions/13506481/change-placeholder-text - for changing placeholder text after submitting form
+***Anna Greaves*** - Developer at Code Institute - for the ["How to README.md"](https://www.youtube.com/watch?v=7BteidgLAyM&feature=youtu.be&ab_channel=CodeInstitute) webinar
 
-***geocodezip*** on StackOwerflow - https://stackoverflow.com/questions/38992746/how-to-zoom-out-the-map-when-the-infowindow-is-closed-in-google-map/ - for zooming out the map when marker infowindow gets closed
+***Brad Traversy*** - for the [full screen landing page](https://codepen.io/bradtraversy)
 
-***Kyle*** on StackOwerflow - https://stackoverflow.com/questions/4919076/outline-effect-to-text - for adding outline effect to text in CSS
+***Simen Daehlin*** -  for the [parallax](https://github.com/Eventyret/simple-parallax)
 
-***Bootstrap*** - https://getbootstrap.com/docs/4.5/getting-started/introduction/ - for providing documentation on the framework
+***Mahesh Ambure*** - for the [testimonial slider](https://codepen.io/maheshambure21/pen/qZZrxy)
 
-***W3schools*** - https://www.w3schools.com/ - for various code segments, examples and explanations used throughout the project
+***Ross Dallaire*** - for [return-to-top arrow](https://codepen.io/rdallaire/pen/apoyx)
 
-***Font Awesome*** -  https://fontawesome.com/ - CDN for icons used in the project
+***Mezo Istvan*** - for [solution](https://medium.com/@mezoistvan/finally-a-css-only-solution-to-hover-on-touchscreens-c498af39c31c) to the touchscreen :hover state of return-to-top arrow
 
-***Google Fonts*** - https://fonts.google.com/ - CDN for fonts used in the project
+***Paul Saxman*** - tutorial video on [using SnazzyMaps](https://www.youtube.com/watch?v=iPq69CnYxMA&ab_channel=GoogleDevelopers)
 
-***Google Cloud Platform*** - https://cloud.google.com/ - For their Google Maps API
+***@Ehsan*** on StackOwerflow - for [changing placeholder text](https://stackoverflow.com/questions/13506481/change-placeholder-text) after submitting form
 
-***Animate.css*** -  https://animate.style/ - for animation on the landing page
+***@geocodezip*** on StackOwerflow - for the event listener on when [marker infowindow gets closed](https://stackoverflow.com/questions/38992746/how-to-zoom-out-the-map-when-the-infowindow-is-closed-in-google-map/)
+
+***@Kyle*** on StackOwerflow - for adding [text outline](https://stackoverflow.com/questions/4919076/outline-effect-to-text) effect in CSS
+
+***Bootstrap*** - for providing [documentation](https://getbootstrap.com/docs/4.5/getting-started/introduction/) on the framework
+
+***W3schools*** - for various code segments, examples and [explanations](https://www.w3schools.com/) used throughout the project
+
+***Font Awesome*** - CDN for [icons](https://fontawesome.com/) used in the project
+
+***Google Fonts*** - CDN for [fonts](https://fonts.google.com/) used in the project
+
+***Google Cloud Platform*** - For their [Google Maps API](https://cloud.google.com/)
+
+***Animate.css*** - for [animation](https://animate.style/) on the landing page
+
+***Wikipedia*** - [List](https://en.wikipedia.org/wiki/List_of_automotive_museums#Europe) of European Motoring Museums
+
+***Pexels*** - for [images](https://www.pexels.com/) used in the project
 
 ***Material Design for Bootstrap*** - https://mdbootstrap.com/ - for Modal Contact Form, Card layout and Footer
 
@@ -300,7 +306,3 @@ GitHub documentation on cloning repository includes other methods to using the c
 ***JQuery*** - https://jquery.com/
 
 ***Autoprefixer CSS online*** - https://autoprefixer.github.io/
-
-***Wikipedia*** - https://en.wikipedia.org/wiki/List_of_automotive_museums#Europe - List of European Motoring Museums
-
-***Pexels*** - https://www.pexels.com/ - for images found in the project
