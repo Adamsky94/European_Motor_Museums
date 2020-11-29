@@ -13,10 +13,38 @@ Code Institute Diploma in Full-Stack Web Development Milestone 2 Project
 The European Motoring Museums Organization /EMM in the following/ is a non-profit organization that is run by the European Museums Association. They have set up the EMM project with the intention of representing the member institution's general and seasonal exhibitions. The member museums are expected to have increased visitor numbers over time. To achieve this the EMM page was created as a showcase site, where future visitors can get information about the Museums and all other essential information for them to be able to visit. Part of the EMM project is organizing travel, booking tickets and accommodation if the individual contacts them through the form on the site. There are no prices, website referrals, phone numbers for any of the museums because EMM wants to be the one who's sharing the information directly to the individual after assessing the individual's needs.
 
 -----------------
+### <u>Contents</u>
+
+- [User Stories](#User Stories)
+
+- [Wireframing](#Wireframing)
+
+  - [Landing](#Landing)
+  - [Page layout](#Page Layout)
+  - [Contact Form](#Contact form)
+  - [Navigation](#Navigation)
+  - [Footer](#Footer)
+
+- [Technologies Used](#Technologies Used)
+
+- [Version Control](#Version Control)
+
+- [Testing write-up](#Testing write-up)
+
+  - [Bug fixes](#Bug Fixes)
+  - [Lighthouse Speed Tool](#Lighthouse Speed Tool)
+
+- [Deployment](#Deployment)
+
+- [Cloning this repository](#Cloning this repository)
+
+- [Credits](#Credits)
+
+-----------------
 
 ### <u>UX Design / Presentation</u>
 
-#### User stories
+#### User Stories
 
 ###### As a visitor to the EMM site I expect:
 
@@ -100,37 +128,37 @@ There is a light-grey background color applied to the whole site. It is mostly n
 - HTML5
 - CSS3
 - JavaScript
-- JQuery - https://jquery.com/
-- Email JS - https://www.emailjs.com/ - for making the contact form alive
 - Google Cloud Services - Google Maps API
 - Google Maps Marker Clusterer
 - Git Version Control 
 - GitHub - to host the repository and the live site
 - GitPod IDE - remote developer environment
 - Microsoft Visual Studio Code - local code editor
-- Bootstrap CDN -  https://getbootstrap.com/
-- FontAwesome CDN - https://fontawesome.com/ - for the icons used
-- Animate.css CDN - https://animate.style/ - for animating element on the landing page 
-- LightGallery - http://sachinchoolur.github.io/lightGallery/ - for viewing the museum card images
-- SnazzyMaps -  https://snazzymaps.com/ - for styling the map
 - Balsamiq Wireframes - used in the design process for wireframing
-- Typora - The README.md file was edited in Typora - https://typora.io/
+-  [Bootstrap](https://getbootstrap.com/) 
+- [JQuery](https://jquery.com/)
+- [Email JS](https://www.emailjs.com/) - for making the contact form alive
+- [FontAwesome](https://fontawesome.com/) - for the icons used
+- [Animate.css](https://animate.style/) - for animating element on the landing page 
+- [LightGallery](http://sachinchoolur.github.io/lightGallery/) - for viewing the museum card images
+- [SnazzyMaps](https://snazzymaps.com/) - for styling the map
+- [Typora](https://typora.io/) - The README.md file was edited in Typora
 
 ### Adding Email JS SDK
 
-Adding this functionality to a website was covered in the Interactive Frontend Development module of the course. Those few videos were a great help. Firstly you have to be registered to this service then you will be able to link it with an existing email address. The official EmailJS documentation is also crucial to understand what has to be done in order to get everything in working order. You can find the documentation here: https://www.emailjs.com/docs/introduction/how-does-emailjs-work/
+Adding this functionality to a website was covered in the Interactive Frontend Development module of the course. Those few videos were a great help. Firstly you have to be registered to this service then you will be able to link it with an existing email address. The official EmailJS documentation is also crucial to understand what has to be done in order to get everything in working order. You can find the documentation [here](https://www.emailjs.com/docs/introduction/how-does-emailjs-work/).
 
 ### Adding the Google Maps API
 
-Firstly you have to register for Google Cloud Services. It is easier if you already use Gmail for example. You can do that at the following link: https://cloud.google.com/
+Firstly you have to register for Google Cloud Services. It is easier if you already use Gmail for example. You can do that at the following [link](https://cloud.google.com/).
 
-Once you logged in you have to set up billing for your account. Only then you are able to create a project and be able to use an API or an SDK. Here is the part of the documentation that helps you going through these steps: https://developers.google.com/maps/gmp-get-started
+Once you logged in you have to set up billing for your account. Only then you are able to create a project and be able to use an API or an SDK. Here is the part of the documentation that helps you going through [these steps](https://developers.google.com/maps/gmp-get-started). 
 
-For Google Maps you need to get a personal API key. Here is the relevant part: https://developers.google.com/maps/documentation/javascript/get-api-key
+For Google Maps you need to get a personal API key. Here is [how to do that](https://developers.google.com/maps/documentation/javascript/get-api-key). 
 
-It's best practice to restrict the use of your API key in order to avoid unauthorized use and extra charges applied to your account. Google Cloud services actually sent me an email when I first pushed my HTML code to my repository on GitHub saying that it might accidentally have been published and the best thing would be to restrict access if it has not been done already. Here is the relevant section:https://developers.google.com/maps/api-key-best-practices?hl=en My API key is restricted. The Google Maps map in my project only functions if it's called from the Deployed Website on GitHub pages, GitPod, or LiveServer from VS Code when I use it locally. 
+It's best practice to restrict the use of your API key in order to avoid unauthorized use and extra charges applied to your account. Google Cloud services actually sent me an email when I first pushed my HTML code to my repository on GitHub saying that it might accidentally have been published and the best thing would be to restrict access if it has not been done already. Here is [how to do that](https://developers.google.com/maps/api-key-best-practices?hl=en). My API key is restricted. The Google Maps map in my project only functions if it's called from the Deployed Website on GitHub pages, GitPod, or LiveServer from VS Code when I use it locally. 
 
-You can find information on how to place markers and use the marker clusterer on a map in the Google Maps JavaScript API Documentation here: https://developers.google.com/maps/documentation/javascript/overview#maps_map_simple-javascript
+You can find information on how to place markers and use the marker clusterer on a map in the Google Maps JavaScript API Documentation [here](https://developers.google.com/maps/documentation/javascript/overview#maps_map_simple-javascript).
 
 -----------------
 
@@ -138,7 +166,7 @@ You can find information on how to place markers and use the marker clusterer on
 
 I used Git for version control and uploading the project to GitHub.
 
-My GitHub repository for this project:  https://github.com/Adamsky94/European_Motoring_Museums
+My GitHub repository for this project: https://github.com/Adamsky94/European_Motoring_Museums
 
 ### Testing write-up
 
@@ -154,13 +182,13 @@ Responsivity for mobile devices tested on:
 - Opera Browser
 - Mozilla Firefox on Galaxy S9 setting
 
-Used online autoprefixer for maximum browser compatibility - https://autoprefixer.github.io/
+Used online [autoprefixer](https://autoprefixer.github.io/) for maximum browser compatibility 
 
-Used online code formatter to achieve optimal syntax - https://webformatter.com/
+Used online [code formatter](https://webformatter.com/) to achieve optimal syntax 
 
-Used online image compressor for achieving the fastest image loading times from the server - https://imagecompressor.com/ and https://tinypng.com/
+Used online [image compressor](https://imagecompressor.com/) and [TinyPNG](https://tinypng.com/) for achieving the fastest image loading times from the server 
 
-Used online image editor when I had to change the opacity on an image: https://www.lunapic.com
+Used online [image editor](https://www.lunapic.com) when I had to change the opacity on an image 
 
 <img src="./assets/images/readme_img/resp2.png" />
 
@@ -197,7 +225,7 @@ There are loads of other things this tool inspects for you and has capabilities 
 
 <img src="./assets/images/readme_img/multimuckup.png" />
 
-GitHub documentation for deploying project to GitHub Pages: https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
+GitHub documentation for [deploying](https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site) a project to GitHub Pages.
 
 ### Cloning this repository
 
@@ -221,7 +249,7 @@ If you'd like to see and work on my code locally feel free to clone the reposito
 
 7. Press **Enter** to create your local clone.
 
-GitHub documentation on cloning repository includes other methods to using the console. You can read more here: https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository
+GitHub documentation on cloning repository includes other methods to using the console. You can read more [here](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository).
 
 -----------------
 
