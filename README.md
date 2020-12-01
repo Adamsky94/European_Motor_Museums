@@ -110,8 +110,6 @@ The European Motoring Museums Organization /EMM in the following/ is a non-profi
 
 > Information about the EMM would be displayed here like head office location and phone on one side. On the other side, there would be a navigation menu. The bottom of the footer would hold the copyright information.
 
-
-
 **Color scheme and typography**
 
 I have used the Mark Script and Source Sans Pro fonts from Google Fonts CDN. I have chosen the Mark Script because it's handwriting calligraphy style for the title. Every other visible text is using Source Sans Pro.
@@ -176,6 +174,8 @@ HTML code validated on - https://validator.w3.org/
 
 CSS code validated on - https://jigsaw.w3.org/css-validator/
 
+**User Story Testing**
+
 Responsivity for mobile devices tested on:
 
 - [Responsinator](http://www.responsinator.com/) and [Multi Device Mockup Generator](https://techsini.com/multi-mockup/) 
@@ -183,6 +183,8 @@ Responsivity for mobile devices tested on:
 - Mozilla Firefox on Galaxy S9 setting
 - Opera Browser
 - Microsoft Edge
+
+<img src="./assets/images/readme_img/resp2.png" />
 
 Used online [Autoprefixer](https://autoprefixer.github.io/) for maximum browser compatibility 
 
@@ -192,7 +194,13 @@ Used online [Image compressor](https://imagecompressor.com/) and [TinyPNG](https
 
 Used [Lunapic](https://www.lunapic.com) online image editor when I had to change the opacity on an image 
 
-<img src="./assets/images/readme_img/resp2.png" />
+- Manually clicking all links through the site, the map, and the README file to ensure they perform the expected action. Clicking a marker on the map writes to the console that the action was executed.
+
+<img src="./assets/images/readme_img/clickingmarkers.jpg" />
+
+- Upon sending a message through the contact form, the site visitor will receive an automated email response to the email address they have provided previously in the form. I Tested this functionality with 2 of my email accounts. The left is linked with Email JS and the project itself is the receiver of the form. The right is the email provided while filling the form. This has got the automated message after clicking send.
+
+<img src="./assets/images/readme_img/testemail.jpg" />
 
 ##### Bug Fixes
 
