@@ -238,7 +238,6 @@ a:hover {
 
 /* Marker infowindow image size */
 .imagesize {
-    max-width: 150px;
     max-height: 120px;
 }
 
