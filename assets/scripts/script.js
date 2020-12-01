@@ -2,15 +2,10 @@ $(document).ready(function () {
     console.log("ready!");
 });
 
-/*Function for loading HTML code under the map*/
-function load_museum_detail(marker) {
-    console.log("You have successfully clicked on the marker of", marker.title);
-    document.getElementById("museum_title").innerHTML = marker.title;
-    document.getElementById("museum_detail").classList.remove("hide");
-}
+var map;
 
-function initMap() {
-    /*coordinates for the markers*/
+function create_map_markers() {
+    //Locations
     const Varna = { lat: 43.21733945, lng: 27.898463459304434 };
     const Budapest = { lat: 47.514134350000006, lng: 19.091634960797748 };
     const MladaBoleslav = { lat: 50.41854105, lng: 14.913829178797954 };
@@ -52,6 +47,334 @@ function initMap() {
     const Cologne = { lat: 50.980793, lng: 6.898708 };
     const StuttgartP = { lat: 48.834187, lng: 9.152548 };
     const Malaga = { lat: 36.699287, lng: -4.43891 };
+    //Markers
+    const marker1 = new google.maps.Marker({
+        position: Varna,
+        map,
+        title: "Retro-Museum, Varna, Bulgaria",
+        content: "<h5>Retro-Museum</h5>" + "<img class='imagesize' src='./assets/images/jpg/east/varna.jpg'></img>",
+    });
+
+    const marker2 = new google.maps.Marker({
+        position: Budapest,
+        map,
+        title: "Museum of Transport, Budapest, Hungary",
+        content: "<h5>Museum of Transport</h5>" + "<img class='imagesize' src='./assets/images/jpg/east/budapestmuseum.jpg'></img>",
+    });
+
+    const marker3 = new google.maps.Marker({
+        position: MladaBoleslav,
+        map,
+        title: "Škoda Auto Museum, Mladá Boleslav, Czechia",
+        content: "<h5>Škoda Auto Museum</h5>" + "<img class='imagesize' src='./assets/images/jpg/east/mladaboleslav.jpg'></img>",
+    });
+
+    const marker4 = new google.maps.Marker({
+        position: Koprivnice,
+        map,
+        title: "Tatra Muzeum, Kopřivnice, Czechia",
+        content: "<h5>Tatra Muzeum</h5>" + "<img class='imagesize' src='./assets/images/jpg/east/tatra.jpg'></img>",
+    });
+
+    const marker5 = new google.maps.Marker({
+        position: Sleza,
+        map,
+        title: "Topacz Museum, Ślęza, Poland",
+        content: "<h5>Topacz Museum</h5>" + "<img class='imagesize' src='./assets/images/jpg/east/sleza.jpg'></img>",
+    });
+
+    const marker6 = new google.maps.Marker({
+        position: Tolyatti,
+        map,
+        title: "AutoVAZ Museum, Tolyatti, Russia",
+        content: "<h5>AutoVAZ Museum</h5>" + "<img class='imagesize' src='./assets/images/jpg/east/tolyatti.jpg'></img>",
+    });
+
+    const marker7 = new google.maps.Marker({
+        position: Otopeni,
+        map,
+        title: "Tiriac Collection, Otopeni, Romania",
+        content: "<h5>Tiriac Collection</h5>" + "<img class='imagesize' src='./assets/images/jpg/east/tiriac.jpg'></img>",
+    });
+
+    const marker9 = new google.maps.Marker({
+        position: Gjern,
+        map,
+        title: "Jysk Automuseum, Gjern, Denmark",
+        content: "<h5>Jysk Automuseum</h5>" + "<img class='imagesize' src='./assets/images/jpg/north/jutland.jpg'></img>",
+    });
+
+    const marker10 = new google.maps.Marker({
+        position: Loomse,
+        map,
+        title: "Automuuseum, Loomse, Estonia",
+        content: "<h5>Automuuseum</h5>" + "<img class='imagesize' src='./assets/images/jpg/north/estoniamuseum.jpg'></img>",
+    });
+
+    const marker11 = new google.maps.Marker({
+        position: Riga,
+        map,
+        title: "Riga Motor Museum, Riga, Latvia",
+        content: "<h5>Riga Motor Museum</h5>" + "<img class='imagesize' src='./assets/images/jpg/north/riga.jpg'></img>",
+    });
+
+    const marker12 = new google.maps.Marker({
+        position: Kangasala,
+        map,
+        title: "Mobilia, Kangasala, Finland",
+        content: "<h5>Mobilia</h5>" + "<img class='imagesize' src='./assets/images/jpg/north/mobilia.jpg'></img>",
+    });
+
+    const marker13 = new google.maps.Marker({
+        position: Trollhattan,
+        map,
+        title: "Saab Museum, Trollhättan, Sweden",
+        content: "<h5>Saab Museum</h5>" + "<img class='imagesize' src='./assets/images/jpg/north/saabmuseum.jpg'></img>",
+    });
+
+    const marker14 = new google.maps.Marker({
+        position: Gothenburg,
+        map,
+        title: "Volvo Museum, Gothenburg, Sweden",
+        content: "<h5>Volvo Museum</h5>" + "<img class='imagesize' src='./assets/images/jpg/north/volvomuseum.jpg'></img>",
+    });
+
+    const marker15 = new google.maps.Marker({
+        position: Limassol,
+        map,
+        title: "Cyprus Motor Museum, Limassol, Cyprus",
+        content: "<h5>Cyprus Motor Museum</h5>" + "<img class='imagesize' src='./assets/images/jpg/south/cyprus.jpg'></img>",
+    });
+
+    const marker16 = new google.maps.Marker({
+        position: Athens,
+        map,
+        title: "Hellenic Motor Museum, Athens, Greece",
+        content: "<h5>Hellenic Motor Museum</h5>" + "<img class='imagesize' src='./assets/images/jpg/south/HellenicMuseum.jpg'></img>",
+    });
+
+    const marker17 = new google.maps.Marker({
+        position: Maranello,
+        map,
+        title: "Museo Ferrari, Maranello, Italy",
+        content: "<h5>Museo Ferrari</h5>" + "<img class='imagesize' src='./assets/images/jpg/south/Museo_Ferrari.jpg'></img>",
+    });
+
+    const marker18 = new google.maps.Marker({
+        position: Modena,
+        map,
+        title: "Museo Lamborghini, Modena, Italy",
+        content: "<h5>Museo Lamborghini</h5>" + "<img class='imagesize' src='./assets/images/jpg/south/lamborghini.jpg'></img>",
+    });
+
+    const marker19 = new google.maps.Marker({
+        position: Brescia,
+        map,
+        title: "Museo Mille Miglia, Brescia,Italy",
+        content: "<h5>Museo Mille Miglia</h5>" + "<img class='imagesize' src='./assets/images/jpg/south/millemiglia.jpg'></img>",
+    });
+
+    const marker20 = new google.maps.Marker({
+        position: Turin,
+        map,
+        title: "National Automuseum, Turin, Italy",
+        content: "<h5>National Automuseum</h5>" + "<img class='imagesize' src='./assets/images/jpg/south/NationalItaly.jpg'></img>",
+    });
+
+    const marker21 = new google.maps.Marker({
+        position: Catania,
+        map,
+        title: "Modern Galery of Arts and Motors, Catania, Sicily",
+        content: "<h5>MOGAM</h5>" + "<img class='imagesize' src='./assets/images/jpg/south/mogam.jpg'></img>",
+    });
+
+    const marker22 = new google.maps.Marker({
+        position: Istanbul,
+        map,
+        title: "Ural Ataman Classic Car Museum, Istanbul, Turkey",
+        content: "<h5>Ural Ataman Museum</h5>" + "<img class='imagesize' src='./assets/images/jpg/south/uralataman.jpg'></img>",
+    });
+
+    const marker23 = new google.maps.Marker({
+        position: Encamp,
+        map,
+        title: "National Automobile Museum, Encamp, Andorra",
+        content: "<h5>National Automobile Museum</h5>" + "<img class='imagesize' src='./assets/images/jpg/west/andorra.jpg'></img>",
+    });
+
+    const marker24 = new google.maps.Marker({
+        position: Aspang,
+        map,
+        title: "Automobilmuseum, Aspang, Austria",
+        content: "<h5>Automobilmuseum</h5>" + "<img class='imagesize' src='./assets/images/jpg/west/aspang.jpg'></img>",
+    });
+
+    const marker25 = new google.maps.Marker({
+        position: Brussels,
+        map,
+        title: "Autoworld, Brussels, Belgium",
+        content: "<h5>Autoworld</h5>" + "<img class='imagesize' src='./assets/images/jpg/west/autoworld.jpg'></img>",
+    });
+
+    const marker26 = new google.maps.Marker({
+        position: Warwickshire,
+        map,
+        title: "British Motor Museum, Warwickshire, England",
+        content: "<h5>British Motor Museum</h5>" + "<img class='imagesize' src='./assets/images/jpg/west/british.jpg'></img>",
+    });
+
+    const marker27 = new google.maps.Marker({
+        position: Sparkford,
+        map,
+        title: "Haynes International Motor Museum, Sparkford, England",
+        content: "<h5>Haynes Motor Museum</h5>" + "<img class='imagesize' src='./assets/images/jpg/west/haynes.jpg'></img>",
+    });
+
+    const marker28 = new google.maps.Marker({
+        position: Weybridge,
+        map,
+        title: "Mercedes-Benz World, Weybridge, England",
+        content: "<h5>Mercedes-Benz World</h5>" + "<img class='imagesize' src='./assets/images/jpg/west/mbworld.jpg'></img>",
+    });
+
+    const marker29 = new google.maps.Marker({
+        position: Mulhouse,
+        map,
+        title: "Cité de l'Automobile, Mulhouse, France",
+        content: "<h5>Cité de l'Automobile</h5>" + "<img class='imagesize' src='./assets/images/jpg/west/citeeauto.jpg'></img>",
+    });
+
+    const marker30 = new google.maps.Marker({
+        position: Paris,
+        map,
+        title: "Citroën Heritage, Paris, France",
+        content: "<h5>Citroën Heritage</h5>" + "<img class='imagesize' src='./assets/images/jpg/west/citroen.jpg'></img>",
+    });
+
+    const marker31 = new google.maps.Marker({
+        position: LeMans,
+        map,
+        title: "Musée des 24 Heures du Mans, Le Mans, France",
+        content: "<h5>LeMans 24 Hours Museum</h5>" + "<img class='imagesize' src='./assets/images/jpg/west/lemans.jpg'></img>",
+    });
+
+    const marker32 = new google.maps.Marker({
+        position: Sochaux,
+        map,
+        title: "Musée de l'Aventure Peugeot, Sochaux, France",
+        content: "<h5>Peugeot Museum</h5>" + "<img class='imagesize' src='./assets/images/jpg/west/peugeot.jpg'></img>",
+    });
+
+    const marker33 = new google.maps.Marker({
+        position: Reims,
+        map,
+        title: "Musée Automobile, Reims, France",
+        content: "<h5>Musée Automobile</h5>" + "<img class='imagesize' src='./assets/images/jpg/west/reims.jpg'></img>",
+    });
+
+    const marker34 = new google.maps.Marker({
+        position: Monaco,
+        map,
+        title: "Monaco Top Cars Collection, Monaco",
+        content: "<h5>Top Cars Collection</h5>" + "<img class='imagesize' src='./assets/images/jpg/west/monaco.jpg'></img>",
+    });
+
+    const marker35 = new google.maps.Marker({
+        position: Zwickau,
+        map,
+        title: "August Horch Museum, Zwickau, Germany",
+        content: "<h5>August Horch Museum</h5>" + "<img class='imagesize' src='./assets/images/jpg/west/August-Horch.jpg'></img>",
+    });
+
+    const marker36 = new google.maps.Marker({
+        position: Wolfsburg,
+        map,
+        title: "Autostadt, Wolfsburg, Germany",
+        content: "<h5>Autostadt</h5>" + "<img class='imagesize' src='./assets/images/jpg/west/autostadt.jpg'></img>",
+    });
+
+    const marker37 = new google.maps.Marker({
+        position: Munchen,
+        map,
+        title: "BMW Museum, München, Germany",
+        content: "<h5>BMW Museum</h5>" + "<img class='imagesize' src='./assets/images/jpg/west/bmw.jpg'></img>",
+    });
+
+    const marker38 = new google.maps.Marker({
+        position: StuttgartMB,
+        map,
+        title: "Mercedes-Benz Museum, Stuttgart, Germany",
+        content: "<h5>Mercedes-Benz Museum</h5>" + "<img class='imagesize' src='./assets/images/jpg/west/mbenz.jpg'></img>",
+    });
+
+    const marker39 = new google.maps.Marker({
+        position: Cologne,
+        map,
+        title: "Motorworld, Cologne, Germany",
+        content: "<h5>Motorworld</h5>" + "<img class='imagesize' src='./assets/images/jpg/west/motorworldkoln.jpg'></img>",
+    });
+
+    const marker40 = new google.maps.Marker({
+        position: StuttgartP,
+        map,
+        title: "Porsche Museum, Stuttgart, Germany",
+        content: "<h5>Porsche Museum</h5>" + "<img class='imagesize' src='./assets/images/jpg/west/Porsche.jpg'></img>",
+    });
+
+    const marker41 = new google.maps.Marker({
+        position: Malaga,
+        map,
+        title: "Museo Automovilístico de Málaga, Spain",
+        content: "<h5>Malagan Automobile Museum</h5>" + "<img class='imagesize' src='./assets/images/jpg/west/malaga.jpg'></img>",
+    });
+
+    const markers = [
+        marker1,
+        marker2,
+        marker3,
+        marker4,
+        marker5,
+        marker6,
+        marker7,
+        marker9,
+        marker10,
+        marker11,
+        marker12,
+        marker13,
+        marker14,
+        marker15,
+        marker16,
+        marker17,
+        marker18,
+        marker19,
+        marker20,
+        marker21,
+        marker22,
+        marker23,
+        marker24,
+        marker25,
+        marker26,
+        marker27,
+        marker28,
+        marker29,
+        marker30,
+        marker31,
+        marker32,
+        marker33,
+        marker34,
+        marker35,
+        marker36,
+        marker37,
+        marker38,
+        marker39,
+        marker40,
+        marker41,
+    ];
+    return markers;
+}
+
+function initMap() {
+    const markers = create_map_markers();
 
     /*Function that draws the map from Google Maps Documentation*/
     const map = new google.maps.Map(document.getElementById("map"), {
@@ -407,332 +730,6 @@ function initMap() {
             },
         ],
     });
-    /*Code that places the markers on the map*/
-
-    const marker1 = new google.maps.Marker({
-        position: Varna,
-        map,
-        title: "Retro-Museum, Varna, Bulgaria",
-        content: "<h5>Retro-Museum</h5>" + "<img class='imagesize' src='./assets/images/jpg/east/varna.jpg'></img>",
-    });
-
-    const marker2 = new google.maps.Marker({
-        position: Budapest,
-        map,
-        title: "Museum of Transport, Budapest, Hungary",
-        content: "<h5>Museum of Transport</h5>" + "<img class='imagesize' src='./assets/images/jpg/east/budapestmuseum.jpg'></img>",
-    });
-
-    const marker3 = new google.maps.Marker({
-        position: MladaBoleslav,
-        map,
-        title: "Škoda Auto Museum, Mladá Boleslav, Czechia",
-        content: "<h5>Škoda Auto Museum</h5>" + "<img class='imagesize' src='./assets/images/jpg/east/mladaboleslav.jpg'></img>",
-    });
-
-    const marker4 = new google.maps.Marker({
-        position: Koprivnice,
-        map,
-        title: "Tatra Muzeum, Kopřivnice, Czechia",
-        content: "<h5>Tatra Muzeum</h5>" + "<img class='imagesize' src='./assets/images/jpg/east/tatra.jpg'></img>",
-    });
-
-    const marker5 = new google.maps.Marker({
-        position: Sleza,
-        map,
-        title: "Topacz Museum, Ślęza, Poland",
-        content: "<h5>Topacz Museum</h5>" + "<img class='imagesize' src='./assets/images/jpg/east/sleza.jpg'></img>",
-    });
-
-    const marker6 = new google.maps.Marker({
-        position: Tolyatti,
-        map,
-        title: "AutoVAZ Museum, Tolyatti, Russia",
-        content: "<h5>AutoVAZ Museum</h5>" + "<img class='imagesize' src='./assets/images/jpg/east/tolyatti.jpg'></img>",
-    });
-
-    const marker7 = new google.maps.Marker({
-        position: Otopeni,
-        map,
-        title: "Tiriac Collection, Otopeni, Romania",
-        content: "<h5>Tiriac Collection</h5>" + "<img class='imagesize' src='./assets/images/jpg/east/tiriac.jpg'></img>",
-    });
-
-    const marker9 = new google.maps.Marker({
-        position: Gjern,
-        map,
-        title: "Jysk Automuseum, Gjern, Denmark",
-        content: "<h5>Jysk Automuseum</h5>" + "<img class='imagesize' src='./assets/images/jpg/north/jutland.jpg'></img>",
-    });
-
-    const marker10 = new google.maps.Marker({
-        position: Loomse,
-        map,
-        title: "Automuuseum, Loomse, Estonia",
-        content: "<h5>Automuuseum</h5>" + "<img class='imagesize' src='./assets/images/jpg/north/estoniamuseum.jpg'></img>",
-    });
-
-    const marker11 = new google.maps.Marker({
-        position: Riga,
-        map,
-        title: "Riga Motor Museum, Riga, Latvia",
-        content: "<h5>Riga Motor Museum</h5>" + "<img class='imagesize' src='./assets/images/jpg/north/riga.jpg'></img>",
-    });
-
-    const marker12 = new google.maps.Marker({
-        position: Kangasala,
-        map,
-        title: "Mobilia, Kangasala, Finland",
-        content: "<h5>Mobilia</h5>" + "<img class='imagesize' src='./assets/images/jpg/north/mobilia.jpg'></img>",
-    });
-
-    const marker13 = new google.maps.Marker({
-        position: Trollhattan,
-        map,
-        title: "Saab Museum, Trollhättan, Sweden",
-        content: "<h5>Saab Museum</h5>" + "<img class='imagesize' src='./assets/images/jpg/north/saabmuseum.jpg'></img>",
-    });
-
-    const marker14 = new google.maps.Marker({
-        position: Gothenburg,
-        map,
-        title: "Volvo Museum, Gothenburg, Sweden",
-        content: "<h5>Volvo Museum</h5>" + "<img class='imagesize' src='./assets/images/jpg/north/volvomuseum.jpg'></img>",
-    });
-
-    const marker15 = new google.maps.Marker({
-        position: Limassol,
-        map,
-        title: "Cyprus Motor Museum, Limassol, Cyprus",
-        content: "<h5>Cyprus Motor Museum</h5>" + "<img class='imagesize' src='./assets/images/jpg/south/cyprus.jpg'></img>",
-    });
-
-    const marker16 = new google.maps.Marker({
-        position: Athens,
-        map,
-        title: "Hellenic Motor Museum, Athens, Greece",
-        content: "<h5>Hellenic Motor Museum</h5>" + "<img class='imagesize' src='./assets/images/jpg/south/HellenicMuseum.jpg'></img>",
-    });
-
-    const marker17 = new google.maps.Marker({
-        position: Maranello,
-        map,
-        title: "Museo Ferrari, Maranello, Italy",
-        content: "<h5>Museo Ferrari</h5>" + "<img class='imagesize' src='./assets/images/jpg/south/Museo_Ferrari.jpg'></img>",
-    });
-
-    const marker18 = new google.maps.Marker({
-        position: Modena,
-        map,
-        title: "Museo Lamborghini, Modena, Italy",
-        content: "<h5>Museo Lamborghini</h5>" + "<img class='imagesize' src='./assets/images/jpg/south/lamborghini.jpg'></img>",
-    });
-
-    const marker19 = new google.maps.Marker({
-        position: Brescia,
-        map,
-        title: "Museo Mille Miglia, Brescia,Italy",
-        content: "<h5>Museo Mille Miglia</h5>" + "<img class='imagesize' src='./assets/images/jpg/south/millemiglia.jpg'></img>",
-    });
-
-    const marker20 = new google.maps.Marker({
-        position: Turin,
-        map,
-        title: "National Automuseum, Turin, Italy",
-        content: "<h5>National Automuseum</h5>" + "<img class='imagesize' src='./assets/images/jpg/south/NationalItaly.jpg'></img>",
-    });
-
-    const marker21 = new google.maps.Marker({
-        position: Catania,
-        map,
-        title: "Modern Galery of Arts and Motors, Catania, Sicily",
-        content: "<h5>MOGAM</h5>" + "<img class='imagesize' src='./assets/images/jpg/south/mogam.jpg'></img>",
-    });
-
-    const marker22 = new google.maps.Marker({
-        position: Istanbul,
-        map,
-        title: "Ural Ataman Classic Car Museum, Istanbul, Turkey",
-        content: "<h5>Ural Ataman Museum</h5>" + "<img class='imagesize' src='./assets/images/jpg/south/uralataman.jpg'></img>",
-    });
-
-    const marker23 = new google.maps.Marker({
-        position: Encamp,
-        map,
-        title: "National Automobile Museum, Encamp, Andorra",
-        content: "<h5>National Automobile Museum</h5>" + "<img class='imagesize' src='./assets/images/jpg/west/andorra.jpg'></img>",
-    });
-
-    const marker24 = new google.maps.Marker({
-        position: Aspang,
-        map,
-        title: "Automobilmuseum, Aspang, Austria",
-        content: "<h5>Automobilmuseum</h5>" + "<img class='imagesize' src='./assets/images/jpg/west/aspang.jpg'></img>",
-    });
-
-    const marker25 = new google.maps.Marker({
-        position: Brussels,
-        map,
-        title: "Autoworld, Brussels, Belgium",
-        content: "<h5>Autoworld</h5>" + "<img class='imagesize' src='./assets/images/jpg/west/autoworld.jpg'></img>",
-    });
-
-    const marker26 = new google.maps.Marker({
-        position: Warwickshire,
-        map,
-        title: "British Motor Museum, Warwickshire, England",
-        content: "<h5>British Motor Museum</h5>" + "<img class='imagesize' src='./assets/images/jpg/west/british.jpg'></img>",
-    });
-
-    const marker27 = new google.maps.Marker({
-        position: Sparkford,
-        map,
-        title: "Haynes International Motor Museum, Sparkford, England",
-        content: "<h5>Haynes Motor Museum</h5>" + "<img class='imagesize' src='./assets/images/jpg/west/haynes.jpg'></img>",
-    });
-
-    const marker28 = new google.maps.Marker({
-        position: Weybridge,
-        map,
-        title: "Mercedes-Benz World, Weybridge, England",
-        content: "<h5>Mercedes-Benz World</h5>" + "<img class='imagesize' src='./assets/images/jpg/west/mbworld.jpg'></img>",
-    });
-
-    const marker29 = new google.maps.Marker({
-        position: Mulhouse,
-        map,
-        title: "Cité de l'Automobile, Mulhouse, France",
-        content: "<h5>Cité de l'Automobile</h5>" + "<img class='imagesize' src='./assets/images/jpg/west/citeeauto.jpg'></img>",
-    });
-
-    const marker30 = new google.maps.Marker({
-        position: Paris,
-        map,
-        title: "Citroën Heritage, Paris, France",
-        content: "<h5>Citroën Heritage</h5>" + "<img class='imagesize' src='./assets/images/jpg/west/citroen.jpg'></img>",
-    });
-
-    const marker31 = new google.maps.Marker({
-        position: LeMans,
-        map,
-        title: "Musée des 24 Heures du Mans, Le Mans, France",
-        content: "<h5>LeMans 24 Hours Museum</h5>" + "<img class='imagesize' src='./assets/images/jpg/west/lemans.jpg'></img>",
-    });
-
-    const marker32 = new google.maps.Marker({
-        position: Sochaux,
-        map,
-        title: "Musée de l'Aventure Peugeot, Sochaux, France",
-        content: "<h5>Peugeot Museum</h5>" + "<img class='imagesize' src='./assets/images/jpg/west/peugeot.jpg'></img>",
-    });
-
-    const marker33 = new google.maps.Marker({
-        position: Reims,
-        map,
-        title: "Musée Automobile, Reims, France",
-        content: "<h5>Musée Automobile</h5>" + "<img class='imagesize' src='./assets/images/jpg/west/reims.jpg'></img>",
-    });
-
-    const marker34 = new google.maps.Marker({
-        position: Monaco,
-        map,
-        title: "Monaco Top Cars Collection, Monaco",
-        content: "<h5>Top Cars Collection</h5>" + "<img class='imagesize' src='./assets/images/jpg/west/monaco.jpg'></img>",
-    });
-
-    const marker35 = new google.maps.Marker({
-        position: Zwickau,
-        map,
-        title: "August Horch Museum, Zwickau, Germany",
-        content: "<h5>August Horch Museum</h5>" + "<img class='imagesize' src='./assets/images/jpg/west/August-Horch.jpg'></img>",
-    });
-
-    const marker36 = new google.maps.Marker({
-        position: Wolfsburg,
-        map,
-        title: "Autostadt, Wolfsburg, Germany",
-        content: "<h5>Autostadt</h5>" + "<img class='imagesize' src='./assets/images/jpg/west/autostadt.jpg'></img>",
-    });
-
-    const marker37 = new google.maps.Marker({
-        position: Munchen,
-        map,
-        title: "BMW Museum, München, Germany",
-        content: "<h5>BMW Museum</h5>" + "<img class='imagesize' src='./assets/images/jpg/west/bmw.jpg'></img>",
-    });
-
-    const marker38 = new google.maps.Marker({
-        position: StuttgartMB,
-        map,
-        title: "Mercedes-Benz Museum, Stuttgart, Germany",
-        content: "<h5>Mercedes-Benz Museum</h5>" + "<img class='imagesize' src='./assets/images/jpg/west/mbenz.jpg'></img>",
-    });
-
-    const marker39 = new google.maps.Marker({
-        position: Cologne,
-        map,
-        title: "Motorworld, Cologne, Germany",
-        content: "<h5>Motorworld</h5>" + "<img class='imagesize' src='./assets/images/jpg/west/motorworldkoln.jpg'></img>",
-    });
-
-    const marker40 = new google.maps.Marker({
-        position: StuttgartP,
-        map,
-        title: "Porsche Museum, Stuttgart, Germany",
-        content: "<h5>Porsche Museum</h5>" + "<img class='imagesize' src='./assets/images/jpg/west/Porsche.jpg'></img>",
-    });
-
-    const marker41 = new google.maps.Marker({
-        position: Malaga,
-        map,
-        title: "Museo Automovilístico de Málaga, Spain",
-        content: "<h5>Malagan Automobile Museum</h5>" + "<img class='imagesize' src='./assets/images/jpg/west/malaga.jpg'></img>",
-    });
-
-    /*Setting up the marker clusters from Google Maps documentation https://cloud.google.com/blog/products/maps-platform/how-cluster-map-markers*/
-
-    const markers = [
-        marker1,
-        marker2,
-        marker3,
-        marker4,
-        marker5,
-        marker6,
-        marker7,
-        marker9,
-        marker10,
-        marker11,
-        marker12,
-        marker13,
-        marker14,
-        marker15,
-        marker16,
-        marker17,
-        marker18,
-        marker19,
-        marker20,
-        marker21,
-        marker22,
-        marker23,
-        marker24,
-        marker25,
-        marker26,
-        marker27,
-        marker28,
-        marker29,
-        marker30,
-        marker31,
-        marker32,
-        marker33,
-        marker34,
-        marker35,
-        marker36,
-        marker37,
-        marker38,
-        marker39,
-        marker40,
-        marker41,
-    ];
 
     /*Function to add and map markers*/
     function addMarker(marker) {
@@ -753,7 +750,7 @@ function initMap() {
 
         /*Event listener for zooming out on map when closing an infowindow*/
         /* Inspiration for the code from https://stackoverflow.com/questions/38992746/how-to-zoom-out-the-map-when-the-infowindow-is-closed-in-google-map*/
-        google.maps.event.addListener(infoWindow, 'closeclick', function() {
+        google.maps.event.addListener(infoWindow, "closeclick", function () {
             map.panTo({ lat: 52.314985, lng: 13.288772 });
             map.setZoom(4);
         });
@@ -770,7 +767,14 @@ function initMap() {
         addMarker(markers[i]);
     }
 
-    console.log("Map loaded sucessfully");
+    console.log("Map loaded!");
+}
+
+/*Function for loading HTML code under the map*/
+function load_museum_detail(marker) {
+    console.log("You have successfully clicked on the marker of", marker.title);
+    document.getElementById("museum_title").innerHTML = marker.title;
+    document.getElementById("museum_detail").classList.remove("hide");
 }
 
 /* Scroll to top button code from @rdallaire on CodePen https://codepen.io/rdallaire/pen/apoyx */
