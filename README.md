@@ -121,6 +121,11 @@ Whenever there is a background image I used faded images so it would not conflic
 I gave the pages a black frame on the top and bottom with the navbar and the footer. 
 There is a light-grey background color applied to the whole site. It is mostly not visible but it was important because of the second half of the page. As I was thinking of creating a contrast to the imagery so the imported Google Maps map element have been styled to be monochrome.
 
+
+**Design update after the mentoring sessions**
+
+"After consulting with my mentor, Antonio suggested that I should defer from the original idea of having information hidden on the site, eg. having to click on a section to reveal buttons, then clicking on the buttons to reveal cards, then clicking on the cards flipping them to call a map on the back of each for the appropriate location. He suggested that data should be presented straight forward so I toned down on toggling visibility of sections on the site. I also scrapped the "having individual maps" idea in favor of a designated map section under the regional sections with all the museums marked on it. I used event listeners on the markers and on the infowindows for interactivity. I added a picture for each infowindow for the represented museum so the website's visitor would not just see the name of the place, but would also be visually reassured that they are clicking on the museum location they found interesting above on the site."
+
 -----------------
 
 ### Technologies Used
@@ -204,10 +209,11 @@ Used [Lunapic](https://www.lunapic.com) online image editor when I had to change
 
 ##### Bug Fixes
 
-- There's an animation on the museum card's body on hover. The contact form was also getting this animation because it is a card on modal. FIX: Created modal card hover CSS class and disabled animation
-- Positioning issue of the button on the landing page when the website is viewed in landscape mode on mobile devices. FIX: Text on the landing page is hidden on small screen devices.
-- Return-to-top button "stuck open", not losing focus on mobile devices after performing the action of returning to the top of the page. FIX: Disabled animation on mobile devices with CSS.
-- Google Maps map marker clusterer loading issues. FIX: Re-organized scripts in HTML file.
+- There's an animation on the museum card's body on hover. The contact form was also getting this animation because it is a card on modal. *FIX*: Created modal card hover CSS class and disabled animation
+- Positioning issue of the button on the landing page when the website is viewed in landscape mode on mobile devices. *FIX*: Text on the landing page is hidden on small screen devices.
+- Site refreshing on pressing send button on the contact form leaving the user with no information wether the email was sent or not. *FIX*: Added an event listener on submitting the form to prevent default action wich is realoading the page.
+- Return-to-top button "stuck open", not losing focus on mobile devices after performing the action of returning to the top of the page. *FIX*: Disabled button animation with CSS on mobile devices.
+- Google Maps map marker clusterer loading issues. *FIX*: Re-organized scripts in HTML file.
 
 ##### Lighthouse Speed Tool
 
@@ -265,7 +271,7 @@ GitHub documentation on cloning repository includes other methods to using the c
 
 ### Credits
 
-***Antonio Rodgrigez*** - My mentor at Code Institute - for general feedback and guidance, special guidance on Google Maps
+***Antonio Rodrigez*** - My mentor at Code Institute - for general feedback and guidance, special guidance on Google Maps
 
 ***Bence Kiss*** - My brother, helping to set up LightGallery
 
